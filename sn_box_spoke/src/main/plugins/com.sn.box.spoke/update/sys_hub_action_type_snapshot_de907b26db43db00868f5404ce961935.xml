@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_hub_action_type_snapshot">
+    <sys_hub_action_type_snapshot action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <annotation/>
+        <category display_value="Folder Management">b57066a3db5d9700868f5404ce961974</category>
+        <copied_from/>
+        <copied_from_name/>
+        <description>&lt;p&gt;This action creates a folder on the Box account of the associated credentials.&lt;/p&gt;
+
+&lt;p&gt;&lt;b&gt;Inputs:&lt;/b&gt;&lt;/p&gt;
+&lt;ul&gt;
+	&lt;li&gt;&lt;b&gt;Name&lt;/b&gt; - Name of the folder to be created.&lt;/li&gt;
+	&lt;li&gt;&lt;b&gt;Parent Folder ID&lt;/b&gt; - ID of the folder under which the new folder will be created. If a value is not provided then the folder will be created at the top level.&lt;/li&gt;
+        &lt;li&gt;&lt;b&gt;As User&lt;/b&gt; - As-User can be used by admins, co-admins to impersonate another user while executing an API request. ID of the user with which the folder needs to be created.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;b&gt;Outputs:&lt;/b&gt;&lt;/p&gt;
+&lt;ul&gt;
+	&lt;li&gt;&lt;b&gt;Status&lt;/b&gt; - Will be set to "Success" if the request succeeds or "Error" if a failure occurs.&lt;/li&gt;
+	&lt;li&gt;&lt;b&gt;Error Message&lt;/b&gt; - Will be populated when the status is "Error".&lt;/li&gt;
+	&lt;li&gt;&lt;b&gt;Folder ID&lt;/b&gt; - ID of the created folder. Will be populated in case of success.&lt;/li&gt;
+	&lt;li&gt;&lt;b&gt;Folder Info&lt;/b&gt; - Information of the created folder in JSON format. Will be populated in case of success.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;b&gt;Error Messages:&lt;/b&gt;&lt;/p&gt;
+&lt;ul&gt;
+	&lt;li&gt;Item with the same name already exists.&lt;/li&gt;
+	&lt;li&gt;Names cannot contain non-printable ASCII, / or \, leading or trailing whitespace. The special names "." or ".." are also unsupported.&lt;/li&gt;
+	&lt;li&gt;Parent folder with given ID not found or associated credentials do not have permissions to access the folder.&lt;/li&gt;
+	&lt;li&gt;Invalid username or password/token.&lt;/li&gt;
+	&lt;li&gt;The credentials associated with the Box Spoke connection does not have enough permission to perform this action.&lt;/li&gt;
+        &lt;li&gt;User ID provided in Create Folder As User input not found.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;b&gt;Additional Notes:&lt;/b&gt;&lt;/p&gt;
+&lt;ul&gt;
+	&lt;li&gt;To enable 'As-User' functionality for Box applications using OAuth2 with JWT, please navigate to the Advanced Features section in the developer console and enable the "Perform actions on behalf of users" permission.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;To use this action, the corresponding Box connection and credential must be created and associated with the Box Connection &amp; Credential alias. &lt;a target="_blank" href="http://docs.servicenow.com/?context=CSHelp:credentials-connections-alias"&gt;Learn More&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;b&gt;Note&lt;/b&gt;: Requires a subscription for production use. &lt;a target="_blank" href="https://docs.servicenow.com/?context=CSHelp:IntegrationHub-licensing-information"&gt;Read More&lt;/a&gt;.&lt;/p&gt;</description>
+        <internal_name>create_folder</internal_name>
+        <label_cache>[{"name":"{{action.name}}","label":"action➛Name","type":"action","ref":""},{"name":"{{action.parent_folder_id}}","label":"action➛Parent Folder ID","type":"action","ref":""},{"name":"{{action.as_user}}","label":"action➛As User","type":"action","ref":""},{"name":"{{step[e8a62615-4bbf-413d-8789-68e2d921d6bf].n}}","label":"step➛Pre Processing➛n","type":"step","ref":""},{"name":"{{step[e8a62615-4bbf-413d-8789-68e2d921d6bf].na}}","label":"step➛Pre Processing➛na","type":"step","ref":""},{"name":"{{step[e8a62615-4bbf-413d-8789-68e2d921d6bf].nam}}","label":"step➛Pre Processing➛nam","type":"step","ref":""},{"name":"{{step[e8a62615-4bbf-413d-8789-68e2d921d6bf].name}}","label":"step➛Pre Processing➛name","type":"step","ref":""},{"name":"{{step[e8a62615-4bbf-413d-8789-68e2d921d6bf].p}}","label":"step➛Pre Processing➛p","type":"step","ref":""},{"name":"{{step[e8a62615-4bbf-413d-8789-68e2d921d6bf].pa}}","label":"step➛Pre Processing➛pa","type":"step","ref":""},{"name":"{{step[e8a62615-4bbf-413d-8789-68e2d921d6bf].par}}","label":"step➛Pre Processing➛par","type":"step","ref":""},{"name":"{{step[e8a62615-4bbf-413d-8789-68e2d921d6bf].pare}}","label":"step➛Pre Processing➛pare","type":"step","ref":""},{"name":"{{step[e8a62615-4bbf-413d-8789-68e2d921d6bf].paren}}","label":"step➛Pre Processing➛paren","type":"step","ref":""},{"name":"{{step[e8a62615-4bbf-413d-8789-68e2d921d6bf].parent}}","label":"step➛Pre Processing➛parent","type":"step","ref":""},{"name":"{{step[e8a62615-4bbf-413d-8789-68e2d921d6bf].parent_}}","label":"step➛Pre Processing➛parent_","type":"step","ref":""},{"name":"{{step[e8a62615-4bbf-413d-8789-68e2d921d6bf].parent_f}}","label":"step➛Pre Processing➛parent_f","type":"step","ref":""},{"name":"{{step[e8a62615-4bbf-413d-8789-68e2d921d6bf].parent_fo}}","label":"step➛Pre Processing➛parent_fo","type":"step","ref":""},{"name":"{{step[e8a62615-4bbf-413d-8789-68e2d921d6bf].parent_fol}}","label":"step➛Pre Processing➛parent_fol","type":"step","ref":""},{"name":"{{step[e8a62615-4bbf-413d-8789-68e2d921d6bf].parent_fold}}","label":"step➛Pre Processing➛parent_fold","type":"step","ref":""},{"name":"{{step[e8a62615-4bbf-413d-8789-68e2d921d6bf].parent_folde}}","label":"step➛Pre Processing➛parent_folde","type":"step","ref":""},{"name":"{{step[e8a62615-4bbf-413d-8789-68e2d921d6bf].parent_folder}}","label":"step➛Pre Processing➛parent_folder","type":"step","ref":""},{"name":"{{step[e8a62615-4bbf-413d-8789-68e2d921d6bf].parent_folder_}}","label":"step➛Pre Processing➛parent_folder_","type":"step","ref":""},{"name":"{{step[e8a62615-4bbf-413d-8789-68e2d921d6bf].parent_folder_i}}","label":"step➛Pre Processing➛parent_folder_i","type":"step","ref":""},{"name":"{{step[e8a62615-4bbf-413d-8789-68e2d921d6bf].parent_folder_id}}","label":"step➛Pre Processing➛parent_folder_id","type":"step","ref":""},{"name":"{{step[00a421ca-a7d5-4911-8636-f404408b007e].response_body}}","label":"step➛Create Folder➛Response Body","type":"step","ref":""},{"name":"{{step[00a421ca-a7d5-4911-8636-f404408b007e].response_headers}}","label":"step➛Create Folder➛Response Headers","type":"step","ref":""},{"name":"{{step[00a421ca-a7d5-4911-8636-f404408b007e].status_code}}","label":"step➛Create Folder➛Status Code","type":"step","ref":""},{"name":"{{step[a3d67f25-c554-40bb-a638-fb87b179052a].status}}","label":"step➛Handle Errors➛status","type":"step","ref":""},{"name":"{{step[a3d67f25-c554-40bb-a638-fb87b179052a].error_message}}","label":"step➛Handle Errors➛error_message","type":"step","ref":""},{"name":"{{step[a3d67f25-c554-40bb-a638-fb87b179052a].folder_info}}","label":"step➛Handle Errors➛folder_info","type":"step","ref":""},{"name":"{{step[a3d67f25-c554-40bb-a638-fb87b179052a].folder_id}}","label":"step➛Handle Errors➛folder_id","type":"step","ref":""},{"name":"{{step[e8a62615-4bbf-413d-8789-68e2d921d6bf].a}}","label":"step➛Pre Processing➛a","type":"step","ref":""},{"name":"{{step[e8a62615-4bbf-413d-8789-68e2d921d6bf].as}}","label":"step➛Pre Processing➛as","type":"step","ref":""},{"name":"{{step[e8a62615-4bbf-413d-8789-68e2d921d6bf].as_}}","label":"step➛Pre Processing➛as_","type":"step","ref":""},{"name":"{{step[e8a62615-4bbf-413d-8789-68e2d921d6bf].as_u}}","label":"step➛Pre Processing➛as_u","type":"step","ref":""},{"name":"{{step[e8a62615-4bbf-413d-8789-68e2d921d6bf].as_us}}","label":"step➛Pre Processing➛as_us","type":"step","ref":""},{"name":"{{step[e8a62615-4bbf-413d-8789-68e2d921d6bf].as_use}}","label":"step➛Pre Processing➛as_use","type":"step","ref":""},{"name":"{{step[e8a62615-4bbf-413d-8789-68e2d921d6bf].as_user}}","label":"step➛Pre Processing➛as_user","type":"step","ref":""},{"name":"{{step[e8a62615-4bbf-413d-8789-68e2d921d6bf].as_user_header}}","label":"step➛Pre Processing➛as_user_header","type":"step","ref":""}]</label_cache>
+        <master>true</master>
+        <name>Create Folder</name>
+        <outputs/>
+        <outputs/>
+        <parent_action display_value="Create Folder">298066a3db5d9700868f5404ce961901</parent_action>
+        <sys_class_name>sys_hub_action_type_snapshot</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2018-07-05 13:29:21</sys_created_on>
+        <sys_id>de907b26db43db00868f5404ce961935</sys_id>
+        <sys_mod_count>5</sys_mod_count>
+        <sys_name>Create Folder</sys_name>
+        <sys_package display_value="Box Spoke" source="sn_box_spoke">fdc25a6bdb1d9700868f5404ce961969</sys_package>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="Box Spoke">fdc25a6bdb1d9700868f5404ce961969</sys_scope>
+        <sys_update_name>sys_hub_action_type_snapshot_de907b26db43db00868f5404ce961935</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2018-09-17 12:52:56</sys_updated_on>
+        <system_level>false</system_level>
+        <type/>
+    </sys_hub_action_type_snapshot>
+    <sys_translated_text action="delete_multiple" query="documentkey=de907b26db43db00868f5404ce961935"/>
+    <sys_variable_value action="delete_multiple" query="document_key=de907b26db43db00868f5404ce961935"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_type_snapshot</document>
+        <document_key>de907b26db43db00868f5404ce961935</document_key>
+        <order>0</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2018-07-06 11:50:22</sys_created_on>
+        <sys_id>0e836c8bdbc31f00bea7ff561d96199b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2018-07-06 11:50:22</sys_updated_on>
+        <value/>
+        <variable display_value="">c14ddb72db031f00bea7ff561d9619da</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=de907b26db43db00868f5404ce961935"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>error_message</field>
+        <id>de907b26db43db00868f5404ce961935</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2018-07-05 13:29:28</sys_created_on>
+        <sys_id>3b90bb26db43db00868f5404ce961933</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2018-07-05 13:29:28</sys_updated_on>
+        <table>var__m_sys_hub_action_output_de907b26db43db00868f5404ce961935</table>
+        <value>{{step[a3d67f25-c554-40bb-a638-fb87b179052a].error_message}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>folder_id</field>
+        <id>de907b26db43db00868f5404ce961935</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2018-07-05 13:29:28</sys_created_on>
+        <sys_id>bf90bb26db43db00868f5404ce961933</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2018-07-05 13:29:28</sys_updated_on>
+        <table>var__m_sys_hub_action_output_de907b26db43db00868f5404ce961935</table>
+        <value>{{step[a3d67f25-c554-40bb-a638-fb87b179052a].folder_id}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>folder_info</field>
+        <id>de907b26db43db00868f5404ce961935</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2018-07-05 13:29:28</sys_created_on>
+        <sys_id>fb90bb26db43db00868f5404ce961933</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2018-07-05 13:29:28</sys_updated_on>
+        <table>var__m_sys_hub_action_output_de907b26db43db00868f5404ce961935</table>
+        <value>{{step[a3d67f25-c554-40bb-a638-fb87b179052a].folder_info}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>status</field>
+        <id>de907b26db43db00868f5404ce961935</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2018-07-05 13:29:28</sys_created_on>
+        <sys_id>7390bb26db43db00868f5404ce961934</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2018-07-05 13:29:28</sys_updated_on>
+        <table>var__m_sys_hub_action_output_de907b26db43db00868f5404ce961935</table>
+        <value>{{step[a3d67f25-c554-40bb-a638-fb87b179052a].status}}</value>
+    </sys_element_mapping>
+</record_update>

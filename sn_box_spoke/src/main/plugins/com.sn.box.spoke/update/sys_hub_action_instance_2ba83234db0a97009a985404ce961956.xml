@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_hub_action_instance">
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Upload File">6267ca43db6d9740bea7ff561d961972</action_type>
+        <action_type_parent/>
+        <comment>Uploads a file from Service Now to a folder in Box</comment>
+        <compiled_snapshot display_value="Upload File">6267ca43db6d9740bea7ff561d961972</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Move Attachment to Box">76b63eb0db0a97009a985404ce961939</flow>
+        <order>1</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2018-05-11 05:52:53</sys_created_on>
+        <sys_id>2ba83234db0a97009a985404ce961956</sys_id>
+        <sys_mod_count>26</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Box Spoke" source="sn_box_spoke">fdc25a6bdb1d9700868f5404ce961969</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Box Spoke">fdc25a6bdb1d9700868f5404ce961969</sys_scope>
+        <sys_update_name>sys_hub_action_instance_2ba83234db0a97009a985404ce961956</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2018-09-07 11:07:30</sys_updated_on>
+        <ui_id>1e8f8291-cf66-4524-8083-c81eeb55cdc7</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=2ba83234db0a97009a985404ce961956"/>
+    <sys_element_mapping action="delete_multiple" query="id=2ba83234db0a97009a985404ce961956"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>attachment</field>
+        <id>2ba83234db0a97009a985404ce961956</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2018-05-11 05:53:29</sys_created_on>
+        <sys_id>0cd8b234db0a97009a985404ce961901</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2018-05-11 05:53:29</sys_updated_on>
+        <table>var__m_sys_hub_action_input_6267ca43db6d9740bea7ff561d961972</table>
+        <value>{{subflow.attachment_record}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>attachment</field>
+        <id>2ba83234db0a97009a985404ce961956</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2018-05-11 05:52:53</sys_created_on>
+        <sys_id>afa83234db0a97009a985404ce96195c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2018-05-11 05:52:53</sys_updated_on>
+        <table>var__m_sys_hub_action_input_d999526fdbd5df00bea7ff561d9619c2</table>
+        <value>{{subflow.attachment_record}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>name</field>
+        <id>2ba83234db0a97009a985404ce961956</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2018-05-11 05:53:29</sys_created_on>
+        <sys_id>48d8b234db0a97009a985404ce961901</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2018-05-11 05:53:29</sys_updated_on>
+        <table>var__m_sys_hub_action_input_6267ca43db6d9740bea7ff561d961972</table>
+        <value>{{subflow.file_name}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>name</field>
+        <id>2ba83234db0a97009a985404ce961956</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2018-05-11 05:52:53</sys_created_on>
+        <sys_id>67a83234db0a97009a985404ce96195c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2018-05-11 05:52:53</sys_updated_on>
+        <table>var__m_sys_hub_action_input_d999526fdbd5df00bea7ff561d9619c2</table>
+        <value>{{subflow.file_name}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>parent_folder_id</field>
+        <id>2ba83234db0a97009a985404ce961956</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2018-05-11 05:52:53</sys_created_on>
+        <sys_id>63a83234db0a97009a985404ce96195d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2018-05-11 05:52:53</sys_updated_on>
+        <table>var__m_sys_hub_action_input_d999526fdbd5df00bea7ff561d9619c2</table>
+        <value>{{subflow.parent_folder_id}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>parent_folder_id</field>
+        <id>2ba83234db0a97009a985404ce961956</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2018-05-11 05:53:29</sys_created_on>
+        <sys_id>ccd8b234db0a97009a985404ce961901</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2018-05-11 05:53:29</sys_updated_on>
+        <table>var__m_sys_hub_action_input_6267ca43db6d9740bea7ff561d961972</table>
+        <value>{{subflow.parent_folder_id}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>token</field>
+        <id>2ba83234db0a97009a985404ce961956</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2018-05-11 05:52:53</sys_created_on>
+        <sys_id>27a83234db0a97009a985404ce96195d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2018-05-11 05:52:53</sys_updated_on>
+        <table>var__m_sys_hub_action_input_d999526fdbd5df00bea7ff561d9619c2</table>
+        <value>{{subflow.token}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>token</field>
+        <id>2ba83234db0a97009a985404ce961956</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2018-05-11 05:53:29</sys_created_on>
+        <sys_id>80d8b234db0a97009a985404ce961902</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2018-05-11 05:53:29</sys_updated_on>
+        <table>var__m_sys_hub_action_input_6267ca43db6d9740bea7ff561d961972</table>
+        <value>{{subflow.token}}</value>
+    </sys_element_mapping>
+</record_update>

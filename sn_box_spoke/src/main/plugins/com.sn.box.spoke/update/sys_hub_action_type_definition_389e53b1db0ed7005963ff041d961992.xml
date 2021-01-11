@@ -1,0 +1,275 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_hub_action_type_definition">
+    <sys_hub_action_type_definition action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <active>true</active>
+        <annotation/>
+        <category display_value="User Management">9c2cd2f0dba55b00868f5404ce961989</category>
+        <copied_from>80d962a7db19df00bea7ff561d9619b5</copied_from>
+        <copied_from_name>Create User</copied_from_name>
+        <description>&lt;p&gt;This action updates user attributes in box that may involve a role change from user to co-owner and vice versa for an existing user in box account of the associated credentials.&lt;/p&gt;
+
+&lt;p&gt;&lt;b&gt;Inputs:&lt;/b&gt;&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;b&gt;User ID&lt;/b&gt; - The user ID of an existing user in box.&lt;/li&gt;
+  &lt;li&gt;&lt;b&gt;Name&lt;/b&gt; - Name of the user in box.&lt;/li&gt;
+  &lt;li&gt;&lt;b&gt;Role&lt;/b&gt; - The user’s enterprise role can be co-admin or user.&lt;/li&gt;
+  &lt;li&gt;&lt;b&gt;Job Title&lt;/b&gt; - The user's job title. E.g. CEO&lt;/li&gt;
+  &lt;li&gt;&lt;b&gt;Phone&lt;/b&gt; - The user's phone number.&lt;/li&gt;
+  &lt;li&gt;&lt;b&gt;Address&lt;/b&gt; - The user's address.&lt;/li&gt;
+  &lt;li&gt;&lt;b&gt;Status&lt;/b&gt; - Status of user. Can be set to Active, Inactive, Cannot Delete Edit, or Cannot Delete Edit Upload.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;b&gt;Outputs:&lt;/b&gt;&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;b&gt;Status&lt;/b&gt; - Will be set to "Success" if the request succeeds or "Error" if a failure occurs.&lt;/li&gt;
+  &lt;li&gt;&lt;b&gt;Error Message&lt;/b&gt; - Will be populated when the status is "Error".&lt;/li&gt;
+
+
+
+&lt;/ul&gt;
+&lt;p&gt;&lt;b&gt;Error Messages:&lt;/b&gt;&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;Invalid username or password/token.&lt;/li&gt;
+  &lt;li&gt;User with given ID not found.&lt;/li&gt;
+  &lt;li&gt;Invalid input parameters in request.&lt;/li&gt;
+  &lt;li&gt;The credentials associated with the Box Spoke connection does not have enough permission to perform this action.&lt;/li&gt;
+&lt;/ul&gt;
+
+
+&lt;p&gt;To use this action, the corresponding Box connection and credential must be created and associated with the Box Connection &amp; Credential alias. &lt;a target="_blank" href="http://docs.servicenow.com/?context=CSHelp:credentials-connections-alias"&gt;Learn More&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;b&gt;Note&lt;/b&gt;: Requires a subscription for production use. &lt;a target="_blank" href="https://docs.servicenow.com/?context=CSHelp:IntegrationHub-licensing-information"&gt;Read More&lt;/a&gt;.&lt;/p&gt;
+</description>
+        <internal_name>update_user</internal_name>
+        <label_cache>[{"name":"{{action.name}}","label":"action➛Token","type":"action","ref":""},{"name":"{{action.job_title}}","label":"action➛Job Title","type":"action","ref":""},{"name":"{{action.phone}}","label":"action➛Phone","type":"action","ref":""},{"name":"{{action.status}}","label":"action➛Status","type":"action","ref":""},{"name":"{{action.name3}}","label":"action➛Name","type":"action","ref":""},{"name":"{{action.user_id}}","label":"action➛User ID","type":"action","ref":""},{"name":"{{action.role}}","label":"action➛Role","type":"action","ref":""},{"name":"{{action.address}}","label":"action➛Address","type":"action","ref":""},{"name":"{{step[24b2a822-74ea-47dd-9f3f-945c689e0fa3].response_body}}","label":"step➛Update User➛Response Body","type":"step","ref":""},{"name":"{{step[24b2a822-74ea-47dd-9f3f-945c689e0fa3].status_code}}","label":"step➛Update User➛Status Code","type":"step","ref":""},{"name":"{{step[24b2a822-74ea-47dd-9f3f-945c689e0fa3].error_message}}","label":"step➛Update User➛Error Message","type":"step","ref":""},{"name":"{{step[321cd45e-ebd9-46f7-9e87-d0bf438cbfb8].error_message}}","label":"step➛Handle Errors➛error_message","type":"step","ref":""},{"name":"{{step[321cd45e-ebd9-46f7-9e87-d0bf438cbfb8].status}}","label":"step➛Handle Errors➛status","type":"step","ref":""},{"name":"{{step[ffe08fb3-7fb5-4e9d-8474-3f2e2e50d520].p}}","label":"step➛Pre Processing➛p","type":"step","ref":""},{"name":"{{step[ffe08fb3-7fb5-4e9d-8474-3f2e2e50d520].pa}}","label":"step➛Pre Processing➛pa","type":"step","ref":""},{"name":"{{step[ffe08fb3-7fb5-4e9d-8474-3f2e2e50d520].pay}}","label":"step➛Pre Processing➛pay","type":"step","ref":""},{"name":"{{step[ffe08fb3-7fb5-4e9d-8474-3f2e2e50d520].payl}}","label":"step➛Pre Processing➛payl","type":"step","ref":""},{"name":"{{step[ffe08fb3-7fb5-4e9d-8474-3f2e2e50d520].paylo}}","label":"step➛Pre Processing➛paylo","type":"step","ref":""},{"name":"{{step[ffe08fb3-7fb5-4e9d-8474-3f2e2e50d520].payloa}}","label":"step➛Pre Processing➛payloa","type":"step","ref":""},{"name":"{{step[ffe08fb3-7fb5-4e9d-8474-3f2e2e50d520].payload}}","label":"step➛Pre Processing➛payload","type":"step","ref":""},{"name":"{{step[321cd45e-ebd9-46f7-9e87-d0bf438cbfb8].e}}","label":"step➛Handle Errors➛e","type":"step","ref":""},{"name":"{{step[321cd45e-ebd9-46f7-9e87-d0bf438cbfb8].er}}","label":"step➛Handle Errors➛er","type":"step","ref":""},{"name":"{{step[321cd45e-ebd9-46f7-9e87-d0bf438cbfb8].err}}","label":"step➛Handle Errors➛err","type":"step","ref":""},{"name":"{{step[321cd45e-ebd9-46f7-9e87-d0bf438cbfb8].erro}}","label":"step➛Handle Errors➛erro","type":"step","ref":""},{"name":"{{step[321cd45e-ebd9-46f7-9e87-d0bf438cbfb8].error}}","label":"step➛Handle Errors➛error","type":"step","ref":""},{"name":"{{step[321cd45e-ebd9-46f7-9e87-d0bf438cbfb8].error_}}","label":"step➛Handle Errors➛error_","type":"step","ref":""},{"name":"{{step[321cd45e-ebd9-46f7-9e87-d0bf438cbfb8].error_m}}","label":"step➛Handle Errors➛error_m","type":"step","ref":""},{"name":"{{step[321cd45e-ebd9-46f7-9e87-d0bf438cbfb8].error_me}}","label":"step➛Handle Errors➛error_me","type":"step","ref":""},{"name":"{{step[321cd45e-ebd9-46f7-9e87-d0bf438cbfb8].error_mes}}","label":"step➛Handle Errors➛error_mes","type":"step","ref":""},{"name":"{{step[321cd45e-ebd9-46f7-9e87-d0bf438cbfb8].error_mess}}","label":"step➛Handle Errors➛error_mess","type":"step","ref":""},{"name":"{{step[321cd45e-ebd9-46f7-9e87-d0bf438cbfb8].error_messa}}","label":"step➛Handle Errors➛error_messa","type":"step","ref":""},{"name":"{{step[321cd45e-ebd9-46f7-9e87-d0bf438cbfb8].error_messag}}","label":"step➛Handle Errors➛error_messag","type":"step","ref":""},{"name":"{{step[ffe08fb3-7fb5-4e9d-8474-3f2e2e50d520].u}}","label":"step➛Pre Processing➛u","type":"step","ref":""},{"name":"{{step[ffe08fb3-7fb5-4e9d-8474-3f2e2e50d520].us}}","label":"step➛Pre Processing➛us","type":"step","ref":""},{"name":"{{step[ffe08fb3-7fb5-4e9d-8474-3f2e2e50d520].use}}","label":"step➛Pre Processing➛use","type":"step","ref":""},{"name":"{{step[ffe08fb3-7fb5-4e9d-8474-3f2e2e50d520].user}}","label":"step➛Pre Processing➛user","type":"step","ref":""},{"name":"{{step[ffe08fb3-7fb5-4e9d-8474-3f2e2e50d520].user_}}","label":"step➛Pre Processing➛user_","type":"step","ref":""},{"name":"{{step[ffe08fb3-7fb5-4e9d-8474-3f2e2e50d520].user_id}}","label":"step➛Pre Processing➛user_id","type":"step","ref":""},{"name":"{{step[321cd45e-ebd9-46f7-9e87-d0bf438cbfb8].s}}","label":"step➛Handle Errors➛s","type":"step","ref":""},{"name":"{{step[321cd45e-ebd9-46f7-9e87-d0bf438cbfb8].st}}","label":"step➛Handle Errors➛st","type":"step","ref":""},{"name":"{{step[321cd45e-ebd9-46f7-9e87-d0bf438cbfb8].sta}}","label":"step➛Handle Errors➛sta","type":"step","ref":""},{"name":"{{step[321cd45e-ebd9-46f7-9e87-d0bf438cbfb8].stat}}","label":"step➛Handle Errors➛stat","type":"step","ref":""},{"name":"{{step[321cd45e-ebd9-46f7-9e87-d0bf438cbfb8].statu}}","label":"step➛Handle Errors➛statu","type":"step","ref":""},{"name":"{{step[321cd45e-ebd9-46f7-9e87-d0bf438cbfb8].}}","label":"step➛Handle Errors➛","type":"step","ref":""}]</label_cache>
+        <latest_snapshot>be9ac627dbbb1b001b5857935e9619ed</latest_snapshot>
+        <master_snapshot>9f023fa6db43db00868f5404ce96194b</master_snapshot>
+        <name>Update User</name>
+        <outputs/>
+        <outputs/>
+        <state>published</state>
+        <sys_class_name>sys_hub_action_type_definition</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2018-05-14 11:12:22</sys_created_on>
+        <sys_id>389e53b1db0ed7005963ff041d961992</sys_id>
+        <sys_mod_count>66</sys_mod_count>
+        <sys_name>Update User</sys_name>
+        <sys_package display_value="Box Spoke" source="sn_box_spoke">fdc25a6bdb1d9700868f5404ce961969</sys_package>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="Box Spoke">fdc25a6bdb1d9700868f5404ce961969</sys_scope>
+        <sys_update_name>sys_hub_action_type_definition_389e53b1db0ed7005963ff041d961992</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2018-08-14 15:24:51</sys_updated_on>
+        <system_level>false</system_level>
+        <type/>
+    </sys_hub_action_type_definition>
+    <sys_translated_text action="delete_multiple" query="documentkey=389e53b1db0ed7005963ff041d961992"/>
+    <sys_variable_value action="delete_multiple" query="document_key=389e53b1db0ed7005963ff041d961992"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_type_definition</document>
+        <document_key>389e53b1db0ed7005963ff041d961992</document_key>
+        <order>0</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2018-08-14 15:09:19</sys_created_on>
+        <sys_id>3817ce63dbbb1b001b5857935e9619e4</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2018-08-14 15:09:19</sys_updated_on>
+        <value/>
+        <variable display_value="">438ed73adb4bdb00868f5404ce9619de</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=389e53b1db0ed7005963ff041d961992"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>address</field>
+        <id>389e53b1db0ed7005963ff041d961992</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2018-05-14 13:18:36</sys_created_on>
+        <sys_id>e97bb735db4ed7005963ff041d9619cf</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2018-05-14 13:18:36</sys_updated_on>
+        <table>var__m_sys_hub_action_output_389e53b1db0ed7005963ff041d961992</table>
+        <value>{{step[321cd45e-ebd9-46f7-9e87-d0bf438cbfb8].address}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>error_message</field>
+        <id>389e53b1db0ed7005963ff041d961992</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2018-05-14 11:12:29</sys_created_on>
+        <sys_id>de9e93b1db0ed7005963ff041d9619d1</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2018-05-17 11:07:50</sys_updated_on>
+        <table>var__m_sys_hub_action_output_389e53b1db0ed7005963ff041d961992</table>
+        <value>{{step[321cd45e-ebd9-46f7-9e87-d0bf438cbfb8].error_message}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>job_title</field>
+        <id>389e53b1db0ed7005963ff041d961992</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2018-05-14 13:18:36</sys_created_on>
+        <sys_id>e57bb735db4ed7005963ff041d9619d0</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2018-05-14 13:18:36</sys_updated_on>
+        <table>var__m_sys_hub_action_output_389e53b1db0ed7005963ff041d961992</table>
+        <value>{{step[321cd45e-ebd9-46f7-9e87-d0bf438cbfb8].job_title}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>job_title9</field>
+        <id>389e53b1db0ed7005963ff041d961992</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2018-05-15 12:21:39</sys_created_on>
+        <sys_id>4d08f0dedbc61b005963ff041d961984</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2018-05-15 12:21:39</sys_updated_on>
+        <table>var__m_sys_hub_action_output_389e53b1db0ed7005963ff041d961992</table>
+        <value>{{step[321cd45e-ebd9-46f7-9e87-d0bf438cbfb8].job_title}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>login</field>
+        <id>389e53b1db0ed7005963ff041d961992</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2018-05-14 13:18:36</sys_created_on>
+        <sys_id>257bb735db4ed7005963ff041d9619d0</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2018-05-14 13:18:36</sys_updated_on>
+        <table>var__m_sys_hub_action_output_389e53b1db0ed7005963ff041d961992</table>
+        <value>{{step[321cd45e-ebd9-46f7-9e87-d0bf438cbfb8].login}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>name</field>
+        <id>389e53b1db0ed7005963ff041d961992</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2018-05-14 13:18:36</sys_created_on>
+        <sys_id>617bb735db4ed7005963ff041d9619d0</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2018-05-14 13:18:36</sys_updated_on>
+        <table>var__m_sys_hub_action_output_389e53b1db0ed7005963ff041d961992</table>
+        <value>{{step[321cd45e-ebd9-46f7-9e87-d0bf438cbfb8].name}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>phone</field>
+        <id>389e53b1db0ed7005963ff041d961992</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2018-05-14 13:18:36</sys_created_on>
+        <sys_id>ad7bb735db4ed7005963ff041d9619cf</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2018-05-14 13:18:36</sys_updated_on>
+        <table>var__m_sys_hub_action_output_389e53b1db0ed7005963ff041d961992</table>
+        <value>{{step[321cd45e-ebd9-46f7-9e87-d0bf438cbfb8].phone}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>phone9</field>
+        <id>389e53b1db0ed7005963ff041d961992</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2018-05-15 12:21:39</sys_created_on>
+        <sys_id>c508f0dedbc61b005963ff041d961984</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2018-05-15 12:21:39</sys_updated_on>
+        <table>var__m_sys_hub_action_output_389e53b1db0ed7005963ff041d961992</table>
+        <value>{{step[321cd45e-ebd9-46f7-9e87-d0bf438cbfb8].phone}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>role</field>
+        <id>389e53b1db0ed7005963ff041d961992</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2018-05-15 13:34:11</sys_created_on>
+        <sys_id>3798855adb0a1b005963ff041d961978</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2018-05-15 13:34:11</sys_updated_on>
+        <table>var__m_sys_hub_action_output_389e53b1db0ed7005963ff041d961992</table>
+        <value>{{step[321cd45e-ebd9-46f7-9e87-d0bf438cbfb8].role}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>status</field>
+        <id>389e53b1db0ed7005963ff041d961992</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2018-05-14 11:12:29</sys_created_on>
+        <sys_id>1a9e93b1db0ed7005963ff041d9619d2</sys_id>
+        <sys_mod_count>7</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2018-05-17 11:59:47</sys_updated_on>
+        <table>var__m_sys_hub_action_output_389e53b1db0ed7005963ff041d961992</table>
+        <value>{{step[321cd45e-ebd9-46f7-9e87-d0bf438cbfb8].status}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>status8</field>
+        <id>389e53b1db0ed7005963ff041d961992</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2018-05-17 11:51:27</sys_created_on>
+        <sys_id>5e444bfadb46d700a9c7594e5e961944</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2018-05-17 11:59:30</sys_updated_on>
+        <table>var__m_sys_hub_action_output_389e53b1db0ed7005963ff041d961992</table>
+        <value>{{step[321cd45e-ebd9-46f7-9e87-d0bf438cbfb8].user_status}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>type</field>
+        <id>389e53b1db0ed7005963ff041d961992</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2018-05-17 11:51:27</sys_created_on>
+        <sys_id>16444bfadb46d700a9c7594e5e961945</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2018-05-17 11:51:27</sys_updated_on>
+        <table>var__m_sys_hub_action_output_389e53b1db0ed7005963ff041d961992</table>
+        <value>{{step[321cd45e-ebd9-46f7-9e87-d0bf438cbfb8].type}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>user_id</field>
+        <id>389e53b1db0ed7005963ff041d961992</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2018-05-14 11:12:29</sys_created_on>
+        <sys_id>929e93b1db0ed7005963ff041d9619d2</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2018-05-15 12:21:38</sys_updated_on>
+        <table>var__m_sys_hub_action_output_389e53b1db0ed7005963ff041d961992</table>
+        <value>{{step[321cd45e-ebd9-46f7-9e87-d0bf438cbfb8].user_id}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>user_info</field>
+        <id>389e53b1db0ed7005963ff041d961992</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2018-05-14 11:12:29</sys_created_on>
+        <sys_id>569e93b1db0ed7005963ff041d9619d2</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2018-05-14 11:12:29</sys_updated_on>
+        <table>var__m_sys_hub_action_output_389e53b1db0ed7005963ff041d961992</table>
+        <value>{{step[321cd45e-ebd9-46f7-9e87-d0bf438cbfb8].user_info}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>user_status</field>
+        <id>389e53b1db0ed7005963ff041d961992</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2018-05-14 13:18:36</sys_created_on>
+        <sys_id>297bb735db4ed7005963ff041d9619cf</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2018-05-14 13:26:28</sys_updated_on>
+        <table>var__m_sys_hub_action_output_389e53b1db0ed7005963ff041d961992</table>
+        <value>{{step[321cd45e-ebd9-46f7-9e87-d0bf438cbfb8].user_status}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>user_status9</field>
+        <id>389e53b1db0ed7005963ff041d961992</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2018-05-15 12:21:39</sys_created_on>
+        <sys_id>8908f0dedbc61b005963ff041d961984</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2018-05-15 12:21:39</sys_updated_on>
+        <table>var__m_sys_hub_action_output_389e53b1db0ed7005963ff041d961992</table>
+        <value>{{step[321cd45e-ebd9-46f7-9e87-d0bf438cbfb8].user_status}}</value>
+    </sys_element_mapping>
+</record_update>

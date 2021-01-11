@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_complex_object">
+  <sys_complex_object action="INSERT_OR_UPDATE">
+    <label/>
+    <name>FDb69c8d43aa81201066045c628f1cdc43</name>
+    <namespace>FlowDesigner</namespace>
+    <scope_name>fdc25a6bdb1d9700868f5404ce961969</scope_name>
+    <serialized_content>{"FlowDesigner:FDb69c8d43aa81201066045c628f1cdc43":{"legal_hold_policy":{"name":"String","name.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"Name\",\"mandatory\":\"false\",\"order\":\"2\",\"max_length\":\"0\",\"uiUniqueId\":\"ebfd5022-feca-4318-836c-cefbf0285d80\"}"},"id":"String","id.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"ID\",\"mandatory\":\"false\",\"order\":\"1\",\"max_length\":\"0\",\"uiUniqueId\":\"6ba96f98-e6f9-4aa9-bc28-2c9ed193fb96\"}"},"type":"String","type.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"Type\",\"mandatory\":\"false\",\"order\":\"3\",\"max_length\":\"0\",\"uiUniqueId\":\"dec21cb9-f9e9-4cd2-a4d8-640fe961dc55\"}"}},"legal_hold_policy.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"Object\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"object\",\"default_value\":\"\",\"label\":\"Legal Hold Policy\",\"mandatory\":\"false\",\"order\":\"3\",\"max_length\":\"0\",\"uiUniqueId\":\"7bf12141-4d5c-4dda-8463-c2c045614c6a\"}"},"id":"String","id.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"ID\",\"mandatory\":\"false\",\"order\":\"1\",\"max_length\":\"0\",\"uiUniqueId\":\"6226d2ef-0a19-4798-ba53-23d15dc1c0e5\"}"},"type":"String","type.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"Type\",\"mandatory\":\"false\",\"order\":\"2\",\"max_length\":\"0\",\"uiUniqueId\":\"f4703c54-298f-41e4-819c-837831f1a4c3\"}"},"assigned_to":{"id":"String","id.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"ID\",\"mandatory\":\"false\",\"order\":\"1\",\"max_length\":\"0\",\"uiUniqueId\":\"a3960474-2b21-4a53-a68b-a694da661608\"}"},"type":"String","type.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"Type\",\"mandatory\":\"false\",\"order\":\"2\",\"max_length\":\"0\",\"uiUniqueId\":\"8eda0984-60ba-4a1f-a5b1-b137ccdaab98\"}"}},"assigned_to.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"Object\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"object\",\"default_value\":\"\",\"label\":\"Assigned To\",\"mandatory\":\"false\",\"order\":\"4\",\"max_length\":\"0\",\"uiUniqueId\":\"8407620e-1b07-429a-b881-6140c563cbeb\"}"}},"FlowDesigner:FDb69c8d43aa81201066045c628f1cdc43.$type_facets":{"SimpleMapFacet":"{\"sourceId\":\"aabc8f82-0495-4a2a-9583-94e2665f1211\",\"default_value\":\"\",\"label\":\"Assigned Legal Hold Policy\",\"mandatory\":\"false\",\"uiUniqueId\":\"7aa57af1-1057-4b8f-a66b-d4d1cea61ab3\",\"uiTypeLabel\":\"Object\",\"co_type_name\":\"FDb69c8d43aa81201066045c628f1cdc43\",\"element_mapping_provider\":\"com.glide.flow_design.action.data.FlowDesignVariableMapper\",\"read_only\":\"false\",\"sourceType\":\"step\",\"sourceUiUniqueId\":\"13873663-f99b-47da-8870-f3b7914fb6f1\",\"hint\":null,\"uiType\":\"object\",\"order\":\"1\",\"max_length\":\"65000\"}"}}</serialized_content>
+    <sys_class_name>sys_complex_object</sys_class_name>
+    <sys_created_by>admin</sys_created_by>
+    <sys_created_on>2020-12-17 09:40:01</sys_created_on>
+    <sys_domain>global</sys_domain>
+    <sys_domain_path>/</sys_domain_path>
+    <sys_id>7a9c8d430f812010747dc7d92f767e43</sys_id>
+    <sys_mod_count>0</sys_mod_count>
+    <sys_name>FDb69c8d43aa81201066045c628f1cdc43</sys_name>
+    <sys_overrides/>
+    <sys_package display_value="Box Spoke" source="sn_box_spoke">fdc25a6bdb1d9700868f5404ce961969</sys_package>
+    <sys_policy/>
+    <sys_scope display_value="Box Spoke">fdc25a6bdb1d9700868f5404ce961969</sys_scope>
+    <sys_update_name>sys_complex_object_7a9c8d430f812010747dc7d92f767e43</sys_update_name>
+    <sys_updated_by>admin</sys_updated_by>
+    <sys_updated_on>2020-12-17 09:40:01</sys_updated_on>
+    <type>complex_object_schema</type>
+  </sys_complex_object>
+</record_update>

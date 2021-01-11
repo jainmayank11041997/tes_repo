@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_hub_flow_logic">
+    <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <block display_value="">45bc7278db0a97009a985404ce96196a</block>
+        <comment/>
+        <connected_to>3ec4df04-94f4-462d-a292-c2147d3513a7</connected_to>
+        <display_text/>
+        <flow display_value="Move Attachment when created to Box">7c93b76adb43db00868f5404ce9619ae</flow>
+        <inputs/>
+        <logic_definition display_value="Else">1f781bf3c32232002841b63b12d3aee6</logic_definition>
+        <order>4</order>
+        <outputs_assigned/>
+        <outputs_to_assign/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2018-07-05 13:42:24</sys_created_on>
+        <sys_id>9193f76adb43db00868f5404ce96199b</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Box Spoke" source="sn_box_spoke">fdc25a6bdb1d9700868f5404ce961969</sys_package>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="Box Spoke">fdc25a6bdb1d9700868f5404ce961969</sys_scope>
+        <sys_update_name>sys_hub_flow_logic_9193f76adb43db00868f5404ce96199b</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2018-07-13 09:03:09</sys_updated_on>
+        <ui_id>861514fc-2dd0-4b23-b3c5-542df527cd0f</ui_id>
+        <workflow_inputs/>
+        <workflow_reference/>
+    </sys_hub_flow_logic>
+    <sys_variable_value action="delete_multiple" query="document_key=9193f76adb43db00868f5404ce96199b"/>
+</record_update>

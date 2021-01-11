@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_app">
+    <sys_app action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <enforce_license>log</enforce_license>
+        <js_level>helsinki_es5</js_level>
+        <licensable>true</licensable>
+        <license_category>none</license_category>
+        <license_model>none</license_model>
+        <logo>23621414db0257009a985404ce961951</logo>
+        <menu/>
+        <name>Box Spoke</name>
+        <private>false</private>
+        <restrict_table_access>false</restrict_table_access>
+        <runtime_access_tracking>permissive</runtime_access_tracking>
+        <scope>sn_box_spoke</scope>
+        <scoped_administration>false</scoped_administration>
+        <short_description/>
+        <source>sn_box_spoke</source>
+        <store_correlation_id/>
+        <store_url/>
+        <sys_class_name>sys_app</sys_class_name>
+        <sys_code/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2018-04-12 09:23:31</sys_created_on>
+        <sys_id>fdc25a6bdb1d9700868f5404ce961969</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2018-05-09 04:29:34</sys_updated_on>
+        <template/>
+        <trackable>true</trackable>
+        <user_role/>
+        <vendor/>
+        <vendor_prefix/>
+        <version>${project.version}</version>
+    </sys_app>
+    <sys_attachment action="INSERT_OR_UPDATE">
+        <average_image_color/>
+        <chunk_size_bytes>734003</chunk_size_bytes>
+        <compressed>true</compressed>
+        <content_type>image/svg+xml</content_type>
+        <file_name>logo</file_name>
+        <image_height/>
+        <image_width/>
+        <size_bytes>1579</size_bytes>
+        <size_compressed>715</size_compressed>
+        <state>available</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2018-05-09 04:29:34</sys_created_on>
+        <sys_id>23621414db0257009a985404ce961951</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2018-05-09 04:29:34</sys_updated_on>
+        <table_name>ZZ_YYsys_app</table_name>
+        <table_sys_id>fdc25a6bdb1d9700868f5404ce961969</table_sys_id>
+    </sys_attachment>
+    <sys_attachment_doc action="INSERT_OR_UPDATE">
+        <data>H4sIAAAAAAAAAA==</data>
+        <length>16</length>
+        <position>0</position>
+        <sys_attachment display_value="logo" sys_id="23621414db0257009a985404ce961951">23621414db0257009a985404ce961951</sys_attachment>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2018-05-09 04:29:34</sys_created_on>
+        <sys_id>63621414db0257009a985404ce961951</sys_id>
+    </sys_attachment_doc>
+    <sys_attachment_doc action="INSERT_OR_UPDATE">
+        <data>dVVNU+MwDL3zKzTuBWa6ju04H2YaDhuGU/kD3EqbJhlCwySBwP76lWS3wG7h4hfpSXqSXLMa32p4f+4OYyGaaXq5jqJ5nuUcy36oI6OUipAhYG53U1MIqwU0VVs3k8dvbTX/7t8LoUCB1UA2znb93rWHp3M5tXMuYq+4uQBY7ar9SADhth22XQXtrhAbAVtMa5S0yiH+YJwIGAiIiEOjY+yqhn3bdYU49IdKMP41vHZVIaq36tDvdiJUeN6MT5z/UYSIuWmnKriR8DpWwOKum6HaF2Kx8bWoGgUHTDQfv7jjP/FTVOgpNGOUPTVjTt3AOA39E6pdlHe39jYXQKUK8Tp0l4vHq1OuodpOp02oL5tAjPlpPB/+CNqUypLSfRsITuhPNfQ/laj/betc6DRsDuO+H54LwbDbTNWlTEAmV5+TrM/TtAIdf9KQ+LKZGsCV3Gstk6WVFkonHYMcDYmMIZP5MpUplJnUbEhkxgSL3xwRS8PAyBjPDLRMkWhgTUCjofQgRo9ZKulAYU46S7xi3sBuxey1WuZUD7/IpVGPNminegxKUsCIJKHynEUiO4GSZLPJHeO4NR+oY+KxMSFJqMMjLsgoReFI8y2epvIA91xeQ2mouOYmHcuj6MT3iHqA/CmLTUlpgkcaXOmRm4bghMVCSI1FvFasgtLY5pjnfJjjLOxKvTZSbbBR/LTeaYOaWPpQdOesN2R+OF637/s3tBrkWNyar7ZGEy0cx4bI8uoR0IpzwJ8Q3RIsTy8DIvQpPzKH9Yiy1jkqoluQ8v3IecD+biGwR6B9Hm155iiYQEI+/OL6a515RWzRdFOInhLMPB+7ND4ZIsuVws51SifOh1QwjYQ5Fuj8bTDchfY8ROkJuZCO+2Ymj4Lrfk7sy0hXUX18seqzj9DZF/W/Nyg8sZhiRf8Cbi7+AvZKe08rBgAA</data>
+        <length>940</length>
+        <position>1</position>
+        <sys_attachment display_value="logo" sys_id="23621414db0257009a985404ce961951">23621414db0257009a985404ce961951</sys_attachment>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2018-05-09 04:29:34</sys_created_on>
+        <sys_id>e3621414db0257009a985404ce961951</sys_id>
+    </sys_attachment_doc>
+</record_update>

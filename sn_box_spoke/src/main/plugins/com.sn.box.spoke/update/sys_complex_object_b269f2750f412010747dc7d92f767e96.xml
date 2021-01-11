@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_complex_object">
+  <sys_complex_object action="INSERT_OR_UPDATE">
+    <label/>
+    <name>FDfe69f275f041201081213ab1ab447d95</name>
+    <namespace>FlowDesigner</namespace>
+    <scope_name>fdc25a6bdb1d9700868f5404ce961969</scope_name>
+    <serialized_content>{"FlowDesigner:FDfe69f275f041201081213ab1ab447d95":{"name":"String","name.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"Name\",\"mandatory\":\"true\",\"order\":\"2\",\"max_length\":\"0\",\"uiUniqueId\":\"41d1052a-e475-4cf2-bfd5-ea54434d6617\"}"},"group_type":"String","group_type.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"Group Type\",\"mandatory\":\"true\",\"order\":\"4\",\"max_length\":\"0\",\"uiUniqueId\":\"97b1f8d1-49a2-474e-a3cd-66f4d61012a2\"}"},"id":"String","id.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"ID\",\"mandatory\":\"true\",\"order\":\"1\",\"max_length\":\"0\",\"uiUniqueId\":\"3b3d93ca-c7c8-46ec-bf66-693ab16b9922\"}"},"type":"String","type.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"Type\",\"mandatory\":\"true\",\"order\":\"3\",\"max_length\":\"0\",\"uiUniqueId\":\"040f5e01-13f3-4df5-946c-e8d0ecf663ce\"}"}},"FlowDesigner:FDfe69f275f041201081213ab1ab447d95.$type_facets":{"SimpleMapFacet":"{\"sourceId\":\"84de9a69-cd0c-4885-b427-e46c941dca97\",\"default_value\":\"\",\"label\":\"Update Group\",\"mandatory\":\"false\",\"uiUniqueId\":\"d4287ead-ac9d-4bd0-babd-62ca06b4c2b3\",\"uiTypeLabel\":\"Object\",\"co_type_name\":\"FDfe69f275f041201081213ab1ab447d95\",\"element_mapping_provider\":\"com.glide.flow_design.action.data.FlowDesignVariableMapper\",\"read_only\":\"false\",\"sourceType\":\"step\",\"sourceUiUniqueId\":\"3579ea1d-c94d-41db-9e10-fc41379efe8c\",\"hint\":null,\"uiType\":\"object\",\"order\":\"1\",\"max_length\":\"65000\"}"}}</serialized_content>
+    <sys_class_name>sys_complex_object</sys_class_name>
+    <sys_created_by>admin</sys_created_by>
+    <sys_created_on>2020-12-13 20:23:02</sys_created_on>
+    <sys_domain>global</sys_domain>
+    <sys_domain_path>/</sys_domain_path>
+    <sys_id>b269f2750f412010747dc7d92f767e96</sys_id>
+    <sys_mod_count>0</sys_mod_count>
+    <sys_name>FDfe69f275f041201081213ab1ab447d95</sys_name>
+    <sys_overrides/>
+    <sys_package display_value="Box Spoke" source="sn_box_spoke">fdc25a6bdb1d9700868f5404ce961969</sys_package>
+    <sys_policy/>
+    <sys_scope display_value="Box Spoke">fdc25a6bdb1d9700868f5404ce961969</sys_scope>
+    <sys_update_name>sys_complex_object_b269f2750f412010747dc7d92f767e96</sys_update_name>
+    <sys_updated_by>admin</sys_updated_by>
+    <sys_updated_on>2020-12-13 20:23:02</sys_updated_on>
+    <type>complex_object_schema</type>
+  </sys_complex_object>
+</record_update>

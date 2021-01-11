@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_documentation element="template" label="Template" language="en" table="var__m_sys_hub_action_input_48ed0040dbc6d3005963ff041d9619f5">
+        <sys_documentation action="INSERT_OR_UPDATE">
+            <element>template</element>
+            <help/>
+            <hint/>
+            <label>Template</label>
+            <language>en</language>
+            <name>var__m_sys_hub_action_input_48ed0040dbc6d3005963ff041d9619f5</name>
+            <plural/>
+            <sys_class_name>sys_documentation</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2018-05-08 09:31:12</sys_created_on>
+            <sys_id>10ed4040dbc6d3005963ff041d96190f</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>Template</sys_name>
+            <sys_package display_value="Box Spoke" source="sn_box_spoke">fdc25a6bdb1d9700868f5404ce961969</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Box Spoke">fdc25a6bdb1d9700868f5404ce961969</sys_scope>
+            <sys_update_name>sys_documentation_var__m_sys_hub_action_input_48ed0040dbc6d3005963ff041d9619f5_template_en</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2018-05-08 09:31:12</sys_updated_on>
+            <url/>
+            <url_target/>
+        </sys_documentation>
+    </sys_documentation>
+</record_update>

@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_hub_flow_logic">
+    <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <block display_value="">33a83234db0a97009a985404ce961997</block>
+        <comment/>
+        <connected_to/>
+        <display_text/>
+        <flow display_value="Move Attachment to Box">e9d8b234db0a97009a985404ce9619b9</flow>
+        <inputs/>
+        <logic_definition display_value="Assign Subflow Outputs">df4e1945c3e232002841b63b12d3ae3e</logic_definition>
+        <order>3.3.2</order>
+        <outputs_assigned>shared_link,download_link,status,error_message</outputs_assigned>
+        <outputs_to_assign/>
+        <parent_ui_id>a9518b50-e9a2-4290-a1dd-2b014e69c667</parent_ui_id>
+        <sys_class_name>sys_hub_flow_logic</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2018-05-11 05:53:38</sys_created_on>
+        <sys_id>92d8f234db0a97009a985404ce961923</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Box Spoke" source="sn_box_spoke">fdc25a6bdb1d9700868f5404ce961969</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Box Spoke">fdc25a6bdb1d9700868f5404ce961969</sys_scope>
+        <sys_update_name>sys_hub_flow_logic_92d8f234db0a97009a985404ce961923</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2018-07-05 13:44:49</sys_updated_on>
+        <ui_id>0b39bbb9-14ea-4c3e-b298-da9338d7f820</ui_id>
+        <workflow_inputs/>
+        <workflow_reference/>
+    </sys_hub_flow_logic>
+    <sys_variable_value action="delete_multiple" query="document_key=92d8f234db0a97009a985404ce961923"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_flow_logic</document>
+        <document_key>92d8f234db0a97009a985404ce961923</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2018-05-11 05:53:38</sys_created_on>
+        <sys_id>2ed8f234db0a97009a985404ce961927</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2018-05-11 05:53:38</sys_updated_on>
+        <value>{{3c5ca33d-325c-40c4-90ac-5793833c02f0.shared_link_url}}</value>
+        <variable display_value="">8ad8b234db0a97009a985404ce9619f2</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_flow_logic</document>
+        <document_key>92d8f234db0a97009a985404ce961923</document_key>
+        <order>2</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2018-05-11 05:53:38</sys_created_on>
+        <sys_id>6ad8f234db0a97009a985404ce961927</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2018-05-11 05:53:38</sys_updated_on>
+        <value>{{3c5ca33d-325c-40c4-90ac-5793833c02f0.download_url}}</value>
+        <variable display_value="">cad8b234db0a97009a985404ce9619f9</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_flow_logic</document>
+        <document_key>92d8f234db0a97009a985404ce961923</document_key>
+        <order>4</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2018-05-11 05:53:38</sys_created_on>
+        <sys_id>a6d8f234db0a97009a985404ce961927</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2018-05-11 05:53:38</sys_updated_on>
+        <value>{{3c5ca33d-325c-40c4-90ac-5793833c02f0.error_message}}</value>
+        <variable display_value="">12d8f234db0a97009a985404ce961908</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_flow_logic</document>
+        <document_key>92d8f234db0a97009a985404ce961923</document_key>
+        <order>3</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2018-05-11 05:53:38</sys_created_on>
+        <sys_id>eed8f234db0a97009a985404ce961927</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2018-05-11 05:53:38</sys_updated_on>
+        <value>{{3c5ca33d-325c-40c4-90ac-5793833c02f0.status}}</value>
+        <variable display_value="">4ed8f234db0a97009a985404ce961900</variable>
+    </sys_variable_value>
+</record_update>

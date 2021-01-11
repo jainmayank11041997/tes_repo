@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_hub_action_type_snapshot">
+    <sys_hub_action_type_snapshot action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <annotation/>
+        <category display_value="Document Management">0e64f239db651740bea7ff561d9619fe</category>
+        <copied_from/>
+        <copied_from_name/>
+        <description>&lt;p&gt;Moves the items that are owned by a user to a target location, typically used in case of user deprovisioning where you need to transfer the ownership of files by moving it to a common folder managed by a Service account.&lt;/p&gt;
+
+&lt;p&gt;&lt;b&gt;Inputs:&lt;/b&gt;&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;b&gt;Source User ID&lt;/b&gt; - The ID of the user whose owned content will be moved.&lt;/li&gt;
+  &lt;li&gt;&lt;b&gt;Destination User ID&lt;/b&gt; - The ID of the user who the folder will be transferred to.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;b&gt;Outputs:&lt;/b&gt;&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;b&gt;Status&lt;/b&gt; - Will be set to "Success" if the request succeeds or "Error" if a failure occurs.&lt;/li&gt;
+  &lt;li&gt;&lt;b&gt;Error Message&lt;/b&gt; - Will be populated when the status is "Error".&lt;/li&gt;
+  &lt;li&gt;&lt;b&gt;Folder ID&lt;/b&gt; - ID of the new folder where all items have been moved.&lt;/li&gt;
+  &lt;li&gt;&lt;b&gt;Folder Info&lt;/b&gt; - Information of the created folder in JSON format. Will be populated in case of success.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;b&gt;Error Messages:&lt;/b&gt;&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;Invalid source user ID.&lt;/li&gt;
+  &lt;li&gt;Cannot transfer to user who is not in the enterprise.&lt;/li&gt;
+  &lt;li&gt;Cannot transfer from user who is not in the enterprise.&lt;/li&gt;
+  &lt;li&gt;Invalid username or password/token.&lt;/li&gt;
+  &lt;li&gt;The credentials associated with the Box Spoke connection does not have enough permission to perform this action.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;To use this action, the corresponding Box connection and credential must be created and associated with the Box Connection &amp; Credential alias. &lt;a target="_blank" href="http://docs.servicenow.com/?context=CSHelp:credentials-connections-alias"&gt;Learn More&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;b&gt;Note&lt;/b&gt;: Requires a subscription for production use. &lt;a target="_blank" href="https://docs.servicenow.com/?context=CSHelp:IntegrationHub-licensing-information"&gt;Read More&lt;/a&gt;.&lt;/p&gt;
+</description>
+        <internal_name>move_owned_item</internal_name>
+        <label_cache>[{"name":"{{action.}}","label":"action➛Is Platform Access Only","type":"action","ref":""},{"name":"{{action.user_id}}","label":"action➛Source User ID","type":"action","ref":""},{"name":"{{action.destination_user_id}}","label":"action➛Destination User ID","type":"action","ref":""},{"name":"{{step[24b2a822-74ea-47dd-9f3f-945c689e0fa3].response_body}}","label":"step➛Move Owned Item➛Response Body","type":"step","ref":""},{"name":"{{step[24b2a822-74ea-47dd-9f3f-945c689e0fa3].status_code}}","label":"step➛Move Owned Item➛Status Code","type":"step","ref":""},{"name":"{{step[24b2a822-74ea-47dd-9f3f-945c689e0fa3].error_message}}","label":"step➛Move Owned Item➛Error Message","type":"step","ref":""},{"name":"{{step[321cd45e-ebd9-46f7-9e87-d0bf438cbfb8].error_message}}","label":"step➛Handle Errors➛error_message","type":"step","ref":""},{"name":"{{step[321cd45e-ebd9-46f7-9e87-d0bf438cbfb8].status}}","label":"step➛Handle Errors➛status","type":"step","ref":""},{"name":"{{step[ffe08fb3-7fb5-4e9d-8474-3f2e2e50d520].p}}","label":"step➛Pre Processing➛p","type":"step","ref":""},{"name":"{{step[ffe08fb3-7fb5-4e9d-8474-3f2e2e50d520].pa}}","label":"step➛Pre Processing➛pa","type":"step","ref":""},{"name":"{{step[ffe08fb3-7fb5-4e9d-8474-3f2e2e50d520].pay}}","label":"step➛Pre Processing➛pay","type":"step","ref":""},{"name":"{{step[ffe08fb3-7fb5-4e9d-8474-3f2e2e50d520].payl}}","label":"step➛Pre Processing➛payl","type":"step","ref":""},{"name":"{{step[ffe08fb3-7fb5-4e9d-8474-3f2e2e50d520].paylo}}","label":"step➛Pre Processing➛paylo","type":"step","ref":""},{"name":"{{step[ffe08fb3-7fb5-4e9d-8474-3f2e2e50d520].payloa}}","label":"step➛Pre Processing➛payloa","type":"step","ref":""},{"name":"{{step[ffe08fb3-7fb5-4e9d-8474-3f2e2e50d520].payload}}","label":"step➛Pre Processing➛payload","type":"step","ref":""},{"name":"{{step[321cd45e-ebd9-46f7-9e87-d0bf438cbfb8].e}}","label":"step➛Handle Errors➛e","type":"step","ref":""},{"name":"{{step[321cd45e-ebd9-46f7-9e87-d0bf438cbfb8].er}}","label":"step➛Handle Errors➛er","type":"step","ref":""},{"name":"{{step[321cd45e-ebd9-46f7-9e87-d0bf438cbfb8].err}}","label":"step➛Handle Errors➛err","type":"step","ref":""},{"name":"{{step[321cd45e-ebd9-46f7-9e87-d0bf438cbfb8].erro}}","label":"step➛Handle Errors➛erro","type":"step","ref":""},{"name":"{{step[321cd45e-ebd9-46f7-9e87-d0bf438cbfb8].error}}","label":"step➛Handle Errors➛error","type":"step","ref":""},{"name":"{{step[321cd45e-ebd9-46f7-9e87-d0bf438cbfb8].error_}}","label":"step➛Handle Errors➛error_","type":"step","ref":""},{"name":"{{step[321cd45e-ebd9-46f7-9e87-d0bf438cbfb8].error_m}}","label":"step➛Handle Errors➛error_m","type":"step","ref":""},{"name":"{{step[321cd45e-ebd9-46f7-9e87-d0bf438cbfb8].error_me}}","label":"step➛Handle Errors➛error_me","type":"step","ref":""},{"name":"{{step[321cd45e-ebd9-46f7-9e87-d0bf438cbfb8].error_mes}}","label":"step➛Handle Errors➛error_mes","type":"step","ref":""},{"name":"{{step[321cd45e-ebd9-46f7-9e87-d0bf438cbfb8].error_mess}}","label":"step➛Handle Errors➛error_mess","type":"step","ref":""},{"name":"{{step[321cd45e-ebd9-46f7-9e87-d0bf438cbfb8].error_messa}}","label":"step➛Handle Errors➛error_messa","type":"step","ref":""},{"name":"{{step[321cd45e-ebd9-46f7-9e87-d0bf438cbfb8].error_messag}}","label":"step➛Handle Errors➛error_messag","type":"step","ref":""},{"name":"{{step[321cd45e-ebd9-46f7-9e87-d0bf438cbfb8].folder_id}}","label":"step➛Handle Errors➛folder_id","type":"step","ref":""},{"name":"{{step[321cd45e-ebd9-46f7-9e87-d0bf438cbfb8].folder_info}}","label":"step➛Handle Errors➛folder_info","type":"step","ref":""},{"name":"{{step[ffe08fb3-7fb5-4e9d-8474-3f2e2e50d520].source_user_id}}","label":"step➛Pre Processing➛source_user_id","type":"step","ref":""}]</label_cache>
+        <master>true</master>
+        <name>Move Owned Item</name>
+        <outputs/>
+        <outputs/>
+        <parent_action display_value="Move Owned Item">e01dfaa8dbee5b00868f5404ce96193f</parent_action>
+        <sys_class_name>sys_hub_action_type_snapshot</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2018-07-05 13:39:37</sys_created_on>
+        <sys_id>20f2372adb43db00868f5404ce9619f8</sys_id>
+        <sys_mod_count>7</sys_mod_count>
+        <sys_name>Move Owned Item</sys_name>
+        <sys_package display_value="Box Spoke" source="sn_box_spoke">fdc25a6bdb1d9700868f5404ce961969</sys_package>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="Box Spoke">fdc25a6bdb1d9700868f5404ce961969</sys_scope>
+        <sys_update_name>sys_hub_action_type_snapshot_20f2372adb43db00868f5404ce9619f8</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2018-09-06 10:06:55</sys_updated_on>
+        <system_level>false</system_level>
+        <type/>
+    </sys_hub_action_type_snapshot>
+    <sys_translated_text action="delete_multiple" query="documentkey=20f2372adb43db00868f5404ce9619f8"/>
+    <sys_variable_value action="delete_multiple" query="document_key=20f2372adb43db00868f5404ce9619f8"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_type_snapshot</document>
+        <document_key>20f2372adb43db00868f5404ce9619f8</document_key>
+        <order>0</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2018-07-06 11:43:44</sys_created_on>
+        <sys_id>f0026c8bdb0fdb00868f5404ce961918</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2018-07-06 11:43:44</sys_updated_on>
+        <value/>
+        <variable display_value="">4ae2677adb031f00bea7ff561d961984</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=20f2372adb43db00868f5404ce9619f8"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>error_message</field>
+        <id>20f2372adb43db00868f5404ce9619f8</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2018-07-05 13:39:46</sys_created_on>
+        <sys_id>72f2b72adb43db00868f5404ce961923</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2018-07-05 13:39:46</sys_updated_on>
+        <table>var__m_sys_hub_action_output_20f2372adb43db00868f5404ce9619f8</table>
+        <value>{{step[321cd45e-ebd9-46f7-9e87-d0bf438cbfb8].folder_id}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>status</field>
+        <id>20f2372adb43db00868f5404ce9619f8</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2018-07-05 13:39:46</sys_created_on>
+        <sys_id>baf2b72adb43db00868f5404ce961923</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2018-07-05 13:39:46</sys_updated_on>
+        <table>var__m_sys_hub_action_output_20f2372adb43db00868f5404ce9619f8</table>
+        <value>{{step[321cd45e-ebd9-46f7-9e87-d0bf438cbfb8].status}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>user_id</field>
+        <id>20f2372adb43db00868f5404ce9619f8</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2018-07-05 13:39:46</sys_created_on>
+        <sys_id>36f2b72adb43db00868f5404ce961923</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2018-07-05 13:39:46</sys_updated_on>
+        <table>var__m_sys_hub_action_output_20f2372adb43db00868f5404ce9619f8</table>
+        <value>{{step[321cd45e-ebd9-46f7-9e87-d0bf438cbfb8].error_message}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>user_info</field>
+        <id>20f2372adb43db00868f5404ce9619f8</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2018-07-05 13:39:46</sys_created_on>
+        <sys_id>f6f2b72adb43db00868f5404ce961923</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2018-07-05 13:39:46</sys_updated_on>
+        <table>var__m_sys_hub_action_output_20f2372adb43db00868f5404ce9619f8</table>
+        <value>{{step[321cd45e-ebd9-46f7-9e87-d0bf438cbfb8].folder_info}}</value>
+    </sys_element_mapping>
+</record_update>

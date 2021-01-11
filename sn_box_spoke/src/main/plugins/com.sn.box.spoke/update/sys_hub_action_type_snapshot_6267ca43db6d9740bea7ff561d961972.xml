@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_hub_action_type_snapshot">
+    <sys_hub_action_type_snapshot action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <annotation/>
+        <category display_value="Document Management">0e64f239db651740bea7ff561d9619fe</category>
+        <copied_from/>
+        <copied_from_name/>
+        <description>&lt;p&gt;This action uploads a new file on the Box account of the associated credentials.&lt;/p&gt;
+&lt;p&gt;&lt;b&gt;Inputs:&lt;/b&gt;&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;b&gt;Name &lt;/b&gt; - Name of the file to be uploaded.&lt;/li&gt;
+  &lt;li&gt;&lt;b&gt;Attachment&lt;/b&gt; - Attachment record or Sys ID of an attachment from the sys_attachment table which will be uploaded on Box Application.&lt;/li&gt;
+  &lt;li&gt;&lt;b&gt;Parent Folder ID&lt;/b&gt; - ID of the folder under which the new file will be created. If a value is not provided then the file will be created at the top level.&lt;/li&gt;
+ &lt;li&gt;&lt;b&gt;As User&lt;/b&gt; - As-User can be used by admins, co-admins to impersonate another user while executing an API request. ID of the user with which the file needs to be uploaded.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;b&gt;Outputs:&lt;/b&gt;&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;b&gt;Status &lt;/b&gt; - Will be set to "Success" if the request succeeds or "Error" if a failure occurs.&lt;/li&gt;
+  &lt;li&gt;&lt;b&gt;Error Message&lt;/b&gt; - Will be populated when the status is “Error”.&lt;/li&gt;
+  &lt;li&gt;&lt;b&gt;File ID&lt;/b&gt; - ID of the created file. Will be populated in case of success.&lt;/li&gt;
+  &lt;li&gt;&lt;b&gt;File Info &lt;/b&gt; - Information of the created file in JSON format. Will be populated in case of success.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;b&gt;Error Messages:&lt;/b&gt;&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;Provided File Name or Attachment is invalid or not found.&lt;/li&gt;
+  &lt;li&gt;Item with the same name already exists.&lt;/li&gt;
+  &lt;li&gt;Names cannot contain non-printable ASCII, / or \, leading or trailing whitespace. The special names "." or ".." are also unsupported.&lt;/li&gt;
+  &lt;li&gt;Parent folder with given ID not found.&lt;/li&gt;
+  &lt;li&gt;Invalid username or password/token.&lt;/li&gt;
+  &lt;li&gt;The credentials associated with the Box Spoke connection does not have enough permission to perform this action.&lt;/li&gt;
+  &lt;li&gt;Provided 'As User' has insufficient permission to perform this action.&lt;/li&gt;
+  &lt;li&gt;Account storage limit reached.&lt;/li&gt;
+  &lt;li&gt;Unauthorized - 'As User' needs to complete email confirmation.&lt;/li&gt;
+  &lt;li&gt;Unauthorized - 'As User' has been deactivated.&lt;/li&gt;
+  &lt;li&gt;Invalid User ID for the given 'As User'.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;b&gt;Additional Notes:&lt;/b&gt;&lt;/p&gt;
+&lt;ul&gt;        
+	&lt;li&gt;To enable 'As-User' functionality for Box applications using OAuth2 with JWT, please navigate to the Advanced Features section in the developer console and enable the "Perform actions on behalf of users" permission.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;To use this action, the corresponding Box connection and credential must be created and associated with the Box Connection &amp; Credential alias. &lt;a target="_blank" href="http://docs.servicenow.com/?context=CSHelp:credentials-connections-alias"&gt;Learn More&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;b&gt;Note&lt;/b&gt;: Requires a subscription for production use. &lt;a target="_blank" href="https://docs.servicenow.com/?context=CSHelp:IntegrationHub-licensing-information"&gt;Read More&lt;/a&gt;.&lt;/p&gt;
+</description>
+        <internal_name>upload_file</internal_name>
+        <label_cache>[{"name":"{{action.attachment}}","label":"action➛Attachment","type":"action","ref":""},{"name":"{{action.parent_folder_id}}","label":"action➛Parent Folder ID","type":"action","ref":""},{"name":"{{action.name}}","label":"action➛Name","type":"action","ref":""},{"name":"{{action.as_user}}","label":"action➛As User","type":"action","ref":""},{"name":"{{step[946c7865-2c38-4dac-87c3-886dfe132363].}}","label":"step➛Handle Errors➛","type":"step","ref":""},{"name":"{{step[946c7865-2c38-4dac-87c3-886dfe132363].s}}","label":"step➛Handle Errors➛s","type":"step","ref":""},{"name":"{{step[946c7865-2c38-4dac-87c3-886dfe132363].st}}","label":"step➛Handle Errors➛st","type":"step","ref":""},{"name":"{{step[946c7865-2c38-4dac-87c3-886dfe132363].sta}}","label":"step➛Handle Errors➛sta","type":"step","ref":""},{"name":"{{step[946c7865-2c38-4dac-87c3-886dfe132363].stat}}","label":"step➛Handle Errors➛stat","type":"step","ref":""},{"name":"{{step[946c7865-2c38-4dac-87c3-886dfe132363].statu}}","label":"step➛Handle Errors➛statu","type":"step","ref":""},{"name":"{{step[946c7865-2c38-4dac-87c3-886dfe132363].status}}","label":"step➛Handle Errors➛status","type":"step","ref":""},{"name":"{{step[946c7865-2c38-4dac-87c3-886dfe132363].e}}","label":"step➛Handle Errors➛e","type":"step","ref":""},{"name":"{{step[946c7865-2c38-4dac-87c3-886dfe132363].er}}","label":"step➛Handle Errors➛er","type":"step","ref":""},{"name":"{{step[946c7865-2c38-4dac-87c3-886dfe132363].err}}","label":"step➛Handle Errors➛err","type":"step","ref":""},{"name":"{{step[946c7865-2c38-4dac-87c3-886dfe132363].erro}}","label":"step➛Handle Errors➛erro","type":"step","ref":""},{"name":"{{step[946c7865-2c38-4dac-87c3-886dfe132363].error}}","label":"step➛Handle Errors➛error","type":"step","ref":""},{"name":"{{step[946c7865-2c38-4dac-87c3-886dfe132363].error_}}","label":"step➛Handle Errors➛error_","type":"step","ref":""},{"name":"{{step[946c7865-2c38-4dac-87c3-886dfe132363].error_m}}","label":"step➛Handle Errors➛error_m","type":"step","ref":""},{"name":"{{step[946c7865-2c38-4dac-87c3-886dfe132363].error_me}}","label":"step➛Handle Errors➛error_me","type":"step","ref":""},{"name":"{{step[946c7865-2c38-4dac-87c3-886dfe132363].error_mes}}","label":"step➛Handle Errors➛error_mes","type":"step","ref":""},{"name":"{{step[946c7865-2c38-4dac-87c3-886dfe132363].error_mess}}","label":"step➛Handle Errors➛error_mess","type":"step","ref":""},{"name":"{{step[946c7865-2c38-4dac-87c3-886dfe132363].error_messa}}","label":"step➛Handle Errors➛error_messa","type":"step","ref":""},{"name":"{{step[946c7865-2c38-4dac-87c3-886dfe132363].error_messag}}","label":"step➛Handle Errors➛error_messag","type":"step","ref":""},{"name":"{{step[946c7865-2c38-4dac-87c3-886dfe132363].error_message}}","label":"step➛Handle Errors➛error_message","type":"step","ref":""},{"name":"{{step[e4f963a0-2315-459a-947b-a525d6d202da].}}","label":"step➛Pre Processing➛","type":"step","ref":""},{"name":"{{step[e4f963a0-2315-459a-947b-a525d6d202da].a}}","label":"step➛Pre Processing➛a","type":"step","ref":""},{"name":"{{step[e4f963a0-2315-459a-947b-a525d6d202da].at}}","label":"step➛Pre Processing➛at","type":"step","ref":""},{"name":"{{step[e4f963a0-2315-459a-947b-a525d6d202da].att}}","label":"step➛Pre Processing➛att","type":"step","ref":""},{"name":"{{step[e4f963a0-2315-459a-947b-a525d6d202da].atta}}","label":"step➛Pre Processing➛atta","type":"step","ref":""},{"name":"{{step[e4f963a0-2315-459a-947b-a525d6d202da].attac}}","label":"step➛Pre Processing➛attac","type":"step","ref":""},{"name":"{{step[e4f963a0-2315-459a-947b-a525d6d202da].attach}}","label":"step➛Pre Processing➛attach","type":"step","ref":""},{"name":"{{step[e4f963a0-2315-459a-947b-a525d6d202da].attachm}}","label":"step➛Pre Processing➛attachm","type":"step","ref":""},{"name":"{{step[e4f963a0-2315-459a-947b-a525d6d202da].attachme}}","label":"step➛Pre Processing➛attachme","type":"step","ref":""},{"name":"{{step[e4f963a0-2315-459a-947b-a525d6d202da].attachmen}}","label":"step➛Pre Processing➛attachmen","type":"step","ref":""},{"name":"{{step[e4f963a0-2315-459a-947b-a525d6d202da].attachment}}","label":"step➛Pre Processing➛attachment","type":"step","ref":""},{"name":"{{step[e4f963a0-2315-459a-947b-a525d6d202da].p}}","label":"step➛Pre Processing➛p","type":"step","ref":""},{"name":"{{step[e4f963a0-2315-459a-947b-a525d6d202da].pa}}","label":"step➛Pre Processing➛pa","type":"step","ref":""},{"name":"{{step[e4f963a0-2315-459a-947b-a525d6d202da].par}}","label":"step➛Pre Processing➛par","type":"step","ref":""},{"name":"{{step[e4f963a0-2315-459a-947b-a525d6d202da].pare}}","label":"step➛Pre Processing➛pare","type":"step","ref":""},{"name":"{{step[e4f963a0-2315-459a-947b-a525d6d202da].paren}}","label":"step➛Pre Processing➛paren","type":"step","ref":""},{"name":"{{step[e4f963a0-2315-459a-947b-a525d6d202da].parent}}","label":"step➛Pre Processing➛parent","type":"step","ref":""},{"name":"{{step[e4f963a0-2315-459a-947b-a525d6d202da].parent_}}","label":"step➛Pre Processing➛parent_","type":"step","ref":""},{"name":"{{step[e4f963a0-2315-459a-947b-a525d6d202da].parent_f}}","label":"step➛Pre Processing➛parent_f","type":"step","ref":""},{"name":"{{step[e4f963a0-2315-459a-947b-a525d6d202da].parent_fo}}","label":"step➛Pre Processing➛parent_fo","type":"step","ref":""},{"name":"{{step[e4f963a0-2315-459a-947b-a525d6d202da].parent_fol}}","label":"step➛Pre Processing➛parent_fol","type":"step","ref":""},{"name":"{{step[e4f963a0-2315-459a-947b-a525d6d202da].parent_fold}}","label":"step➛Pre Processing➛parent_fold","type":"step","ref":""},{"name":"{{step[e4f963a0-2315-459a-947b-a525d6d202da].parent_folde}}","label":"step➛Pre Processing➛parent_folde","type":"step","ref":""},{"name":"{{step[e4f963a0-2315-459a-947b-a525d6d202da].parent_folder}}","label":"step➛Pre Processing➛parent_folder","type":"step","ref":""},{"name":"{{step[e4f963a0-2315-459a-947b-a525d6d202da].parent_folder_}}","label":"step➛Pre Processing➛parent_folder_","type":"step","ref":""},{"name":"{{step[e4f963a0-2315-459a-947b-a525d6d202da].parent_folder_i}}","label":"step➛Pre Processing➛parent_folder_i","type":"step","ref":""},{"name":"{{step[e4f963a0-2315-459a-947b-a525d6d202da].parent_folder_id}}","label":"step➛Pre Processing➛parent_folder_id","type":"step","ref":""},{"name":"{{step[e4f963a0-2315-459a-947b-a525d6d202da].name}}","label":"step➛Pre Processing➛name","type":"step","ref":""},{"name":"{{step[946c7865-2c38-4dac-87c3-886dfe132363].f}}","label":"step➛Handle Errors➛f","type":"step","ref":""},{"name":"{{step[946c7865-2c38-4dac-87c3-886dfe132363].fi}}","label":"step➛Handle Errors➛fi","type":"step","ref":""},{"name":"{{step[946c7865-2c38-4dac-87c3-886dfe132363].fil}}","label":"step➛Handle Errors➛fil","type":"step","ref":""},{"name":"{{step[946c7865-2c38-4dac-87c3-886dfe132363].file}}","label":"step➛Handle Errors➛file","type":"step","ref":""},{"name":"{{step[946c7865-2c38-4dac-87c3-886dfe132363].file_}}","label":"step➛Handle Errors➛file_","type":"step","ref":""},{"name":"{{step[946c7865-2c38-4dac-87c3-886dfe132363].file_i}}","label":"step➛Handle Errors➛file_i","type":"step","ref":""},{"name":"{{step[946c7865-2c38-4dac-87c3-886dfe132363].file_id}}","label":"step➛Handle Errors➛file_id","type":"step","ref":""},{"name":"{{step[946c7865-2c38-4dac-87c3-886dfe132363].file_in}}","label":"step➛Handle Errors➛file_in","type":"step","ref":""},{"name":"{{step[946c7865-2c38-4dac-87c3-886dfe132363].file_inf}}","label":"step➛Handle Errors➛file_inf","type":"step","ref":""},{"name":"{{step[946c7865-2c38-4dac-87c3-886dfe132363].file_info}}","label":"step➛Handle Errors➛file_info","type":"step","ref":""},{"name":"{{step[e4f963a0-2315-459a-947b-a525d6d202da].as}}","label":"step➛Pre Processing➛as","type":"step","ref":""},{"name":"{{step[e4f963a0-2315-459a-947b-a525d6d202da].as_}}","label":"step➛Pre Processing➛as_","type":"step","ref":""},{"name":"{{step[e4f963a0-2315-459a-947b-a525d6d202da].as_u}}","label":"step➛Pre Processing➛as_u","type":"step","ref":""},{"name":"{{step[e4f963a0-2315-459a-947b-a525d6d202da].as_us}}","label":"step➛Pre Processing➛as_us","type":"step","ref":""},{"name":"{{step[e4f963a0-2315-459a-947b-a525d6d202da].as_use}}","label":"step➛Pre Processing➛as_use","type":"step","ref":""},{"name":"{{step[e4f963a0-2315-459a-947b-a525d6d202da].as_user}}","label":"step➛Pre Processing➛as_user","type":"step","ref":""},{"name":"{{step[e4f963a0-2315-459a-947b-a525d6d202da].as_user_}}","label":"step➛Pre Processing➛as_user_","type":"step","ref":""},{"name":"{{step[e4f963a0-2315-459a-947b-a525d6d202da].as_user_h}}","label":"step➛Pre Processing➛as_user_h","type":"step","ref":""},{"name":"{{step[e4f963a0-2315-459a-947b-a525d6d202da].as_user_he}}","label":"step➛Pre Processing➛as_user_he","type":"step","ref":""},{"name":"{{step[e4f963a0-2315-459a-947b-a525d6d202da].as_user_hea}}","label":"step➛Pre Processing➛as_user_hea","type":"step","ref":""},{"name":"{{step[e4f963a0-2315-459a-947b-a525d6d202da].as_user_head}}","label":"step➛Pre Processing➛as_user_head","type":"step","ref":""},{"name":"{{step[e4f963a0-2315-459a-947b-a525d6d202da].as_user_heade}}","label":"step➛Pre Processing➛as_user_heade","type":"step","ref":""},{"name":"{{step[e4f963a0-2315-459a-947b-a525d6d202da].as_user_header}}","label":"step➛Pre Processing➛as_user_header","type":"step","ref":""},{"name":"{{step[cab0add1-d0fe-455d-92e6-7ec601230a1f].response_body}}","label":"step➛Upload File➛Response Body","type":"step","ref":""},{"name":"{{step[cab0add1-d0fe-455d-92e6-7ec601230a1f].status_code}}","label":"step➛Upload File➛Status Code","type":"step","ref":""},{"name":"{{step[cab0add1-d0fe-455d-92e6-7ec601230a1f].error_message}}","label":"step➛Upload File➛Error Message","type":"step","ref":""}]</label_cache>
+        <master>true</master>
+        <name>Upload File</name>
+        <outputs/>
+        <outputs/>
+        <parent_action display_value="Upload File">d999526fdbd5df00bea7ff561d9619c2</parent_action>
+        <sys_class_name>sys_hub_action_type_snapshot</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2018-04-23 05:32:35</sys_created_on>
+        <sys_id>6267ca43db6d9740bea7ff561d961972</sys_id>
+        <sys_mod_count>13</sys_mod_count>
+        <sys_name>Upload File</sys_name>
+        <sys_package display_value="Box Spoke" source="sn_box_spoke">fdc25a6bdb1d9700868f5404ce961969</sys_package>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="Box Spoke">fdc25a6bdb1d9700868f5404ce961969</sys_scope>
+        <sys_update_name>sys_hub_action_type_snapshot_6267ca43db6d9740bea7ff561d961972</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2018-09-17 12:48:00</sys_updated_on>
+        <system_level>false</system_level>
+        <type/>
+    </sys_hub_action_type_snapshot>
+    <sys_translated_text action="delete_multiple" query="documentkey=6267ca43db6d9740bea7ff561d961972"/>
+    <sys_variable_value action="delete_multiple" query="document_key=6267ca43db6d9740bea7ff561d961972"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_type_snapshot</document>
+        <document_key>6267ca43db6d9740bea7ff561d961972</document_key>
+        <order>0</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2018-08-14 15:13:02</sys_created_on>
+        <sys_id>0fe78aa3dbbb1b001b5857935e961947</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2018-08-14 15:13:02</sys_updated_on>
+        <value/>
+        <variable display_value="">71cb9776db4bdb00868f5404ce961941</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=6267ca43db6d9740bea7ff561d961972"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>error_message</field>
+        <id>6267ca43db6d9740bea7ff561d961972</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2018-04-23 05:32:43</sys_created_on>
+        <sys_id>2c770e43db6d9740bea7ff561d9619d3</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2018-04-23 05:32:43</sys_updated_on>
+        <table>var__m_sys_hub_action_output_6267ca43db6d9740bea7ff561d961972</table>
+        <value>{{step[946c7865-2c38-4dac-87c3-886dfe132363].error_message}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>file_id</field>
+        <id>6267ca43db6d9740bea7ff561d961972</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2018-04-23 05:32:43</sys_created_on>
+        <sys_id>ec770e43db6d9740bea7ff561d9619d3</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2018-04-23 05:32:43</sys_updated_on>
+        <table>var__m_sys_hub_action_output_6267ca43db6d9740bea7ff561d961972</table>
+        <value>{{step[946c7865-2c38-4dac-87c3-886dfe132363].file_id}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>file_info</field>
+        <id>6267ca43db6d9740bea7ff561d961972</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2018-04-23 05:32:43</sys_created_on>
+        <sys_id>a0770e43db6d9740bea7ff561d9619d4</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2018-04-23 05:32:43</sys_updated_on>
+        <table>var__m_sys_hub_action_output_6267ca43db6d9740bea7ff561d961972</table>
+        <value>{{step[946c7865-2c38-4dac-87c3-886dfe132363].file_info}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>status</field>
+        <id>6267ca43db6d9740bea7ff561d961972</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2018-04-23 05:32:43</sys_created_on>
+        <sys_id>64770e43db6d9740bea7ff561d9619d4</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2018-04-23 05:32:43</sys_updated_on>
+        <table>var__m_sys_hub_action_output_6267ca43db6d9740bea7ff561d961972</table>
+        <value>{{step[946c7865-2c38-4dac-87c3-886dfe132363].status}}</value>
+    </sys_element_mapping>
+</record_update>

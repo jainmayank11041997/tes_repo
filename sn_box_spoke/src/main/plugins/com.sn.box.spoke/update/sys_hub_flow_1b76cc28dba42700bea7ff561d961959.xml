@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_hub_flow">
+    <sys_hub_flow action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <active>false</active>
+        <annotation/>
+        <category/>
+        <copied_from/>
+        <copied_from_name/>
+        <description>&lt;p&gt;The flow shows an implementation of Box actions for creating a user in Box when a ServiceNow user is added to a particular group.&lt;/p&gt;
+
+&lt;p&gt;&lt;b&gt;Trigger:&lt;/b&gt; The flow is triggered every time a record is created in the the Group Member table and the Group Name is Box User.&lt;/p&gt;
+
+&lt;p&gt;&lt;b&gt;Flow Steps:&lt;/b&gt;&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;b&gt;Create User:&lt;/b&gt; The step Creates a User in Box using Create User action. The user details are retrieved from the user reference record from the Group Member table.&lt;/li&gt;
+&lt;li&gt;&lt;b&gt;Look up Folder ID:&lt;/b&gt; The step retrieves an ID of the common folder to which the user will be given access to.&lt;/li&gt;
+&lt;li&gt;&lt;b&gt;Add Collaborator:&lt;/b&gt; The step adds the user created as a collaborator for a common folder which can be of the team or company.&lt;/li&gt;
+&lt;li&gt;Incidents are created in case a failure occurs during execution of any steps.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;&lt;b&gt;Note&lt;/b&gt;: Requires a subscription for production use. &lt;a target="_blank" href="https://docs.servicenow.com/?context=CSHelp:IntegrationHub-licensing-information"&gt;Read More&lt;/a&gt;.&lt;/p&gt;</description>
+        <internal_name>test_on-boarding_user</internal_name>
+        <label_cache>[{"name":"7a28383d-b70f-4dd9-be14-faee87e65384.Table","label":"3.1➛Table","reference_display":"Table","type":"table_name","base_type":"table_name"},{"name":"7a28383d-b70f-4dd9-be14-faee87e65384.Record","label":"3.1➛Record","reference":"task","reference_display":"Task","type":"document_id","base_type":"document_id"},{"name":"f8cc2659-dd46-4618-85df-272a1b91b82b.Table","label":"2.3.1➛Incident Table","reference":"incident","reference_display":"Incident","type":"table_name","base_type":"table_name"},{"name":"f8cc2659-dd46-4618-85df-272a1b91b82b.Record","label":"2.3.1➛Incident Record","reference":"incident","reference_display":"Incident","type":"reference","base_type":"reference"},{"name":"38431496-1016-4d6d-a8e5-fea32d73a9ed.Table","label":"2.3➛Table","reference_display":"Table","type":"table_name","base_type":"table_name"},{"name":"38431496-1016-4d6d-a8e5-fea32d73a9ed.Record","label":"2.3➛Record","reference":"task","reference_display":"Task","type":"document_id","base_type":"document_id"},{"name":"d2712213-2315-4d03-8d9b-26f40e295c54.Table","label":"2.2.2.1➛Incident Table","reference":"incident","reference_display":"Incident","type":"table_name","base_type":"table_name"},{"name":"d2712213-2315-4d03-8d9b-26f40e295c54.Record","label":"2.2.2.1➛Incident Record","reference":"incident","reference_display":"Incident","type":"reference","base_type":"reference"},{"name":"8fa394b8-4c7e-4dd3-af83-4992f5e57e18.collaboration_info","label":"2.2.1➛Collaboration Info","reference_display":"Collaboration Info","type":"string","base_type":"string"},{"name":"8fa394b8-4c7e-4dd3-af83-4992f5e57e18.collaboration_id","label":"2.2.1➛Collaboration ID","reference_display":"Collaboration ID","type":"string","base_type":"string"},{"name":"8fa394b8-4c7e-4dd3-af83-4992f5e57e18.error_message","label":"2.2.1➛Error Message","reference_display":"Error Message","type":"string","base_type":"string"},{"name":"8fa394b8-4c7e-4dd3-af83-4992f5e57e18.status","label":"2.2.1➛Status","reference_display":"Status","type":"choice","base_type":"choice"},{"name":"588b8be6-9705-4fde-ab05-eee5e370a37d.folder_id","label":"2.1➛Folder ID","reference_display":"Folder ID","type":"string","base_type":"string"},{"name":"588b8be6-9705-4fde-ab05-eee5e370a37d.error","label":"2.1➛Error Message","reference_display":"Error Message","type":"string","base_type":"string"},{"name":"588b8be6-9705-4fde-ab05-eee5e370a37d.status","label":"2.1➛Status","type":"choice","base_type":"choice"},{"name":"Created_1.current.user.email","label":"Trigger➛Group Member Record➛User➛Email","reference":"","reference_display":"Email","type":"email","base_type":"email","parent_table_name":"sys_user","column_name":"email"},{"name":"Created_1.current.user.user_name","label":"Trigger➛Group Member Record➛User➛User ID","reference":"","reference_display":"User ID","type":"string","base_type":"string","parent_table_name":"sys_user","column_name":"user_name"},{"name":"57052be7-a81a-4ab5-a743-570ba52c3662.user_info","label":"1➛User Info","reference_display":"User Info","type":"string","base_type":"string"},{"name":"57052be7-a81a-4ab5-a743-570ba52c3662.error_message","label":"1➛User ID","reference_display":"User ID","type":"string","base_type":"string"},{"name":"57052be7-a81a-4ab5-a743-570ba52c3662.user_id","label":"1➛Error Message   ","type":"string","base_type":"string"},{"name":"57052be7-a81a-4ab5-a743-570ba52c3662.status","label":"1➛Status","reference_display":"Status","type":"choice","base_type":"choice"}]</label_cache>
+        <latest_snapshot>01eb846cdba42700bea7ff561d96192c</latest_snapshot>
+        <master_snapshot>01eb846cdba42700bea7ff561d96192c</master_snapshot>
+        <name>On-Boarding User</name>
+        <outputs/>
+        <remote_trigger_id>35eb846cdba42700bea7ff561d9619bc</remote_trigger_id>
+        <sc_callable>false</sc_callable>
+        <show_draft_actions>false</show_draft_actions>
+        <show_triggered_flows>false</show_triggered_flows>
+        <status>draft</status>
+        <sys_class_name>sys_hub_flow</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2018-09-11 04:52:51</sys_created_on>
+        <sys_id>1b76cc28dba42700bea7ff561d961959</sys_id>
+        <sys_mod_count>17</sys_mod_count>
+        <sys_name>On-Boarding User</sys_name>
+        <sys_package display_value="Box Spoke" source="sn_box_spoke">fdc25a6bdb1d9700868f5404ce961969</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Box Spoke">fdc25a6bdb1d9700868f5404ce961969</sys_scope>
+        <sys_update_name>sys_hub_flow_1b76cc28dba42700bea7ff561d961959</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2018-09-11 06:51:09</sys_updated_on>
+        <type>flow</type>
+    </sys_hub_flow>
+    <sys_translated_text action="delete_multiple" query="documentkey=1b76cc28dba42700bea7ff561d961959"/>
+    <sys_variable_value action="delete_multiple" query="document_key=1b76cc28dba42700bea7ff561d961959"/>
+</record_update>

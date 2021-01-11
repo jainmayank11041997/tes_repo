@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_choice action="INSERT_OR_UPDATE" field="item_type1" table="var__m_sys_hub_action_input_8d7eca87db6d9740bea7ff561d96198a" version="3">
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>item_type1</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>-- None --</label>
+            <language>en</language>
+            <name>var__m_sys_hub_action_input_8d7eca87db6d9740bea7ff561d96198a</name>
+            <sequence>1</sequence>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2018-04-23 06:03:21</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>0d7eca87db6d9740bea7ff561d96198f</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2018-04-23 06:03:21</sys_updated_on>
+            <value/>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>item_type1</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>File</label>
+            <language>en</language>
+            <name>var__m_sys_hub_action_input_8d7eca87db6d9740bea7ff561d96198a</name>
+            <sequence>2</sequence>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2018-04-23 06:03:21</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>8d7eca87db6d9740bea7ff561d961991</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2018-04-23 06:03:21</sys_updated_on>
+            <value>files</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>item_type1</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Folder</label>
+            <language>en</language>
+            <name>var__m_sys_hub_action_input_8d7eca87db6d9740bea7ff561d96198a</name>
+            <sequence>3</sequence>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2018-04-23 06:03:21</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>897eca87db6d9740bea7ff561d961994</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2018-04-23 06:03:21</sys_updated_on>
+            <value>folders</value>
+        </sys_choice>
+        <sys_choice_set action="INSERT_OR_UPDATE">
+            <element>item_type1</element>
+            <name>var__m_sys_hub_action_input_8d7eca87db6d9740bea7ff561d96198a</name>
+            <sys_class_name>sys_choice_set</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2018-04-23 06:03:21</sys_created_on>
+            <sys_id>857eca87db6d9740bea7ff561d961990</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>item_type1</sys_name>
+            <sys_package display_value="Box Spoke" source="sn_box_spoke">fdc25a6bdb1d9700868f5404ce961969</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Box Spoke">fdc25a6bdb1d9700868f5404ce961969</sys_scope>
+            <sys_update_name>sys_choice_var__m_sys_hub_action_input_8d7eca87db6d9740bea7ff561d96198a_item_type1</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2018-04-23 06:03:21</sys_updated_on>
+        </sys_choice_set>
+    </sys_choice>
+</record_update>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_hub_flow">
+    <sys_hub_flow action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <active>true</active>
+        <annotation/>
+        <category display_value="File Management">cdc9166fdbd5df00bea7ff561d96193b</category>
+        <copied_from/>
+        <copied_from_name/>
+        <description>&lt;p&gt;This sub-flow contains steps to upload an attachment to Box and add related metadata to the uploaded file.&lt;/p&gt;
+
+
+&lt;p&gt;&lt;b&gt;Sub-flow Steps:&lt;/b&gt;&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;b&gt;Upload File:&lt;/b&gt; This action uploads a file from ServiceNow to Box.&lt;/li&gt;
+&lt;li&gt;&lt;b&gt;Add Metadata to File:&lt;/b&gt; The steps adds metadata to the upload file which contains information about the related service now record.&lt;/li&gt;
+&lt;li&gt;&lt;b&gt;Create Shared Link:&lt;/b&gt; The steps Creates a Shared Link which can be used to access or download the file using a URL.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;&lt;b&gt;Note&lt;/b&gt;: Requires a subscription for production use. &lt;a target="_blank" href="https://docs.servicenow.com/?context=CSHelp:IntegrationHub-licensing-information"&gt;Read More&lt;/a&gt;.&lt;/p&gt;</description>
+        <internal_name>move_attachment_to_box</internal_name>
+        <label_cache>[{"name":"subflow.parent_folder_id","label":"Input➛Parent Folder ID","type":"string","base_type":"string"},{"name":"subflow.file_name","label":"Input➛File Name","type":"string","base_type":"string"},{"name":"subflow.token","label":"Input➛Token","type":"string","base_type":"string"},{"name":"subflow.attachment_record","label":"Input➛Attachment Record","type":"string","base_type":"string"},{"name":"1e8f8291-cf66-4524-8083-c81eeb55cdc7.file_id","label":"1➛File ID","reference_display":"File ID"},{"name":"1e8f8291-cf66-4524-8083-c81eeb55cdc7.status","label":"1➛Status","reference_display":"Status"},{"name":"1e8f8291-cf66-4524-8083-c81eeb55cdc7.error_message","label":"1➛Error Message","reference_display":"Error Message"},{"name":"cc474188-cb5c-4538-82d6-1b690a1e175d.status","label":"3.1➛Status","reference_display":"Status"},{"name":"cc474188-cb5c-4538-82d6-1b690a1e175d.error_message","label":"3.1➛Error Message","reference_display":"Error Message"},{"name":"3c5ca33d-325c-40c4-90ac-5793833c02f0.shared_link_url","label":"3.3.1➛Shared Link URL","reference_display":"Shared Link URL"},{"name":"3c5ca33d-325c-40c4-90ac-5793833c02f0.download_url","label":"3.3.1➛Download URL","reference_display":"Download URL"},{"name":"3c5ca33d-325c-40c4-90ac-5793833c02f0.status","label":"3.3.1➛Status","reference_display":"Status"},{"name":"3c5ca33d-325c-40c4-90ac-5793833c02f0.error_message","label":"3.3.1➛Error Message","reference_display":"Error Message"},{"name":"1e8f8291-cf66-4524-8083-c81eeb55cdc7.file_info","label":"1➛File Info","reference_display":"File Info"},{"name":"cc474188-cb5c-4538-82d6-1b690a1e175d.metadata_id","label":"3.1➛Metadata ID","reference_display":"Metadata ID"},{"name":"cc474188-cb5c-4538-82d6-1b690a1e175d.metadata_info","label":"3.1➛Metadata Info","reference_display":"Metadata Info"},{"name":"3c5ca33d-325c-40c4-90ac-5793833c02f0.shared_link_info","label":"3.3.1➛Shared Link Info","reference_display":"Shared Link Info"},{"name":"3c5ca33d-325c-40c4-90ac-5793833c02f0.shared_link_clickable","label":"3.3.1➛Shared Link Clickable","reference_display":"Shared Link Clickable"}]</label_cache>
+        <latest_snapshot>dfd5709fdbd86300bea7ff561d96194d</latest_snapshot>
+        <master_snapshot>e9d8b234db0a97009a985404ce9619b9</master_snapshot>
+        <name>Move Attachment to Box</name>
+        <outputs/>
+        <remote_trigger_id/>
+        <sc_callable>false</sc_callable>
+        <show_draft_actions>false</show_draft_actions>
+        <show_triggered_flows>false</show_triggered_flows>
+        <status>draft</status>
+        <sys_class_name>sys_hub_flow</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2018-05-11 05:44:22</sys_created_on>
+        <sys_id>76b63eb0db0a97009a985404ce961939</sys_id>
+        <sys_mod_count>17</sys_mod_count>
+        <sys_name>Move Attachment to Box</sys_name>
+        <sys_package display_value="Box Spoke" source="sn_box_spoke">fdc25a6bdb1d9700868f5404ce961969</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Box Spoke">fdc25a6bdb1d9700868f5404ce961969</sys_scope>
+        <sys_update_name>sys_hub_flow_76b63eb0db0a97009a985404ce961939</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2018-09-07 11:07:29</sys_updated_on>
+        <type>subflow</type>
+    </sys_hub_flow>
+    <sys_translated_text action="delete_multiple" query="documentkey=76b63eb0db0a97009a985404ce961939"/>
+    <sys_variable_value action="delete_multiple" query="document_key=76b63eb0db0a97009a985404ce961939"/>
+</record_update>

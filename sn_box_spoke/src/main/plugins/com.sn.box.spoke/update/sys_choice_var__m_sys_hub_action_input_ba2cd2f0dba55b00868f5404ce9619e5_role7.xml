@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_choice action="INSERT_OR_UPDATE" field="role7" table="var__m_sys_hub_action_input_ba2cd2f0dba55b00868f5404ce9619e5" version="3">
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>role7</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>-- None --</label>
+            <language>en</language>
+            <name>var__m_sys_hub_action_input_ba2cd2f0dba55b00868f5404ce9619e5</name>
+            <sequence>1</sequence>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2018-04-17 10:21:50</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>41101819dbad9340bea7ff561d961986</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2018-04-17 10:21:50</sys_updated_on>
+            <value/>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>role7</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Editor</label>
+            <language>en</language>
+            <name>var__m_sys_hub_action_input_ba2cd2f0dba55b00868f5404ce9619e5</name>
+            <sequence>2</sequence>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2018-04-17 10:30:53</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>21221499dbad9340bea7ff561d961938</sys_id>
+            <sys_mod_count>1</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2018-04-17 10:33:43</sys_updated_on>
+            <value>editor</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>role7</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Co-owner</label>
+            <language>en</language>
+            <name>var__m_sys_hub_action_input_ba2cd2f0dba55b00868f5404ce9619e5</name>
+            <sequence>3</sequence>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2018-04-17 10:19:51</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>c4afc019dbad9340bea7ff561d961980</sys_id>
+            <sys_mod_count>3</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2018-04-17 10:33:43</sys_updated_on>
+            <value>co-owner</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>role7</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Viewer</label>
+            <language>en</language>
+            <name>var__m_sys_hub_action_input_ba2cd2f0dba55b00868f5404ce9619e5</name>
+            <sequence>4</sequence>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2018-04-26 06:26:21</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>d370f944dbf15b40bea7ff561d96197f</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2018-04-26 06:26:21</sys_updated_on>
+            <value>viewer</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>role7</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Previewer</label>
+            <language>en</language>
+            <name>var__m_sys_hub_action_input_ba2cd2f0dba55b00868f5404ce9619e5</name>
+            <sequence>5</sequence>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2018-04-17 10:19:51</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>0cafc019dbad9340bea7ff561d961984</sys_id>
+            <sys_mod_count>3</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2018-04-17 10:33:43</sys_updated_on>
+            <value>previewer</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>role7</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Uploader</label>
+            <language>en</language>
+            <name>var__m_sys_hub_action_input_ba2cd2f0dba55b00868f5404ce9619e5</name>
+            <sequence>6</sequence>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2018-04-17 10:19:51</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>80afc019dbad9340bea7ff561d961987</sys_id>
+            <sys_mod_count>3</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2018-04-17 10:33:43</sys_updated_on>
+            <value>uploader</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>role7</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Previewer Uploader</label>
+            <language>en</language>
+            <name>var__m_sys_hub_action_input_ba2cd2f0dba55b00868f5404ce9619e5</name>
+            <sequence>7</sequence>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2018-04-17 10:19:51</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>48afc019dbad9340bea7ff561d961989</sys_id>
+            <sys_mod_count>3</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2018-04-17 10:33:43</sys_updated_on>
+            <value>previewer uploader</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>role7</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Viewer Uploader</label>
+            <language>en</language>
+            <name>var__m_sys_hub_action_input_ba2cd2f0dba55b00868f5404ce9619e5</name>
+            <sequence>8</sequence>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2018-04-17 10:19:51</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>40afc019dbad9340bea7ff561d96198c</sys_id>
+            <sys_mod_count>3</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2018-04-17 10:33:43</sys_updated_on>
+            <value>viewer uploader</value>
+        </sys_choice>
+        <sys_choice_set action="INSERT_OR_UPDATE">
+            <element>role7</element>
+            <name>var__m_sys_hub_action_input_ba2cd2f0dba55b00868f5404ce9619e5</name>
+            <sys_class_name>sys_choice_set</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2018-04-17 10:21:50</sys_created_on>
+            <sys_id>4d101819dbad9340bea7ff561d961986</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>role7</sys_name>
+            <sys_package display_value="Box Spoke" source="sn_box_spoke">fdc25a6bdb1d9700868f5404ce961969</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Box Spoke">fdc25a6bdb1d9700868f5404ce961969</sys_scope>
+            <sys_update_name>sys_choice_var__m_sys_hub_action_input_ba2cd2f0dba55b00868f5404ce9619e5_role7</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2018-04-17 10:21:50</sys_updated_on>
+        </sys_choice_set>
+    </sys_choice>
+</record_update>

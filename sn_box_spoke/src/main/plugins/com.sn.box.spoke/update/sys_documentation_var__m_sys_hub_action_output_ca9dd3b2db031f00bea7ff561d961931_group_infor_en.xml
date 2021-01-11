@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_documentation element="group_infor" label="Group Info" language="en" table="var__m_sys_hub_action_output_ca9dd3b2db031f00bea7ff561d961931">
+        <sys_documentation action="INSERT_OR_UPDATE">
+            <element>group_infor</element>
+            <help/>
+            <hint/>
+            <label>Group Info</label>
+            <language>en</language>
+            <name>var__m_sys_hub_action_output_ca9dd3b2db031f00bea7ff561d961931</name>
+            <plural/>
+            <sys_class_name>sys_documentation</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2018-07-06 06:44:57</sys_created_on>
+            <sys_id>4cad57b2db031f00bea7ff561d961914</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>Group Info</sys_name>
+            <sys_package display_value="Box Spoke" source="sn_box_spoke">fdc25a6bdb1d9700868f5404ce961969</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Box Spoke">fdc25a6bdb1d9700868f5404ce961969</sys_scope>
+            <sys_update_name>sys_documentation_var__m_sys_hub_action_output_ca9dd3b2db031f00bea7ff561d961931_group_infor_en</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2018-07-06 06:44:57</sys_updated_on>
+            <url/>
+            <url_target/>
+        </sys_documentation>
+    </sys_documentation>
+</record_update>

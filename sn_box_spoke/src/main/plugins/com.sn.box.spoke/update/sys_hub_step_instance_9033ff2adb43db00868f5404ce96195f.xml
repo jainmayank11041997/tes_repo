@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_hub_step_instance">
+    <sys_hub_step_instance action="INSERT_OR_UPDATE">
+        <action display_value="Look up Folder ID ">1b23bf2adb43db00868f5404ce9619d0</action>
+        <cid>129e5624-413f-453c-937e-0d5f75882cf4</cid>
+        <extended_inputs/>
+        <extended_inputs/>
+        <extended_outputs/>
+        <icon/>
+        <inputs/>
+        <label>Handle Errors</label>
+        <order>3</order>
+        <outputs/>
+        <step_type display_value="Script">106afb6647032200b4fad7527c9a71e7</step_type>
+        <sys_class_name>sys_hub_step_instance</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2018-07-05 13:40:41</sys_created_on>
+        <sys_id>9033ff2adb43db00868f5404ce96195f</sys_id>
+        <sys_mod_count>5</sys_mod_count>
+        <sys_name>Handle Errors</sys_name>
+        <sys_package display_value="Box Spoke" source="sn_box_spoke">fdc25a6bdb1d9700868f5404ce961969</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Box Spoke">fdc25a6bdb1d9700868f5404ce961969</sys_scope>
+        <sys_update_name>sys_hub_step_instance_9033ff2adb43db00868f5404ce96195f</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2018-10-25 11:34:14</sys_updated_on>
+    </sys_hub_step_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=9033ff2adb43db00868f5404ce96195f"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>9033ff2adb43db00868f5404ce96195f</document_key>
+        <order>600</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2018-07-05 13:40:43</sys_created_on>
+        <sys_id>7433ff2adb43db00868f5404ce96198f</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2018-10-25 11:34:15</sys_updated_on>
+        <value>(function execute(inputs, outputs) {
+
+  if (inputs.status_code == 200) {
+    var abort = false;
+    var number_of_entries = JSON.parse(inputs.response)["total_count"];
+
+    var parent_folders_string = inputs.parent_folders.toString().toUpperCase();
+    if (!parent_folders_string.includes("ALL FILES")) {
+      inputs.parent_folders = "ALL FILES," + inputs.parent_folders.toString();
+
+    }
+    var folders_in_path = inputs.parent_folders.split(',');
+
+    var length_of_folders_in_path = folders_in_path.length;
+
+    var equality_flag = 0;
+    var folder_id = 0;
+
+
+    var target_folder = inputs.target_folder;
+    if (number_of_entries &gt; 0) {
+
+      for (var i = 0; i &lt; number_of_entries &amp;&amp; !abort; i++) {
+        if (target_folder.toUpperCase() == JSON.parse(inputs.response)["entries"][i]["name"].toUpperCase()) {
+          var total_parents = JSON.parse(inputs.response)["entries"][i]["path_collection"]["total_count"];
+          if (length_of_folders_in_path - 1 == total_parents) {
+
+            for (var j = 0; j &lt; (length_of_folders_in_path - 1); j++) {
+
+              if (folders_in_path[j].toUpperCase() == (JSON.parse(inputs.response)["entries"][i]["path_collection"]["entries"][j]["name"]).toUpperCase()) {
+                equality_flag++;
+                if (equality_flag == total_parents) {
+
+                  folder_id = JSON.parse(inputs.response)["entries"][i]["id"];
+                  outputs.folder_id = folder_id;
+                  outputs.status = "Success";
+                  outputs.error_message = "";
+
+                  abort = true;
+                } else {
+                  outputs.status = "Error";
+                  outputs.error_message = "Folder path doesn't exist.";
+
+                }
+
+
+
+              } else {
+                equality_flag--;
+                outputs.status = "Error";
+                outputs.error_message = "Folder path doesn't exist.";
+
+              }
+
+
+
+
+            }
+
+
+          } else {
+            outputs.status = "Error";
+            outputs.error_message = "Folder path doesn't exist.";
+
+          }
+        } else {
+          outputs.status = "Error";
+          outputs.error_message = "Folder path doesn't exist.";
+
+        }
+      }
+
+
+
+    } else {
+      outputs.status = "Error";
+      outputs.error_message = "Folder path doesn't exist.";
+
+    }
+  } else {
+    outputs = new BoxErrorHandler().folderErrorHandler(inputs, outputs);
+  }
+
+})(inputs, outputs);
+</value>
+        <variable display_value="">71aa7f6647032200b4fad7527c9a719b</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>9033ff2adb43db00868f5404ce96195f</document_key>
+        <order>400</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2018-07-05 13:40:43</sys_created_on>
+        <sys_id>b033ff2adb43db00868f5404ce96198f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2018-07-05 13:40:43</sys_updated_on>
+        <value>35aa573fd7802200bdbaee5b5e610375</value>
+        <variable display_value="">f5e56d79b3101300176b051a16a8dce4</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=9033ff2adb43db00868f5404ce96195f"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>application</field>
+        <id>9033ff2adb43db00868f5404ce96195f</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2018-07-05 13:40:43</sys_created_on>
+        <sys_id>6c33ff2adb43db00868f5404ce96198e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2018-07-05 13:40:43</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_106afb6647032200b4fad7527c9a71e7</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>error_message</field>
+        <id>9033ff2adb43db00868f5404ce96195f</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2018-07-05 13:40:43</sys_created_on>
+        <sys_id>fc33ff2adb43db00868f5404ce96198f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2018-07-05 13:40:43</sys_updated_on>
+        <table>var__m_sys_hub_step_ext_input_9033ff2adb43db00868f5404ce96195f</table>
+        <value>{{step[954e8242-9ee4-4a6b-a381-2ecd1865557a].error_message}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>parent_folders</field>
+        <id>9033ff2adb43db00868f5404ce96195f</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2018-07-05 13:40:43</sys_created_on>
+        <sys_id>b033ff2adb43db00868f5404ce961990</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2018-07-05 13:40:43</sys_updated_on>
+        <table>var__m_sys_hub_step_ext_input_9033ff2adb43db00868f5404ce96195f</table>
+        <value>{{step[1606c1f2-22a1-4507-89ea-82e0a66467fd].parent_folders}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>response</field>
+        <id>9033ff2adb43db00868f5404ce96195f</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2018-07-05 13:40:43</sys_created_on>
+        <sys_id>f833ff2adb43db00868f5404ce961990</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2018-07-05 13:40:43</sys_updated_on>
+        <table>var__m_sys_hub_step_ext_input_9033ff2adb43db00868f5404ce96195f</table>
+        <value>{{step[954e8242-9ee4-4a6b-a381-2ecd1865557a].response_body}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>script</field>
+        <id>9033ff2adb43db00868f5404ce96195f</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2018-07-05 13:40:43</sys_created_on>
+        <sys_id>3033ff2adb43db00868f5404ce96198f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2018-07-05 13:40:43</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_106afb6647032200b4fad7527c9a71e7</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>status_code</field>
+        <id>9033ff2adb43db00868f5404ce96195f</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2018-07-05 13:40:43</sys_created_on>
+        <sys_id>7433ff2adb43db00868f5404ce961990</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2018-07-05 13:40:43</sys_updated_on>
+        <table>var__m_sys_hub_step_ext_input_9033ff2adb43db00868f5404ce96195f</table>
+        <value>{{step[954e8242-9ee4-4a6b-a381-2ecd1865557a].status_code}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>target_folder</field>
+        <id>9033ff2adb43db00868f5404ce96195f</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2018-07-05 13:40:43</sys_created_on>
+        <sys_id>3833ff2adb43db00868f5404ce961990</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2018-07-05 13:40:43</sys_updated_on>
+        <table>var__m_sys_hub_step_ext_input_9033ff2adb43db00868f5404ce96195f</table>
+        <value>{{step[1606c1f2-22a1-4507-89ea-82e0a66467fd].target_folder_name}}</value>
+    </sys_element_mapping>
+</record_update>

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_hub_action_instance">
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Create Task">2b3a6335531003003bf1d9109ec58759</action_type>
+        <action_type_parent display_value="Create Task">3f9b1ff1531003003bf1d9109ec58775</action_type_parent>
+        <comment>Create an incident with the error message from the Lookup Folder Action</comment>
+        <compiled_snapshot display_value="Create Task">2b3a6335531003003bf1d9109ec58759</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Test On-Boarding User">01eb846cdba42700bea7ff561d96192c</flow>
+        <order>2.3.1</order>
+        <parent_ui_id>39bd34dd-1896-461b-91f2-2c939f22f0da</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2018-09-11 06:29:56</sys_created_on>
+        <sys_id>d1bc5828dbe42700bea7ff561d96195a</sys_id>
+        <sys_mod_count>10</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Box Spoke" source="sn_box_spoke">fdc25a6bdb1d9700868f5404ce961969</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Box Spoke">fdc25a6bdb1d9700868f5404ce961969</sys_scope>
+        <sys_update_name>sys_hub_action_instance_d1bc5828dbe42700bea7ff561d96195a</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2018-09-11 06:47:37</sys_updated_on>
+        <ui_id>f8cc2659-dd46-4618-85df-272a1b91b82b</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=d1bc5828dbe42700bea7ff561d96195a"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>d1bc5828dbe42700bea7ff561d96195a</document_key>
+        <order>0</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2018-09-11 06:29:56</sys_created_on>
+        <sys_id>51bc5828dbe42700bea7ff561d96195f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2018-09-11 06:29:56</sys_updated_on>
+        <value>incident</value>
+        <variable display_value="">e73a6335531003003bf1d9109ec5875c</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=d1bc5828dbe42700bea7ff561d96195a"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>field_values</field>
+        <id>d1bc5828dbe42700bea7ff561d96195a</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2018-09-11 06:29:56</sys_created_on>
+        <sys_id>ddbc5828dbe42700bea7ff561d96195e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2018-09-11 06:29:56</sys_updated_on>
+        <table>var__m_sys_hub_action_input_2b3a6335531003003bf1d9109ec58759</table>
+        <value>short_description={{588b8be6-9705-4fde-ab05-eee5e370a37d.error}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>task_table</field>
+        <id>d1bc5828dbe42700bea7ff561d96195a</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2018-09-11 06:29:56</sys_created_on>
+        <sys_id>1dbc5828dbe42700bea7ff561d96195e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2018-09-11 06:29:56</sys_updated_on>
+        <table>var__m_sys_hub_action_input_2b3a6335531003003bf1d9109ec58759</table>
+        <value/>
+    </sys_element_mapping>
+</record_update>

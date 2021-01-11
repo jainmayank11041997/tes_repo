@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_complex_object">
+  <sys_complex_object action="INSERT_OR_UPDATE">
+    <label/>
+    <name>FD03260578a561201079bcb58991777589</name>
+    <namespace>FlowDesigner</namespace>
+    <scope_name>fdc25a6bdb1d9700868f5404ce961969</scope_name>
+    <serialized_content>{"FlowDesigner:FD03260578a561201079bcb58991777589":{"retention_length":"String","retention_length.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":null,\"uiType\":\"string\",\"default_value\":null,\"label\":\"Retention Length\",\"mandatory\":\"false\",\"order\":\"3\",\"max_length\":\"0\",\"uiUniqueId\":\"ab4eafa7-ea5d-4d35-8be4-db41bbf0d715\"}"},"policy_type":"String","policy_type.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":null,\"uiType\":\"string\",\"default_value\":null,\"label\":\"Policy Type\",\"mandatory\":\"false\",\"order\":\"5\",\"max_length\":\"0\",\"uiUniqueId\":\"a1d7d068-ac0a-4fec-a908-4d7617eda54f\"}"},"assignment_counts":{"metadata_template":"String","metadata_template.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":null,\"uiType\":\"string\",\"default_value\":null,\"label\":\"Metadata Template\",\"mandatory\":\"false\",\"order\":\"3\",\"max_length\":\"0\",\"uiUniqueId\":\"c58b3614-fe3e-4d4c-baef-cb08a1d669ec\"}"},"folder":"String","folder.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":null,\"uiType\":\"string\",\"default_value\":null,\"label\":\"Folder\",\"mandatory\":\"false\",\"order\":\"2\",\"max_length\":\"0\",\"uiUniqueId\":\"8d9e81d6-7bf5-4658-b460-f409065d48bc\"}"},"Enterprise":"String","Enterprise.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":null,\"uiType\":\"string\",\"default_value\":null,\"label\":\"Enterprise\",\"mandatory\":\"false\",\"order\":\"1\",\"max_length\":\"0\",\"uiUniqueId\":\"07d3f4b8-49a2-46d1-a5b9-d2faa6f7f18c\"}"}},"assignment_counts.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"Object\",\"read_only\":\"false\",\"hint\":null,\"uiType\":\"object\",\"default_value\":\"\",\"label\":\"Assignment Counts\",\"mandatory\":\"false\",\"order\":\"7\",\"max_length\":\"0\",\"uiUniqueId\":\"7b30a12b-5986-4071-a669-2990cfe61ee9\"}"},"disposition_action":"String","disposition_action.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":null,\"uiType\":\"string\",\"default_value\":null,\"label\":\"Disposition Action\",\"mandatory\":\"false\",\"order\":\"4\",\"max_length\":\"0\",\"uiUniqueId\":\"6c4c4e5c-4bce-4619-b663-e6807cc3b79f\"}"},"policy_name":"String","policy_name.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":null,\"uiType\":\"string\",\"default_value\":null,\"label\":\"Policy Name\",\"mandatory\":\"false\",\"order\":\"2\",\"max_length\":\"0\",\"uiUniqueId\":\"865cdcf4-8cfc-431f-907f-a5d2bd6b1cb5\"}"},"id":"String","id.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":null,\"uiType\":\"string\",\"default_value\":null,\"label\":\"ID\",\"mandatory\":\"false\",\"order\":\"1\",\"max_length\":\"0\",\"uiUniqueId\":\"ed7cced3-2201-4b3a-9b4f-01fe0965c974\"}"},"status":"String","status.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":null,\"uiType\":\"string\",\"default_value\":null,\"label\":\"Status\",\"mandatory\":\"false\",\"order\":\"6\",\"max_length\":\"0\",\"uiUniqueId\":\"ba8d01ec-95db-4224-88c7-89cf6eb22b96\"}"}},"FlowDesigner:FD03260578a561201079bcb58991777589.$type_facets":{"SimpleMapFacet":"{\"sourceId\":\"fbfc0cf0-9b5a-4909-8330-184c4e9fbc9f\",\"default_value\":\"\",\"label\":\"Retention Policy\",\"mandatory\":\"false\",\"uiUniqueId\":\"6fa3d99b-7d2c-4dc5-8dfa-89a282557f03\",\"uiTypeLabel\":\"\",\"co_type_name\":\"FD03260578a561201079bcb58991777589\",\"read_only\":\"false\",\"sourceUiUniqueId\":\"b0846861-d674-4b61-9650-1463550e4dfa\",\"sourceType\":\"step\",\"hint\":null,\"uiType\":\"object\",\"order\":\"1\",\"max_length\":\"0\"}"}}</serialized_content>
+    <sys_class_name>sys_complex_object</sys_class_name>
+    <sys_created_by>admin</sys_created_by>
+    <sys_created_on>2021-01-04 05:56:58</sys_created_on>
+    <sys_domain>global</sys_domain>
+    <sys_domain_path>/</sys_domain_path>
+    <sys_id>c32605780f612010747dc7d92f767e89</sys_id>
+    <sys_mod_count>0</sys_mod_count>
+    <sys_name>FD03260578a561201079bcb58991777589</sys_name>
+    <sys_overrides/>
+    <sys_package display_value="Box Spoke" source="sn_box_spoke">fdc25a6bdb1d9700868f5404ce961969</sys_package>
+    <sys_policy/>
+    <sys_scope display_value="Box Spoke">fdc25a6bdb1d9700868f5404ce961969</sys_scope>
+    <sys_update_name>sys_complex_object_c32605780f612010747dc7d92f767e89</sys_update_name>
+    <sys_updated_by>admin</sys_updated_by>
+    <sys_updated_on>2021-01-04 05:56:58</sys_updated_on>
+    <type>complex_object_schema</type>
+  </sys_complex_object>
+</record_update>

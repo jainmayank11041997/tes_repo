@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_hub_flow_logic">
+    <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <block display_value="">00b83234db0a97009a985404ce96199f</block>
+        <comment/>
+        <connected_to/>
+        <display_text/>
+        <flow display_value="Move Attachment to Box">76b63eb0db0a97009a985404ce961939</flow>
+        <inputs/>
+        <logic_definition display_value="If">af4e1945c3e232002841b63b12d3ae3e</logic_definition>
+        <order>3.3</order>
+        <outputs_assigned/>
+        <outputs_to_assign/>
+        <parent_ui_id>47f234c5-7526-46e0-a970-f5b4992e0d06</parent_ui_id>
+        <sys_class_name>sys_hub_flow_logic</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2018-05-11 05:52:55</sys_created_on>
+        <sys_id>c0b83234db0a97009a985404ce9619a0</sys_id>
+        <sys_mod_count>13</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Box Spoke" source="sn_box_spoke">fdc25a6bdb1d9700868f5404ce961969</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Box Spoke">fdc25a6bdb1d9700868f5404ce961969</sys_scope>
+        <sys_update_name>sys_hub_flow_logic_c0b83234db0a97009a985404ce9619a0</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2018-09-07 11:07:31</sys_updated_on>
+        <ui_id>a9518b50-e9a2-4290-a1dd-2b014e69c667</ui_id>
+        <workflow_inputs/>
+        <workflow_reference/>
+    </sys_hub_flow_logic>
+    <sys_variable_value action="delete_multiple" query="document_key=c0b83234db0a97009a985404ce9619a0"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_flow_logic</document>
+        <document_key>c0b83234db0a97009a985404ce9619a0</document_key>
+        <order>10</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2018-05-11 05:52:55</sys_created_on>
+        <sys_id>88b83234db0a97009a985404ce9619a4</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2018-05-11 05:52:55</sys_updated_on>
+        <value>Metadata has added to a file</value>
+        <variable display_value="">f0af19c1c32632002841b63b12d3aea3</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_flow_logic</document>
+        <document_key>c0b83234db0a97009a985404ce9619a0</document_key>
+        <order>20</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2018-05-11 05:52:55</sys_created_on>
+        <sys_id>c4b83234db0a97009a985404ce9619a4</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2018-05-11 05:52:55</sys_updated_on>
+        <value>{{cc474188-cb5c-4538-82d6-1b690a1e175d.status}}=Success</value>
+        <variable display_value="">9a5f5105c32632002841b63b12d3ae46</variable>
+    </sys_variable_value>
+</record_update>

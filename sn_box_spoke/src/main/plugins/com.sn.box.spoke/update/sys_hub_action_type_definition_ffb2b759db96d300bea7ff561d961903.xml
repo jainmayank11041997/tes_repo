@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_hub_action_type_definition">
+    <sys_hub_action_type_definition action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <active>true</active>
+        <annotation/>
+        <category display_value="Group Management">761fbd45db1a9300bea7ff561d961972</category>
+        <copied_from>6a2f7d45db1a9300bea7ff561d9619bd</copied_from>
+        <copied_from_name>Update Group</copied_from_name>
+        <description>&lt;p&gt;This action deletes a group in box.&lt;/p&gt;
+
+&lt;p&gt;&lt;b&gt;Inputs:&lt;/b&gt;&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;b&gt;Group ID &lt;/b&gt; - The ID of the group to be deleted.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;b&gt;Outputs:&lt;/b&gt;&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;b&gt;Status&lt;/b&gt; - Will be set to "Success" if the request succeeds or "Error" if a failure occurs.&lt;/li&gt;
+  &lt;li&gt;&lt;b&gt;Error Message&lt;/b&gt; - Will be populated when the status is "Error".&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;b&gt;Error Messages:&lt;/b&gt; &lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;Group with given ID not found.&lt;/li&gt;
+  &lt;li&gt;Invalid username or password/token.&lt;/li&gt;
+  &lt;li&gt;The credentials associated with the Box Spoke connection does not have enough permission to perform this action.&lt;/li&gt;
+
+&lt;/ul&gt;
+
+&lt;p&gt;To use this action, the corresponding Box connection and credential must be created and associated with the Box Connection &amp; Credential alias. &lt;a target="_blank" href="http://docs.servicenow.com/?context=CSHelp:credentials-connections-alias"&gt;Learn More&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;b&gt;Note&lt;/b&gt;: Requires a subscription for production use. &lt;a target="_blank" href="https://docs.servicenow.com/?context=CSHelp:IntegrationHub-licensing-information"&gt;Read More&lt;/a&gt;.&lt;/p&gt;
+</description>
+        <internal_name>delete_group</internal_name>
+        <label_cache>[{"name":"{{action.group_id}}","label":"action➛Group ID","type":"action","ref":""},{"name":"{{step[69d3927d-63a8-48d3-bcf5-fcdaed7847cf].}}","label":"step➛Pre Processing➛","type":"step","ref":""},{"name":"{{step[69d3927d-63a8-48d3-bcf5-fcdaed7847cf].g}}","label":"step➛Pre Processing➛g","type":"step","ref":""},{"name":"{{step[69d3927d-63a8-48d3-bcf5-fcdaed7847cf].gr}}","label":"step➛Pre Processing➛gr","type":"step","ref":""},{"name":"{{step[69d3927d-63a8-48d3-bcf5-fcdaed7847cf].gro}}","label":"step➛Pre Processing➛gro","type":"step","ref":""},{"name":"{{step[69d3927d-63a8-48d3-bcf5-fcdaed7847cf].grou}}","label":"step➛Pre Processing➛grou","type":"step","ref":""},{"name":"{{step[69d3927d-63a8-48d3-bcf5-fcdaed7847cf].group}}","label":"step➛Pre Processing➛group","type":"step","ref":""},{"name":"{{step[69d3927d-63a8-48d3-bcf5-fcdaed7847cf].group_}}","label":"step➛Pre Processing➛group_","type":"step","ref":""},{"name":"{{step[69d3927d-63a8-48d3-bcf5-fcdaed7847cf].group_i}}","label":"step➛Pre Processing➛group_i","type":"step","ref":""},{"name":"{{step[69d3927d-63a8-48d3-bcf5-fcdaed7847cf].group_id}}","label":"step➛Pre Processing➛group_id","type":"step","ref":""},{"name":"{{step[69d3927d-63a8-48d3-bcf5-fcdaed7847cf].p}}","label":"step➛Pre Processing➛p","type":"step","ref":""},{"name":"{{step[69d3927d-63a8-48d3-bcf5-fcdaed7847cf].pa}}","label":"step➛Pre Processing➛pa","type":"step","ref":""},{"name":"{{step[69d3927d-63a8-48d3-bcf5-fcdaed7847cf].pay}}","label":"step➛Pre Processing➛pay","type":"step","ref":""},{"name":"{{step[69d3927d-63a8-48d3-bcf5-fcdaed7847cf].payl}}","label":"step➛Pre Processing➛payl","type":"step","ref":""},{"name":"{{step[69d3927d-63a8-48d3-bcf5-fcdaed7847cf].paylo}}","label":"step➛Pre Processing➛paylo","type":"step","ref":""},{"name":"{{step[69d3927d-63a8-48d3-bcf5-fcdaed7847cf].payloa}}","label":"step➛Pre Processing➛payloa","type":"step","ref":""},{"name":"{{step[69d3927d-63a8-48d3-bcf5-fcdaed7847cf].payload}}","label":"step➛Pre Processing➛payload","type":"step","ref":""},{"name":"{{step[b131fb4e-31b9-4b3c-8b8c-157048729471].status_code}}","label":"step➛Delete Group➛Status Code","type":"step","ref":""},{"name":"{{step[b131fb4e-31b9-4b3c-8b8c-157048729471].response_body}}","label":"step➛Delete Group➛Response Body","type":"step","ref":""},{"name":"{{step[b131fb4e-31b9-4b3c-8b8c-157048729471].error_message}}","label":"step➛Delete Group➛Error Message","type":"step","ref":""},{"name":"{{step[84de9a69-cd0c-4885-b427-e46c941dca97].}}","label":"step➛Handle Errors➛","type":"step","ref":""},{"name":"{{step[84de9a69-cd0c-4885-b427-e46c941dca97].s}}","label":"step➛Handle Errors➛s","type":"step","ref":""},{"name":"{{step[84de9a69-cd0c-4885-b427-e46c941dca97].st}}","label":"step➛Handle Errors➛st","type":"step","ref":""},{"name":"{{step[84de9a69-cd0c-4885-b427-e46c941dca97].sta}}","label":"step➛Handle Errors➛sta","type":"step","ref":""},{"name":"{{step[84de9a69-cd0c-4885-b427-e46c941dca97].stat}}","label":"step➛Handle Errors➛stat","type":"step","ref":""},{"name":"{{step[84de9a69-cd0c-4885-b427-e46c941dca97].statu}}","label":"step➛Handle Errors➛statu","type":"step","ref":""},{"name":"{{step[84de9a69-cd0c-4885-b427-e46c941dca97].status}}","label":"step➛Handle Errors➛status","type":"step","ref":""},{"name":"{{step[84de9a69-cd0c-4885-b427-e46c941dca97].e}}","label":"step➛Handle Errors➛e","type":"step","ref":""},{"name":"{{step[84de9a69-cd0c-4885-b427-e46c941dca97].er}}","label":"step➛Handle Errors➛er","type":"step","ref":""},{"name":"{{step[84de9a69-cd0c-4885-b427-e46c941dca97].err}}","label":"step➛Handle Errors➛err","type":"step","ref":""},{"name":"{{step[84de9a69-cd0c-4885-b427-e46c941dca97].erro}}","label":"step➛Handle Errors➛erro","type":"step","ref":""},{"name":"{{step[84de9a69-cd0c-4885-b427-e46c941dca97].error}}","label":"step➛Handle Errors➛error","type":"step","ref":""},{"name":"{{step[84de9a69-cd0c-4885-b427-e46c941dca97].error_}}","label":"step➛Handle Errors➛error_","type":"step","ref":""},{"name":"{{step[84de9a69-cd0c-4885-b427-e46c941dca97].error_m}}","label":"step➛Handle Errors➛error_m","type":"step","ref":""},{"name":"{{step[84de9a69-cd0c-4885-b427-e46c941dca97].error_me}}","label":"step➛Handle Errors➛error_me","type":"step","ref":""},{"name":"{{step[84de9a69-cd0c-4885-b427-e46c941dca97].error_mes}}","label":"step➛Handle Errors➛error_mes","type":"step","ref":""},{"name":"{{step[84de9a69-cd0c-4885-b427-e46c941dca97].error_mess}}","label":"step➛Handle Errors➛error_mess","type":"step","ref":""},{"name":"{{step[84de9a69-cd0c-4885-b427-e46c941dca97].error_messa}}","label":"step➛Handle Errors➛error_messa","type":"step","ref":""},{"name":"{{step[84de9a69-cd0c-4885-b427-e46c941dca97].error_messag}}","label":"step➛Handle Errors➛error_messag","type":"step","ref":""},{"name":"{{step[84de9a69-cd0c-4885-b427-e46c941dca97].error_message}}","label":"step➛Handle Errors➛error_message","type":"step","ref":""}]</label_cache>
+        <latest_snapshot>55bd062bdbbb1b001b5857935e96190b</latest_snapshot>
+        <master_snapshot>95a173a6db43db00868f5404ce9619ba</master_snapshot>
+        <name>Delete Group</name>
+        <outputs/>
+        <outputs/>
+        <state>published</state>
+        <sys_class_name>sys_hub_action_type_definition</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2018-05-25 09:39:15</sys_created_on>
+        <sys_id>ffb2b759db96d300bea7ff561d961903</sys_id>
+        <sys_mod_count>19</sys_mod_count>
+        <sys_name>Delete Group</sys_name>
+        <sys_package display_value="Box Spoke" source="sn_box_spoke">fdc25a6bdb1d9700868f5404ce961969</sys_package>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="Box Spoke">fdc25a6bdb1d9700868f5404ce961969</sys_scope>
+        <sys_update_name>sys_hub_action_type_definition_ffb2b759db96d300bea7ff561d961903</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2018-08-14 15:38:22</sys_updated_on>
+        <system_level>false</system_level>
+        <type/>
+    </sys_hub_action_type_definition>
+    <sys_translated_text action="delete_multiple" query="documentkey=ffb2b759db96d300bea7ff561d961903"/>
+    <sys_variable_value action="delete_multiple" query="document_key=ffb2b759db96d300bea7ff561d961903"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_type_definition</document>
+        <document_key>ffb2b759db96d300bea7ff561d961903</document_key>
+        <order>0</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2018-07-06 11:56:52</sys_created_on>
+        <sys_id>d905a08fdb0fdb00868f5404ce961930</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2018-07-06 11:56:52</sys_updated_on>
+        <value/>
+        <variable display_value="">792f5b36db031f00bea7ff561d96195e</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=ffb2b759db96d300bea7ff561d961903"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>error_message</field>
+        <id>ffb2b759db96d300bea7ff561d961903</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2018-05-25 09:39:26</sys_created_on>
+        <sys_id>1ec23b59db96d300bea7ff561d96196e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2018-05-25 09:39:26</sys_updated_on>
+        <table>var__m_sys_hub_action_output_ffb2b759db96d300bea7ff561d961903</table>
+        <value>{{step[84de9a69-cd0c-4885-b427-e46c941dca97].error_message}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>group_info</field>
+        <id>ffb2b759db96d300bea7ff561d961903</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2018-05-25 09:39:26</sys_created_on>
+        <sys_id>dec23b59db96d300bea7ff561d96196e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2018-05-25 09:39:26</sys_updated_on>
+        <table>var__m_sys_hub_action_output_ffb2b759db96d300bea7ff561d961903</table>
+        <value>{{step[84de9a69-cd0c-4885-b427-e46c941dca97].group_info}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>status</field>
+        <id>ffb2b759db96d300bea7ff561d961903</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2018-05-25 09:39:26</sys_created_on>
+        <sys_id>56c23b59db96d300bea7ff561d96196f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2018-05-25 09:39:26</sys_updated_on>
+        <table>var__m_sys_hub_action_output_ffb2b759db96d300bea7ff561d961903</table>
+        <value>{{step[84de9a69-cd0c-4885-b427-e46c941dca97].status}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>type</field>
+        <id>ffb2b759db96d300bea7ff561d961903</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2018-05-25 09:39:26</sys_created_on>
+        <sys_id>92c23b59db96d300bea7ff561d96196f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2018-05-25 09:39:26</sys_updated_on>
+        <table>var__m_sys_hub_action_output_ffb2b759db96d300bea7ff561d961903</table>
+        <value>{{step[84de9a69-cd0c-4885-b427-e46c941dca97].group_id}}</value>
+    </sys_element_mapping>
+</record_update>

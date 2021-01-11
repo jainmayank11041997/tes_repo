@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_hub_action_instance">
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Create Shared Link">267e0e87db6d9740bea7ff561d961992</action_type>
+        <action_type_parent/>
+        <comment>Creates a Shared Link to the uploaded file which can be used to Download or View the file.</comment>
+        <compiled_snapshot display_value="Create Shared Link">267e0e87db6d9740bea7ff561d961992</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Move Attachment to Box">76b63eb0db0a97009a985404ce961939</flow>
+        <order>3.3.1</order>
+        <parent_ui_id>a9518b50-e9a2-4290-a1dd-2b014e69c667</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2018-05-11 05:52:54</sys_created_on>
+        <sys_id>7ba83234db0a97009a985404ce96198d</sys_id>
+        <sys_mod_count>26</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Box Spoke" source="sn_box_spoke">fdc25a6bdb1d9700868f5404ce961969</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Box Spoke">fdc25a6bdb1d9700868f5404ce961969</sys_scope>
+        <sys_update_name>sys_hub_action_instance_7ba83234db0a97009a985404ce96198d</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2018-09-07 11:07:31</sys_updated_on>
+        <ui_id>3c5ca33d-325c-40c4-90ac-5793833c02f0</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=7ba83234db0a97009a985404ce96198d"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>7ba83234db0a97009a985404ce96198d</document_key>
+        <order>2</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2018-05-11 05:52:55</sys_created_on>
+        <sys_id>33a83234db0a97009a985404ce961994</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2018-05-11 05:52:55</sys_updated_on>
+        <value>open</value>
+        <variable display_value="">0dd1d331dbe9db00868f5404ce9619d7</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>7ba83234db0a97009a985404ce96198d</document_key>
+        <order>2</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2018-05-11 05:53:32</sys_created_on>
+        <sys_id>3cd8b234db0a97009a985404ce96194e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2018-05-11 05:53:32</sys_updated_on>
+        <value>open</value>
+        <variable display_value="">767e0e87db6d9740bea7ff561d9619b6</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>7ba83234db0a97009a985404ce96198d</document_key>
+        <order>5</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2018-05-11 05:53:32</sys_created_on>
+        <sys_id>b0d8b234db0a97009a985404ce96194f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2018-05-11 05:53:32</sys_updated_on>
+        <value>1</value>
+        <variable display_value="">877e0e87db6d9740bea7ff561d9619d1</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>7ba83234db0a97009a985404ce96198d</document_key>
+        <order>5</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2018-05-11 05:52:55</sys_created_on>
+        <sys_id>b7a83234db0a97009a985404ce961994</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2018-05-11 05:52:55</sys_updated_on>
+        <value>1</value>
+        <variable display_value="">c342d731dbe9db00868f5404ce9619b2</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>7ba83234db0a97009a985404ce96198d</document_key>
+        <order>0</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2018-05-11 05:52:55</sys_created_on>
+        <sys_id>f3a83234db0a97009a985404ce961994</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2018-05-11 05:52:55</sys_updated_on>
+        <value>files</value>
+        <variable display_value="">8a551bb1dbe9db00868f5404ce961966</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>7ba83234db0a97009a985404ce96198d</document_key>
+        <order>0</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2018-05-11 05:53:32</sys_created_on>
+        <sys_id>fcd8b234db0a97009a985404ce96194e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2018-05-11 05:53:32</sys_updated_on>
+        <value>files</value>
+        <variable display_value="">667e0e87db6d9740bea7ff561d961995</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=7ba83234db0a97009a985404ce96198d"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>can_download</field>
+        <id>7ba83234db0a97009a985404ce96198d</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2018-05-11 05:52:55</sys_created_on>
+        <sys_id>fba83234db0a97009a985404ce961993</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2018-05-11 05:52:55</sys_updated_on>
+        <table>var__m_sys_hub_action_input_4f411bfddba9db00868f5404ce961942</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>can_download</field>
+        <id>7ba83234db0a97009a985404ce96198d</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2018-05-11 05:53:32</sys_created_on>
+        <sys_id>f4d8b234db0a97009a985404ce96194e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2018-05-11 05:53:32</sys_updated_on>
+        <table>var__m_sys_hub_action_input_267e0e87db6d9740bea7ff561d961992</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>item_id</field>
+        <id>7ba83234db0a97009a985404ce96198d</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2018-05-11 05:53:32</sys_created_on>
+        <sys_id>bcd8b234db0a97009a985404ce96194d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2018-05-11 05:53:32</sys_updated_on>
+        <table>var__m_sys_hub_action_input_267e0e87db6d9740bea7ff561d961992</table>
+        <value>{{1e8f8291-cf66-4524-8083-c81eeb55cdc7.file_id}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>item_id</field>
+        <id>7ba83234db0a97009a985404ce96198d</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2018-05-11 05:52:55</sys_created_on>
+        <sys_id>b3a83234db0a97009a985404ce961993</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2018-05-11 05:52:55</sys_updated_on>
+        <table>var__m_sys_hub_action_input_4f411bfddba9db00868f5404ce961942</table>
+        <value>{{1e8f8291-cf66-4524-8083-c81eeb55cdc7.file_id}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>item_type1</field>
+        <id>7ba83234db0a97009a985404ce96198d</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2018-05-11 05:53:32</sys_created_on>
+        <sys_id>34d8b234db0a97009a985404ce96194e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2018-05-11 05:53:32</sys_updated_on>
+        <table>var__m_sys_hub_action_input_267e0e87db6d9740bea7ff561d961992</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>item_type1</field>
+        <id>7ba83234db0a97009a985404ce96198d</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2018-05-11 05:52:55</sys_created_on>
+        <sys_id>3ba83234db0a97009a985404ce961993</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2018-05-11 05:52:55</sys_updated_on>
+        <table>var__m_sys_hub_action_input_4f411bfddba9db00868f5404ce961942</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>shared_link_access</field>
+        <id>7ba83234db0a97009a985404ce96198d</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2018-05-11 05:52:55</sys_created_on>
+        <sys_id>77a83234db0a97009a985404ce961993</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2018-05-11 05:52:55</sys_updated_on>
+        <table>var__m_sys_hub_action_input_4f411bfddba9db00868f5404ce961942</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>shared_link_access</field>
+        <id>7ba83234db0a97009a985404ce96198d</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2018-05-11 05:53:32</sys_created_on>
+        <sys_id>70d8b234db0a97009a985404ce96194e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2018-05-11 05:53:32</sys_updated_on>
+        <table>var__m_sys_hub_action_input_267e0e87db6d9740bea7ff561d961992</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>token</field>
+        <id>7ba83234db0a97009a985404ce96198d</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2018-05-11 05:52:55</sys_created_on>
+        <sys_id>bfa83234db0a97009a985404ce961993</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2018-05-11 05:52:55</sys_updated_on>
+        <table>var__m_sys_hub_action_input_4f411bfddba9db00868f5404ce961942</table>
+        <value>{{subflow.token}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>token</field>
+        <id>7ba83234db0a97009a985404ce96198d</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2018-05-11 05:53:32</sys_created_on>
+        <sys_id>b8d8b234db0a97009a985404ce96194e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2018-05-11 05:53:32</sys_updated_on>
+        <table>var__m_sys_hub_action_input_267e0e87db6d9740bea7ff561d961992</table>
+        <value>{{subflow.token}}</value>
+    </sys_element_mapping>
+</record_update>

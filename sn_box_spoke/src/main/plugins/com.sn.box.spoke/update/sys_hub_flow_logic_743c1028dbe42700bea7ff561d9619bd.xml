@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_hub_flow_logic">
+    <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <block display_value="">b03c1028dbe42700bea7ff561d9619bc</block>
+        <comment/>
+        <connected_to>47e40e62-6f61-4e87-9ad8-8e8ca23af441</connected_to>
+        <display_text/>
+        <flow display_value="On-Boarding User">1b76cc28dba42700bea7ff561d961959</flow>
+        <inputs/>
+        <logic_definition display_value="Else">1f781bf3c32232002841b63b12d3aee6</logic_definition>
+        <order>3</order>
+        <outputs_assigned/>
+        <outputs_to_assign/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2018-09-11 06:27:43</sys_created_on>
+        <sys_id>743c1028dbe42700bea7ff561d9619bd</sys_id>
+        <sys_mod_count>11</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Box Spoke" source="sn_box_spoke">fdc25a6bdb1d9700868f5404ce961969</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Box Spoke">fdc25a6bdb1d9700868f5404ce961969</sys_scope>
+        <sys_update_name>sys_hub_flow_logic_743c1028dbe42700bea7ff561d9619bd</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2018-09-11 06:50:53</sys_updated_on>
+        <ui_id>4d2c8cd2-8420-452f-a893-02d73ed620ee</ui_id>
+        <workflow_inputs/>
+        <workflow_reference/>
+    </sys_hub_flow_logic>
+    <sys_variable_value action="delete_multiple" query="document_key=743c1028dbe42700bea7ff561d9619bd"/>
+</record_update>

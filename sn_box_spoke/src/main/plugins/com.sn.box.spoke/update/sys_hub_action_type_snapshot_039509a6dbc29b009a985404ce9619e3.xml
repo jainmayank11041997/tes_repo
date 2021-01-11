@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_hub_action_type_snapshot">
+    <sys_hub_action_type_snapshot action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <annotation/>
+        <category display_value="Document Sharing">99c7bacedb6d1740bea7ff561d961991</category>
+        <copied_from/>
+        <copied_from_name/>
+        <description>&lt;p&gt;The action creates a new collaboration that grants a user or group access to a file or folder in a specific role.&lt;/p&gt;
+
+&lt;p&gt;&lt;b&gt;Inputs:&lt;/b&gt;&lt;/p&gt;
+&lt;ul&gt;
+	&lt;li&gt;&lt;b&gt;Item Type&lt;/b&gt; - Type of the item. Can be set to the value 'File' or 'Folder'.&lt;/li&gt;
+	&lt;li&gt;&lt;b&gt;Item ID&lt;/b&gt; - ID of the file or folder that access is granted to.&lt;/li&gt;
+	&lt;li&gt;&lt;b&gt;Accessible By Type&lt;/b&gt; - The type of entity which will be added as a collaborator. Can be set to the value 'User' or 'Group'.&lt;/li&gt;
+	&lt;li&gt;&lt;b&gt;Accessible By ID&lt;/b&gt; - ID of the user or group that is granted access.&lt;/li&gt;
+	&lt;li&gt;&lt;b&gt;Accessible By Login&lt;/b&gt; - The email address of the person to grant access to. Use instead of id to invite new users.&lt;/li&gt;
+	&lt;li&gt;&lt;b&gt;Role&lt;/b&gt; - The level of access granted. Can be the following values 'Editor, Viewer, Previewer, Uploader, Preview Uploader, Viewer Uploader or Co-Owner'.&lt;/li&gt;
+	&lt;li&gt;&lt;b&gt;Can View Path&lt;/b&gt; - Whether view path collaboration feature is enabled or not. View path collaborations allow the invitee to see the entire ancestral path to the associated folder. The user will not gain privileges in any ancestral folder (e.g. see content the user is not collaborated on).&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;b&gt;Outputs:&lt;/b&gt;&lt;/p&gt;
+&lt;ul&gt;
+	&lt;li&gt;&lt;b&gt;Status&lt;/b&gt; - Will be set to "Success" if the request succeeds or "Error" if a failure occurs.&lt;/li&gt;
+	&lt;li&gt;&lt;b&gt;Error Message&lt;/b&gt; - Will be populated when the status is "Error".&lt;/li&gt;
+	&lt;li&gt;&lt;b&gt;Collaboration ID&lt;/b&gt; - ID of the collaboration.&lt;/li&gt;
+	&lt;li&gt;&lt;b&gt;Collbaoration Info&lt;/b&gt; - Information of the created collaboration in JSON format.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;b&gt;Error Messages:&lt;/b&gt;&lt;/p&gt;
+&lt;ul&gt;
+	&lt;li&gt;User is already a collaborator.&lt;/li&gt;
+	&lt;li&gt;Group is already a collaborator.&lt;/li&gt;
+	&lt;li&gt;File with given ID not found or associated credentials do not have permissions to access the file.&lt;/li&gt;
+	&lt;li&gt;Folder with given ID not found or associated credentials do not have permissions to access the folder.&lt;/li&gt;
+	&lt;li&gt;The credentials associated with the Box Spoke connection does not have enough permission to perform this action.&lt;/li&gt;
+	&lt;li&gt;User with given ID not found.&lt;/li&gt;
+	&lt;li&gt;Group with given ID not found.&lt;/li&gt;
+	&lt;li&gt;External collaboration is restricted on this item.&lt;/li&gt;
+       &lt;li&gt;Invalid username or password/token.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;b&gt;Additional Note:&lt;/b&gt;&lt;/p&gt;
+&lt;ul&gt;
+	&lt;li&gt;Viewer or Editor are valid roles for an item of type 'File'. The action will fail in case any other role is selected.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;To use this action, the corresponding Box connection and credential must be created and associated with the Box Connection &amp; Credential alias. &lt;a target="_blank" href="http://docs.servicenow.com/?context=CSHelp:credentials-connections-alias"&gt;Learn More&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;b&gt;Note&lt;/b&gt;: Requires a subscription for production use. &lt;a target="_blank" href="https://docs.servicenow.com/?context=CSHelp:IntegrationHub-licensing-information"&gt;Read More&lt;/a&gt;.&lt;/p&gt;</description>
+        <internal_name>add_collaborator</internal_name>
+        <label_cache>[{"name":"{{action.accessible_by_type7}}","label":"action➛Accessible By Type","type":"action","ref":""},{"name":"{{action.role7}}","label":"action➛Role","type":"action","ref":""},{"name":"{{action.item_type}}","label":"action➛Item Type","type":"action","ref":""},{"name":"{{action.item_id}}","label":"action➛Item ID","type":"action","ref":""},{"name":"{{action.accessible_by_id}}","label":"action➛Accessible By ID","type":"action","ref":""},{"name":"{{action.accessible_by_login}}","label":"action➛Accessible By Login","type":"action","ref":""},{"name":"{{action.can_view_path}}","label":"action➛Can View Path","type":"action","ref":""},{"name":"{{step[fbb1cefe-6f31-44af-b379-73386178877f].}}","label":"Pre Processingstep➛➛","type":"step","ref":""},{"name":"{{step[fbb1cefe-6f31-44af-b379-73386178877f].p}}","label":"Pre Processingstep➛➛p","type":"step","ref":""},{"name":"{{step[fbb1cefe-6f31-44af-b379-73386178877f].pa}}","label":"Pre Processingstep➛➛pa","type":"step","ref":""},{"name":"{{step[fbb1cefe-6f31-44af-b379-73386178877f].pay}}","label":"Pre Processingstep➛➛pay","type":"step","ref":""},{"name":"{{step[fbb1cefe-6f31-44af-b379-73386178877f].payl}}","label":"Pre Processingstep➛➛payl","type":"step","ref":""},{"name":"{{step[fbb1cefe-6f31-44af-b379-73386178877f].paylo}}","label":"Pre Processingstep➛➛paylo","type":"step","ref":""},{"name":"{{step[fbb1cefe-6f31-44af-b379-73386178877f].payloa}}","label":"Pre Processingstep➛➛payloa","type":"step","ref":""},{"name":"{{step[fbb1cefe-6f31-44af-b379-73386178877f].payload}}","label":"step➛Pre Processing➛payload","type":"step","ref":""},{"name":"{{step[930e43ed-ea59-4a52-bec0-433668aa8668].response_body}}","label":"step➛Add Collaborator➛Response Body","type":"step","ref":""},{"name":"{{step[930e43ed-ea59-4a52-bec0-433668aa8668].status_code}}","label":"step➛Add Collaborator➛Status Code","type":"step","ref":""},{"name":"{{step[117c024b-f4bd-4c8c-b9c1-b2d99f91f20e].}}","label":"step➛Handle Errors➛","type":"step","ref":""},{"name":"{{step[117c024b-f4bd-4c8c-b9c1-b2d99f91f20e].s}}","label":"step➛Handle Errors➛s","type":"step","ref":""},{"name":"{{step[117c024b-f4bd-4c8c-b9c1-b2d99f91f20e].st}}","label":"step➛Handle Errors➛st","type":"step","ref":""},{"name":"{{step[117c024b-f4bd-4c8c-b9c1-b2d99f91f20e].sta}}","label":"step➛Handle Errors➛sta","type":"step","ref":""},{"name":"{{step[117c024b-f4bd-4c8c-b9c1-b2d99f91f20e].stat}}","label":"step➛Handle Errors➛stat","type":"step","ref":""},{"name":"{{step[117c024b-f4bd-4c8c-b9c1-b2d99f91f20e].statu}}","label":"step➛Handle Errors➛statu","type":"step","ref":""},{"name":"{{step[117c024b-f4bd-4c8c-b9c1-b2d99f91f20e].status}}","label":"step➛Handle Errors➛status","type":"step","ref":""},{"name":"{{step[117c024b-f4bd-4c8c-b9c1-b2d99f91f20e].e}}","label":"step➛Handle Errors➛e","type":"step","ref":""},{"name":"{{step[117c024b-f4bd-4c8c-b9c1-b2d99f91f20e].er}}","label":"step➛Handle Errors➛er","type":"step","ref":""},{"name":"{{step[117c024b-f4bd-4c8c-b9c1-b2d99f91f20e].err}}","label":"step➛Handle Errors➛err","type":"step","ref":""},{"name":"{{step[117c024b-f4bd-4c8c-b9c1-b2d99f91f20e].erro}}","label":"step➛Handle Errors➛erro","type":"step","ref":""},{"name":"{{step[117c024b-f4bd-4c8c-b9c1-b2d99f91f20e].error}}","label":"step➛Handle Errors➛error","type":"step","ref":""},{"name":"{{step[117c024b-f4bd-4c8c-b9c1-b2d99f91f20e].error_}}","label":"step➛Handle Errors➛error_","type":"step","ref":""},{"name":"{{step[117c024b-f4bd-4c8c-b9c1-b2d99f91f20e].error_m}}","label":"step➛Handle Errors➛error_m","type":"step","ref":""},{"name":"{{step[117c024b-f4bd-4c8c-b9c1-b2d99f91f20e].error_me}}","label":"step➛Handle Errors➛error_me","type":"step","ref":""},{"name":"{{step[117c024b-f4bd-4c8c-b9c1-b2d99f91f20e].error_mes}}","label":"step➛Handle Errors➛error_mes","type":"step","ref":""},{"name":"{{step[117c024b-f4bd-4c8c-b9c1-b2d99f91f20e].error_mess}}","label":"step➛Handle Errors➛error_mess","type":"step","ref":""},{"name":"{{step[117c024b-f4bd-4c8c-b9c1-b2d99f91f20e].error_messa}}","label":"step➛Handle Errors➛error_messa","type":"step","ref":""},{"name":"{{step[117c024b-f4bd-4c8c-b9c1-b2d99f91f20e].error_messag}}","label":"step➛Handle Errors➛error_messag","type":"step","ref":""},{"name":"{{step[117c024b-f4bd-4c8c-b9c1-b2d99f91f20e].error_message}}","label":"step➛Handle Errors➛error_message","type":"step","ref":""},{"name":"{{step[117c024b-f4bd-4c8c-b9c1-b2d99f91f20e].c}}","label":"step➛Handle Errors➛c","type":"step","ref":""},{"name":"{{step[117c024b-f4bd-4c8c-b9c1-b2d99f91f20e].co}}","label":"step➛Handle Errors➛co","type":"step","ref":""},{"name":"{{step[117c024b-f4bd-4c8c-b9c1-b2d99f91f20e].col}}","label":"step➛Handle Errors➛col","type":"step","ref":""},{"name":"{{step[117c024b-f4bd-4c8c-b9c1-b2d99f91f20e].coll}}","label":"step➛Handle Errors➛coll","type":"step","ref":""},{"name":"{{step[117c024b-f4bd-4c8c-b9c1-b2d99f91f20e].colla}}","label":"step➛Handle Errors➛colla","type":"step","ref":""},{"name":"{{step[117c024b-f4bd-4c8c-b9c1-b2d99f91f20e].collab}}","label":"step➛Handle Errors➛collab","type":"step","ref":""},{"name":"{{step[117c024b-f4bd-4c8c-b9c1-b2d99f91f20e].collabo}}","label":"step➛Handle Errors➛collabo","type":"step","ref":""},{"name":"{{step[117c024b-f4bd-4c8c-b9c1-b2d99f91f20e].collabor}}","label":"step➛Handle Errors➛collabor","type":"step","ref":""},{"name":"{{step[117c024b-f4bd-4c8c-b9c1-b2d99f91f20e].collabora}}","label":"step➛Handle Errors➛collabora","type":"step","ref":""},{"name":"{{step[117c024b-f4bd-4c8c-b9c1-b2d99f91f20e].collaborat}}","label":"step➛Handle Errors➛collaborat","type":"step","ref":""},{"name":"{{step[117c024b-f4bd-4c8c-b9c1-b2d99f91f20e].collaborati}}","label":"step➛Handle Errors➛collaborati","type":"step","ref":""},{"name":"{{step[117c024b-f4bd-4c8c-b9c1-b2d99f91f20e].collaboratio}}","label":"step➛Handle Errors➛collaboratio","type":"step","ref":""},{"name":"{{step[117c024b-f4bd-4c8c-b9c1-b2d99f91f20e].collaboration}}","label":"step➛Handle Errors➛collaboration","type":"step","ref":""},{"name":"{{step[117c024b-f4bd-4c8c-b9c1-b2d99f91f20e].collaboration_}}","label":"step➛Handle Errors➛collaboration_","type":"step","ref":""},{"name":"{{step[117c024b-f4bd-4c8c-b9c1-b2d99f91f20e].collaboration_i}}","label":"step➛Handle Errors➛collaboration_i","type":"step","ref":""},{"name":"{{step[117c024b-f4bd-4c8c-b9c1-b2d99f91f20e].collaboration_id}}","label":"step➛Handle Errors➛collaboration_id","type":"step","ref":""},{"name":"{{step[117c024b-f4bd-4c8c-b9c1-b2d99f91f20e].collaboration_j}}","label":"step➛Handle Errors➛collaboration_j","type":"step","ref":""},{"name":"{{step[117c024b-f4bd-4c8c-b9c1-b2d99f91f20e].collaboration_js}}","label":"step➛Handle Errors➛collaboration_js","type":"step","ref":""},{"name":"{{step[117c024b-f4bd-4c8c-b9c1-b2d99f91f20e].collaboration_jso}}","label":"step➛Handle Errors➛collaboration_jso","type":"step","ref":""},{"name":"{{step[117c024b-f4bd-4c8c-b9c1-b2d99f91f20e].collaboration_json}}","label":"step➛Handle Errors➛collaboration_json","type":"step","ref":""},{"name":"{{step[fbb1cefe-6f31-44af-b379-73386178877f].item_type}}","label":"step➛Pre Processing➛item_type","type":"step","ref":""}]</label_cache>
+        <master>true</master>
+        <name>Add Collaborator</name>
+        <outputs/>
+        <outputs/>
+        <parent_action display_value="Add Collaborator">ba2cd2f0dba55b00868f5404ce9619e5</parent_action>
+        <sys_class_name>sys_hub_action_type_snapshot</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2018-05-16 07:59:31</sys_created_on>
+        <sys_id>039509a6dbc29b009a985404ce9619e3</sys_id>
+        <sys_mod_count>5</sys_mod_count>
+        <sys_name>Add Collaborator</sys_name>
+        <sys_package display_value="Box Spoke" source="sn_box_spoke">fdc25a6bdb1d9700868f5404ce961969</sys_package>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="Box Spoke">fdc25a6bdb1d9700868f5404ce961969</sys_scope>
+        <sys_update_name>sys_hub_action_type_snapshot_039509a6dbc29b009a985404ce9619e3</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2018-08-14 15:28:37</sys_updated_on>
+        <system_level>false</system_level>
+        <type/>
+    </sys_hub_action_type_snapshot>
+    <sys_translated_text action="delete_multiple" query="documentkey=039509a6dbc29b009a985404ce9619e3"/>
+    <sys_variable_value action="delete_multiple" query="document_key=039509a6dbc29b009a985404ce9619e3"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_type_snapshot</document>
+        <document_key>039509a6dbc29b009a985404ce9619e3</document_key>
+        <order>0</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2018-07-06 11:41:55</sys_created_on>
+        <sys_id>de91e40bdbc31f00bea7ff561d96194c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2018-07-06 11:41:55</sys_updated_on>
+        <value/>
+        <variable display_value="">9ba9933edbcfdb00bea7ff561d961975</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=039509a6dbc29b009a985404ce9619e3"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>collaboration_id</field>
+        <id>039509a6dbc29b009a985404ce9619e3</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2018-05-16 07:59:42</sys_created_on>
+        <sys_id>35a50da6dbc29b009a985404ce9619e9</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2018-05-16 07:59:42</sys_updated_on>
+        <table>var__m_sys_hub_action_output_039509a6dbc29b009a985404ce9619e3</table>
+        <value>{{step[117c024b-f4bd-4c8c-b9c1-b2d99f91f20e].collaboration_id}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>collaboration_info</field>
+        <id>039509a6dbc29b009a985404ce9619e3</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2018-05-16 07:59:42</sys_created_on>
+        <sys_id>71a50da6dbc29b009a985404ce9619e9</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2018-05-16 07:59:42</sys_updated_on>
+        <table>var__m_sys_hub_action_output_039509a6dbc29b009a985404ce9619e3</table>
+        <value>{{step[117c024b-f4bd-4c8c-b9c1-b2d99f91f20e].collaboration_json}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>error_message</field>
+        <id>039509a6dbc29b009a985404ce9619e3</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2018-05-16 07:59:42</sys_created_on>
+        <sys_id>bda50da6dbc29b009a985404ce9619e8</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2018-05-16 07:59:42</sys_updated_on>
+        <table>var__m_sys_hub_action_output_039509a6dbc29b009a985404ce9619e3</table>
+        <value>{{step[117c024b-f4bd-4c8c-b9c1-b2d99f91f20e].error_message}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>status</field>
+        <id>039509a6dbc29b009a985404ce9619e3</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2018-05-16 07:59:42</sys_created_on>
+        <sys_id>f5a50da6dbc29b009a985404ce9619e9</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2018-05-16 07:59:42</sys_updated_on>
+        <table>var__m_sys_hub_action_output_039509a6dbc29b009a985404ce9619e3</table>
+        <value>{{step[117c024b-f4bd-4c8c-b9c1-b2d99f91f20e].status}}</value>
+    </sys_element_mapping>
+</record_update>

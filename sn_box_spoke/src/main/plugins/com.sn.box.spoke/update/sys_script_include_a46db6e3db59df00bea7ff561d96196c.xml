@@ -1,0 +1,474 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_include">
+    <sys_script_include action="INSERT_OR_UPDATE">
+        <access>package_private</access>
+        <active>true</active>
+        <api_name>sn_box_spoke.BoxErrorHandler</api_name>
+        <client_callable>false</client_callable>
+        <description>Class containing error handling methods for box spoke actions.</description>
+        <name>BoxErrorHandler</name>
+        <script><![CDATA[var BoxErrorHandler = Class.create();
+BoxErrorHandler.prototype = {
+
+  initialize: function() {},
+
+  /**
+    The method maintains a list of code and error messages in a JSON. It takes the code as input and returns the appropriate error message.	
+    parameters :
+      code  - key for retrieving the error message from the error message json.	  	
+    return : error message for the give code	  
+    
+  */
+  retrieveErrorMessage: function(code) {
+    var errorCodeMsgs = {
+      "item_name_in_use": "Item with the same name already exists.",
+      "item_name_invalid": "Names cannot contain non-printable ASCII, \/ or \\, leading or trailing whitespace. The special names \".\" or \"..\" are also unsupported.",
+      "not_found_parent": "Parent folder with given ID not found or associated credentials do not have permissions to access the folder.",
+      "not_found_file": "File with given ID not found or associated credentials do not have permissions to access the file.",
+      "not_found_folder": "Folder with given ID not found or associated credentials do not have permissions to access the folder.",
+      "not_found_id": "User with given ID not found.",
+      "not_found_group_id": "Group with given ID not found.",
+      "as_user_not_found": "Invalid User ID for the given 'As User'.",
+      "unauthorized": "Invalid username or password/token.",
+      "permissions": "The credentials associated with the Box Spoke connection does not have enough permission to perform this action.",
+      "user_id_not_found": "User with given ID not found.",
+      "source_user_id_not_found": "Invalid source user ID.",
+      //"destination_user_id_not_found": "Invalid destination user ID.",
+      //"user_id_format_incorrect": "Incorrect User ID format.",	
+      "group_id_not_found": "Group with given ID not found.",
+      "item_name_too_long": "Item name too long.",
+      "storage_limit_exceeded": "Account storage limit reached.",
+      "user_login_already_used": "User with the specified login already exists.",
+      "cannot_invite_deactivated_usesr": "Cannot invite a deactivated user.",
+      "shared_link_invalid_param": "Inputs 'Can Download' & 'Password' can only be set if the input 'Shared Link Access' is set to the value Open or Company.",
+      "unshared_at": "Date/Time of the input Unshared At cannot be in the past.",
+      "tuple_already_exists": "Metadata Object for the given file already exist.",
+      "instance_tuple_not_found": "Template not found in the given scope in Box.",
+      //Never Occurred Yet
+      //400
+
+      "add_user_to_group_bad_request": "Cannot assign configurable permissions to role type member.",
+      "terms_of_service_required": "User must accept custom terms of service before action can be taken.",
+      "requested_preview_unavailable": "Requested preview unavailable.",
+      "folder_not_empty": "Cannot delete - folder not empty.",
+      "invalid_request_parameters": "Invalid input parameters in request",
+      "user_already_collaborator": "User is already a collaborator.",
+      "group_already_collaborator": "Group is already a collaborator.",
+      "cannot_make_collaborated_subfolder_private": "Cannot move a collaborated subfolder to a private folder unless the new owner is explicitly specified.",
+      "collaborations_not_available_on_root_folder": "Root folder cannot be collaborated.",
+      "sync_item_move_failure": "Cannot move a synced item.",
+      "requested_page_out_of_range": "Requested representation page out of range.",
+      "cyclical_folder_structure": "Folder move creates cyclical folder structure.",
+      "bad_digest": "The specified Content-MD5 did not match what we received.",
+      "invalid_collaboration_item": "Item type must be specified and set to 'folder'.",
+      "task_assignee_not_allowed": "Assigner does not have sufficient privileges to assign task to assignee.",
+      "invalid_status": "You can change the status only if the collaboration is pending.",
+      "retention_length_missing": "Retention Time Period cannot be empty for finite Policy.",
+      "invalid_metadata_error": "Invalid value in Metadata input.Metadata should be a correctly nested resource attribute name\/value pair.",
+      "schema_validation_failed": "Provided Metadata attributes has properties which are not allowed by the provided Template schema.",
+      //403
+      "forbidden": "The credentials associated with the Box Spoke connection does not have enough permission to perform this action.",
+      "access_denied_insufficient_permissions": "The credentials associated with the Box Spoke connection does not have enough permission to perform this action.",
+      "access_denied_item_locked": "Access denied – item locked.",
+      "file_size_limit_exceeded": "File size exceeds the folder owner's file size limit.",
+      "access_from_location_blocked": "You're attempting to log in to Box from a location that has not been approved by your admin. Please talk to your admin to resolve this issue.",
+      "as_user_access_denied_insufficient_permissions": "Provided 'As User' has insufficient permission to perform this action.",
+      "user_email_confirmation_required": "Unauthorized - 'As User' needs to complete email confirmation.",
+      "deactivated_as_user": "Unauthorized - 'As User' has been deactivated.",
+      //404
+      "preview_cannot_be_generated": "Preview cannot be generated.",
+      "trashed": "Item is trashed.",
+      "not_trashed": "Item is not trashed.",
+      "not_found_collab_id": "Collaboration ID not found.",
+      "invalid_user_id": "Entered User ID is invalid.",
+
+      //405
+      "method_not_allowed": "Method Not Allowed.",
+      //409
+      "conflict": "A resource with this value already exists.",
+      "recent_similar_comment": "A similar comment has been made recently.",
+      "operation_blocked_temporary": "The operation is blocked by another ongoing operation.",
+      "duplicate_group": "Group with same name already exists.",
+      "retention_name_already_exists": "A retention policy with provided name already exist.",
+
+      //412
+      "sync_state_precondition_failed": "The resource has been modified. Please retrieve the resource again and retry.",
+      "precondition_failed": "The resource has been modified. Please retrieve the resource again and retry",
+      //413
+      "request_entity_too_large": "The size of the upload is more than the allowed maximum.",
+      //429
+      "rate_limit_exceeded": "Request rate limit exceeded, please try again later. There are two limits. The first is a limit of 10 API calls per second per user. The second limit is 4 uploads per second per user.",
+      //500
+      "internal_server_error": "Internal Server Error.",
+      //503
+      "unavailable": "Unavailable.",
+      "file_version_id": "Invalid file Version ID.",
+      "not_found_item": "Item ID of either folder or file provided is invalid.",
+      "generic_item_not_found": "The requested item is not found.",
+      "not_found_attachment": "Provided File Name or Attachment is invalid or not found."
+    };
+
+    for (var key in errorCodeMsgs) {
+      if (key == code) {
+        return errorCodeMsgs[key];
+      }
+    }
+  },
+
+
+  //parse error 
+
+  boxErrorParser: function(response) {
+    try {
+      var response_parsed = JSON.parse(response);
+      if (response_parsed) {
+        if (response_parsed["context_info"])
+          return response_parsed["context_info"]["errors"][0]["message"];
+        else if (response_parsed["message"])
+          return response_parsed["message"];
+      }
+    } catch (err) {
+
+    }
+  },
+
+  //Function for all common errors related to actions
+  genericErrorHandler: function(inputs, outputs) {
+    outputs.status = 'Error';
+
+    if (inputs.status_code == '401') {
+      outputs.error_message = this.retrieveErrorMessage('unauthorized');
+    } else if (inputs.status_code == '403') {
+      outputs.error_message = this.retrieveErrorMessage('permissions');
+    } else {
+      if (inputs.response) {
+        outputs.error_message = this.boxErrorParser(inputs.response);
+      }
+    }
+
+    if (!outputs.error_message) {
+      outputs.error_message = "Unexpected error occurred. Please check the response received from the api for more details.";
+    }
+
+    return outputs;
+  },
+
+
+  //Function for "create user" related errors  
+  createUserErrorHandler: function(inputs, outputs) {
+    outputs.status = 'Error';
+
+    if (inputs.response && inputs.status_code == '409') {
+      outputs.error_message = this.retrieveErrorMessage('user_login_already_used');
+    } else if (inputs.response) {
+      outputs.error_message = this.retrieveErrorMessage(JSON.parse(inputs.response)['code']);
+    }
+
+    if (!outputs.error_message) {
+      outputs = this.genericErrorHandler(inputs, outputs);
+    }
+
+    return outputs;
+
+  },
+  //Function for "update user" related errors  
+  userErrorHandler: function(inputs, outputs) {
+    outputs.status = 'Error';
+
+    if (inputs.response && inputs.status_code == '404') {
+      outputs.error_message = this.retrieveErrorMessage('user_id_not_found');
+    } else if (inputs.response && inputs.status_code == '400') {
+      outputs.error_message = this.retrieveErrorMessage('invalid_request_parameters');
+    } else if (inputs.response) {
+      outputs.error_message = this.retrieveErrorMessage(JSON.parse(inputs.response)['code']);
+    }
+    if (!outputs.error_message) {
+      outputs = this.genericErrorHandler(inputs, outputs);
+    }
+
+    return outputs;
+
+  },
+
+  //Function for "delete user" related errors  
+  deleteUserErrorHandler: function(inputs, outputs) {
+    outputs.status = 'Error';
+
+    if (inputs.response && inputs.status_code == '404') {
+      outputs.error_message = this.retrieveErrorMessage('user_id_not_found');
+      //} else if (inputs.response && inputs.status_code == '405') {
+      //outputs.error_message = this.retrieveErrorMessage('method_not_allowed');
+    } else if (inputs.response) {
+      outputs.error_message = this.retrieveErrorMessage(JSON.parse(inputs.response)['code']);
+    }
+
+    if (!outputs.error_message) {
+      outputs = this.genericErrorHandler(inputs, outputs);
+    }
+
+    return outputs;
+
+  },
+  //Function for "create group" related errors  
+  createGroupErrorHandler: function(inputs, outputs) {
+    outputs.status = 'Error';
+    if (inputs.response && inputs.status_code == '409') {
+      outputs.error_message = this.retrieveErrorMessage('duplicate_group');
+    } else if (inputs.response) {
+      outputs.error_message = this.retrieveErrorMessage(JSON.parse(inputs.response)['code']);
+    }
+
+    if (!outputs.error_message) {
+      outputs = this.genericErrorHandler(inputs, outputs);
+    }
+
+    return outputs;
+
+  },
+  groupErrorHandler: function(inputs, outputs) {
+    outputs.status = 'Error';
+    if (inputs.response && inputs.status_code == '409') {
+      outputs.error_message = this.retrieveErrorMessage('duplicate_group');
+    } else if (inputs.response && inputs.status_code == '404' && inputs.response.toString().indexOf("\'group_tag\' with value") != -1) {
+      outputs.error_message = this.retrieveErrorMessage('group_id_not_found');
+    } else if (inputs.response && inputs.status_code == '404') {
+      outputs.error_message = this.retrieveErrorMessage('group_id_not_found');
+    } else if (inputs.response) {
+      outputs.error_message = this.retrieveErrorMessage(JSON.parse(inputs.response)['code']);
+    }
+
+    if (!outputs.error_message) {
+      outputs = this.genericErrorHandler(inputs, outputs);
+    }
+
+    return outputs;
+  },
+  //Function for "Add To Group" related errors  
+  addToGroupErrorHandler: function(inputs, outputs) {
+    outputs.status = 'Error';
+    //"User already exists in group"
+    if (inputs.response && inputs.status_code == '409') {
+      outputs.error_message = "User already exists in group";
+    } else if (inputs.response && inputs.status_code == '400') {
+      outputs.error_message = this.retrieveErrorMessage('add_user_to_group_bad_request');
+    } else if (inputs.response && inputs.status_code == '404' && inputs.response.toString().indexOf("\'group_tag\' with value") != -1) {
+      outputs.error_message = this.retrieveErrorMessage('group_id_not_found');
+    } else if (inputs.response && inputs.status_code == '404' && inputs.response.toString().indexOf("\'user\' with value") != -1) {
+      outputs.error_message = this.retrieveErrorMessage('user_id_not_found');
+    }
+    if (!outputs.error_message) {
+      outputs = this.genericErrorHandler(inputs, outputs);
+    }
+    return outputs;
+  },
+
+
+  //Function for all files related errors
+  fileErrorHandler: function(inputs, outputs) {
+
+    outputs.status = 'Error';
+
+    if (inputs.status_code == 404 && inputs.response) {
+      if (inputs.response.toString().indexOf("\'parent\' with value") != -1) {
+        outputs.error_message = this.retrieveErrorMessage('not_found_parent');
+      } else if (inputs.response.toString().indexOf("\'file\' with value") != -1) {
+        outputs.error_message = this.retrieveErrorMessage('not_found_file');
+      } else if (inputs.response.indexOf("On-Behalf-Of User not found") != -1) {
+        outputs.error_message = this.retrieveErrorMessage('as_user_not_found');
+      } else if (inputs.response.indexOf("Not Found") != -1) {
+        outputs.error_message = this.retrieveErrorMessage('generic_item_not_found');
+      } else if (inputs.response.indexOf("instance_tuple_not_found") != -1) {
+        outputs.error_message = this.retrieveErrorMessage('instance_tuple_not_found');
+      } else {
+        outputs = this.genericErrorHandler(inputs, outputs);
+      }
+
+
+
+    } else if (inputs.status_code == 400 && inputs.response) {
+		
+      if (inputs.response.toString().indexOf("Entity body") != -1) {
+        outputs.error_message = this.retrieveErrorMessage('invalid_metadata_error');
+
+      }else
+		  if (inputs.response.toString().indexOf("not allowed by the schema") != -1) {
+        outputs.error_message = this.retrieveErrorMessage('schema_validation_failed');
+
+      } else {
+        outputs = this.genericErrorHandler(inputs, outputs);
+      }
+    } else if (inputs.response && JSON.parse(inputs.response)['code'] == "user_email_confirmation_required") {
+      outputs.error_message = this.retrieveErrorMessage('user_email_confirmation_required');
+    } else if (inputs.status_code == 403 && (inputs.as_user) && (inputs.response)) {
+      outputs.error_message = this.retrieveErrorMessage('as_user_access_denied_insufficient_permissions');
+    } else if (inputs.status_code == 401 && inputs.response && JSON.parse(inputs.response)['code'] == "unauthorized" && inputs.response.toString().indexOf("deactivated") != -1) {
+      outputs.error_message = this.retrieveErrorMessage('deactivated_as_user');
+    } else if (inputs.error_message == "Error encountered fetching Attachment") {
+      outputs.error_message = this.retrieveErrorMessage('not_found_attachment');
+    } else if (inputs.response) {
+      if (JSON.parse(inputs.response)['code'] == "bad_request" || (JSON.parse(inputs.response)['code'] == "unauthorized" && inputs.response.toString().indexOf("deactivated") != -1)) {
+        outputs.error_message = JSON.parse(inputs.response)['message'];
+      } else {
+        outputs.error_message = this.retrieveErrorMessage(JSON.parse(inputs.response)['code']);
+      }
+    }
+    if (!outputs.error_message) {
+      outputs = this.genericErrorHandler(inputs, outputs);
+    }
+    return outputs;
+
+  },
+
+  // function for all folder related errors
+  folderErrorHandler: function(inputs, outputs) {
+    outputs.status = 'Error';
+
+    if (inputs.status_code == 404 && inputs.response) {
+      if (inputs.response.toString().indexOf("\'parent\' with value") != -1) {
+        outputs.error_message = this.retrieveErrorMessage('not_found_parent');
+      } else if (inputs.response.toString().indexOf("invalid_user_id") != -1) {
+        outputs.error_message = this.retrieveErrorMessage('invalid_user_id');
+      }	else if (inputs.response.toString().indexOf("not_found") != -1) {
+        outputs.error_message = this.retrieveErrorMessage('not_found_folder');
+      } else if (inputs.response.toString().indexOf("not_found") != -1) {
+        outputs.error_message = this.retrieveErrorMessage('not_found_file');
+      } else if (inputs.response.indexOf("On-Behalf-Of User not found") != -1) {
+        outputs.error_message = this.retrieveErrorMessage('as_user_not_found');
+      } else {
+        outputs = this.genericErrorHandler(inputs, outputs);
+      }
+    } else if (inputs.response) {
+      outputs.error_message = this.retrieveErrorMessage(JSON.parse(inputs.response)['code']);
+    }
+
+
+    if (!outputs.error_message) {
+      outputs = this.genericErrorHandler(inputs, outputs);
+    }
+    return outputs;
+  },
+
+
+
+
+
+  //Function for "Move Owned Item" related errors  
+  moveOwnedItem: function(inputs, outputs) {
+    outputs.status = 'Error';
+
+    if (inputs.response && inputs.status_code == '404' && inputs.response.toString().indexOf("not_found") != -1) {
+      outputs.error_message = this.retrieveErrorMessage('source_user_id_not_found');
+    } else if (inputs.status_code == '403' && inputs.response.toString().indexOf("Cannot transfer") != -1) {
+      outputs.error_message = JSON.parse(inputs.response)['message'];
+    }
+
+
+    if (!outputs.error_message) {
+      outputs = this.genericErrorHandler(inputs, outputs);
+    }
+    return outputs;
+  },
+
+
+
+
+
+
+
+
+
+  // function for all collaboration related errors 
+  collaborationErrorHandler: function(inputs, outputs) {
+    outputs.status = 'Error';
+    if (inputs.response && inputs.status_code == 404) {
+      if (inputs.response.toString().indexOf("\'item\' with value") != -1 && inputs.item_type == 'file') {
+        outputs.error_message = this.retrieveErrorMessage('not_found_file');
+      } else if (inputs.response.toString().indexOf("\'item\' with value") != -1 && inputs.item_type == 'folder') {
+        outputs.error_message = this.retrieveErrorMessage('not_found_folder');
+      } else if (inputs.response.toString().indexOf("\'id\' with value") != -1) {
+        outputs.error_message = this.retrieveErrorMessage('not_found_id');
+      } else if (inputs.response.toString().indexOf("\'group_tag\' with value") != -1) {
+        outputs.error_message = this.retrieveErrorMessage('not_found_group_id');
+      } else if (inputs.response.toString().indexOf("Not Found") != -1) {
+        outputs.error_message = this.retrieveErrorMessage('not_found_collab_id');
+      } else {
+        outputs = this.genericErrorHandler(inputs, outputs);
+      }
+    } else if (inputs.response && inputs.status_code == 409 && inputs.response.toString().indexOf("Group is already a collaborator") != -1) {
+      outputs.error_message = this.retrieveErrorMessage('group_already_collaborator');
+    } else if (inputs.response) {
+      outputs.error_message = this.retrieveErrorMessage(JSON.parse(inputs.response)['code']);
+    }
+
+    if (!outputs.error_message) {
+      outputs = this.genericErrorHandler(inputs, outputs);
+    }
+
+    return outputs;
+  },
+
+  // function for error handler creation and update of shared links
+  sharedLinkErrorHandler: function(inputs, outputs) {
+    outputs.status = 'Error';
+    if (inputs.response && inputs.status_code == 404 && inputs.response.toString().indexOf("\'item\' with value") != -1 && inputs.item_type == 'files') {
+      outputs.error_message = this.retrieveErrorMessage('not_found_file');
+    } else if (inputs.response && inputs.status_code == 404 && inputs.response.toString().indexOf("\'item\' with value") != -1 && inputs.item_type == 'folders') {
+      outputs.error_message = this.retrieveErrorMessage('not_found_folder');
+    } else if (inputs.response && inputs.status_code == 404 && inputs.response.indexOf("Not Found")) {
+      outputs.error_message = this.retrieveErrorMessage('not_found_item');
+    } else if (inputs.response && inputs.status_code == '400' && inputs.response.indexOf("Invalid value") != -1) {
+      if ((inputs.can_download == true || inputs.password) && inputs.shared_link_access == "collaborators") {
+        outputs.error_message = this.retrieveErrorMessage('shared_link_invalid_param');
+      } else if (inputs.response.indexOf('unshared_at') != -1) {
+        outputs.error_message = this.retrieveErrorMessage('unshared_at');
+      } else {
+        outputs = this.genericErrorHandler(inputs, outputs);
+      }
+
+    } else if (inputs.response && inputs.status_code == 405 && inputs.response.indexOf("Method Not Allowed")) {
+      outputs.error_message = this.retrieveErrorMessage('not_found_item');
+    } else if (inputs.response) {
+      outputs.error_message = this.retrieveErrorMessage(JSON.parse(inputs.response)['code']);
+    }
+
+    if (!outputs.error_message) {
+      outputs = this.genericErrorHandler(inputs, outputs);
+    }
+
+    return outputs;
+
+
+  },
+
+  // function for error handler copy box file to ServiceNow record
+  copyFileToSnowErrorHandler: function(inputs, outputs) {
+    outputs.status = 'Error';
+    if ((inputs.status_code == 404) || (inputs.status_code == 405)) {
+      outputs.error_message = this.retrieveErrorMessage('not_found_file');
+    } else if (inputs.status_code == 400) {
+      outputs.error_message = this.retrieveErrorMessage('file_version_id');
+    } else if (inputs.status_code == 401) {
+      outputs.error_message = this.retrieveErrorMessage('unauthorized');
+    } else if (inputs.status_code == 403) {
+      outputs.error_message = this.retrieveErrorMessage('permissions');
+    }
+
+    return outputs;
+  },
+
+  type: 'BoxErrorHandler'
+};
+]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2018-04-12 12:30:23</sys_created_on>
+        <sys_id>a46db6e3db59df00bea7ff561d96196c</sys_id>
+        <sys_mod_count>263</sys_mod_count>
+        <sys_name>BoxErrorHandler</sys_name>
+        <sys_package display_value="Box Spoke" source="sn_box_spoke">fdc25a6bdb1d9700868f5404ce961969</sys_package>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="Box Spoke">fdc25a6bdb1d9700868f5404ce961969</sys_scope>
+        <sys_update_name>sys_script_include_a46db6e3db59df00bea7ff561d96196c</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2018-10-25 11:30:24</sys_updated_on>
+    </sys_script_include>
+</record_update>

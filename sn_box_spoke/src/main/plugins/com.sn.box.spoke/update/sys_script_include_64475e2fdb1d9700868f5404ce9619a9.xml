@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_include">
+    <sys_script_include action="INSERT_OR_UPDATE">
+        <access>package_private</access>
+        <active>true</active>
+        <api_name>sn_box_spoke.BoxUtils</api_name>
+        <client_callable>false</client_callable>
+        <description>Class containing utility methods for box spoke actions.</description>
+        <name>BoxUtils</name>
+        <script><![CDATA[var BoxUtils = Class.create();
+BoxUtils.prototype = {
+    initialize: function() {
+    },
+	
+	 /**  Params : json object 
+	  Functionality : Traverses through all key-value pairs part of the inputs and strips the value of any whitespace which are added inadverently around       the values.
+	  Return : updated json object.	
+	  */
+	
+	trimStringInputs: function(inputs) {
+	  for (var key in inputs) {
+	    if (inputs[key] && typeof inputs[key] == 'string') {
+			inputs[key] = inputs[key].trim();			
+        }	 
+      }
+	  return inputs;  
+	}, 
+	
+
+    type: 'BoxUtils'
+};]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2018-04-12 09:43:55</sys_created_on>
+        <sys_id>64475e2fdb1d9700868f5404ce9619a9</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name>BoxUtils</sys_name>
+        <sys_package display_value="Box Spoke" source="sn_box_spoke">fdc25a6bdb1d9700868f5404ce961969</sys_package>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="Box Spoke">fdc25a6bdb1d9700868f5404ce961969</sys_scope>
+        <sys_update_name>sys_script_include_64475e2fdb1d9700868f5404ce9619a9</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2018-04-12 12:45:34</sys_updated_on>
+    </sys_script_include>
+</record_update>

@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_hub_action_type_definition">
+    <sys_hub_action_type_definition action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <active>true</active>
+        <annotation/>
+        <category display_value="Document Management">0e64f239db651740bea7ff561d9619fe</category>
+        <description>&lt;p&gt;This action retrieves file ID for the given file name from Box account of the associated credentials.&lt;/p&gt;
+
+&lt;p&gt;&lt;b&gt;Inputs:&lt;/b&gt;&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;b&gt;File Path&lt;/b&gt; - The complete path of the file along with extension which user want to search. E.g. incident/fileName.docx.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;b&gt;Outputs:&lt;/b&gt;&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;b&gt;Status&lt;/b&gt; - Will be set to "Success" if the request succeeds or "Error" if a failure occurs.&lt;/li&gt;
+  &lt;li&gt;&lt;b&gt;Error Message&lt;/b&gt; - Will be populated when the status is "Error".&lt;/li&gt;
+  &lt;li&gt;&lt;b&gt;File ID&lt;/b&gt; - ID of the file. Will be populated in case of success.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;b&gt;Error Messages:&lt;/b&gt;&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;Invalid username or password/token.&lt;/li&gt;
+  &lt;li&gt;Entered file path is incorrect or associated credentials do not have permissions to access the file on Box.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;It takes more than 10 minutes for a new file created in Box to be searchable, so this action will not return results immediately for newly created file. Use this action for existing file that has been created earlier and is older than 10 minutes.&lt;/p&gt;
+
+&lt;p&gt;To use this action, the corresponding Box connection and credential must be created and associated with the Box Connection &amp; Credential alias. &lt;a target="_blank" href="http://docs.servicenow.com/?context=CSHelp:credentials-connections-alias"&gt;Learn More&lt;/a&gt;&lt;/p&gt;
+ 
+&lt;p&gt;&lt;b&gt;Note&lt;/b&gt;: Requires a subscription for production use. &lt;a target="_blank" href="https://docs.servicenow.com/?context=CSHelp:IntegrationHub-licensing-information"&gt;Read More&lt;/a&gt;.&lt;/p&gt;
+</description>
+        <internal_name>lookup_file_id</internal_name>
+        <label_cache>[{"name":"{{action.folder_path}}","label":"action➛File Path","type":"action","ref":""},{"name":"{{step[1606c1f2-22a1-4507-89ea-82e0a66467fd].parent_folders}}","label":"step➛Pre Processing➛parent_folders","type":"step","ref":""},{"name":"{{step[954e8242-9ee4-4a6b-a381-2ecd1865557a].response_body}}","label":"step➛Look up File ID ➛Response Body","type":"step","ref":""},{"name":"{{step[954e8242-9ee4-4a6b-a381-2ecd1865557a].error_message}}","label":"step➛Look up File ID ➛Error Message","type":"step","ref":""},{"name":"{{step[954e8242-9ee4-4a6b-a381-2ecd1865557a].status_code}}","label":"step➛Look up File ID ➛Status Code","type":"step","ref":""},{"name":"{{step[129e5624-413f-453c-937e-0d5f75882cf4].e}}","label":"step➛Handle Errors➛e","type":"step","ref":""},{"name":"{{step[129e5624-413f-453c-937e-0d5f75882cf4].er}}","label":"step➛Handle Errors➛er","type":"step","ref":""},{"name":"{{step[129e5624-413f-453c-937e-0d5f75882cf4].err}}","label":"step➛Handle Errors➛err","type":"step","ref":""},{"name":"{{step[129e5624-413f-453c-937e-0d5f75882cf4].erro}}","label":"step➛Handle Errors➛erro","type":"step","ref":""},{"name":"{{step[129e5624-413f-453c-937e-0d5f75882cf4].error}}","label":"step➛Handle Errors➛error","type":"step","ref":""},{"name":"{{step[129e5624-413f-453c-937e-0d5f75882cf4].status}}","label":"step➛Handle Errors➛status","type":"step","ref":""},{"name":"{{step[129e5624-413f-453c-937e-0d5f75882cf4].error_message}}","label":"step➛Handle Errors➛error_message","type":"step","ref":""},{"name":"{{step[1606c1f2-22a1-4507-89ea-82e0a66467fd].target_file_name}}","label":"step➛Pre Processing➛target_file_name","type":"step","ref":""},{"name":"{{step[129e5624-413f-453c-937e-0d5f75882cf4].file_id}}","label":"step➛Handle Errors➛file_id","type":"step","ref":""}]</label_cache>
+        <latest_snapshot>7b3cc6a7dbbb1b001b5857935e961973</latest_snapshot>
+        <master_snapshot>dce2b32adb43db00868f5404ce96195a</master_snapshot>
+        <name>Look up File ID</name>
+        <outputs/>
+        <outputs/>
+        <state>published</state>
+        <sys_class_name>sys_hub_action_type_definition</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2018-05-03 13:22:44</sys_created_on>
+        <sys_id>b2e29392dbb19f40bea7ff561d961936</sys_id>
+        <sys_mod_count>32</sys_mod_count>
+        <sys_name>Look up File ID</sys_name>
+        <sys_package display_value="Box Spoke" source="sn_box_spoke">fdc25a6bdb1d9700868f5404ce961969</sys_package>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="Box Spoke">fdc25a6bdb1d9700868f5404ce961969</sys_scope>
+        <sys_update_name>sys_hub_action_type_definition_b2e29392dbb19f40bea7ff561d961936</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2018-08-14 15:32:00</sys_updated_on>
+        <system_level>false</system_level>
+        <type/>
+    </sys_hub_action_type_definition>
+    <sys_translated_text action="delete_multiple" query="documentkey=b2e29392dbb19f40bea7ff561d961936"/>
+    <sys_variable_value action="delete_multiple" query="document_key=b2e29392dbb19f40bea7ff561d961936"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_type_definition</document>
+        <document_key>b2e29392dbb19f40bea7ff561d961936</document_key>
+        <order>0</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2018-07-06 11:47:12</sys_created_on>
+        <sys_id>3fc26ccbdb0fdb00868f5404ce961952</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2018-07-06 11:47:12</sys_updated_on>
+        <value/>
+        <variable display_value="">6b3167f6db031f00bea7ff561d961963</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=b2e29392dbb19f40bea7ff561d961936"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>error</field>
+        <id>b2e29392dbb19f40bea7ff561d961936</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2018-05-03 13:22:52</sys_created_on>
+        <sys_id>c1f2d392dbb19f40bea7ff561d961932</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2018-05-03 13:22:52</sys_updated_on>
+        <table>var__m_sys_hub_action_output_b2e29392dbb19f40bea7ff561d961936</table>
+        <value>{{step[129e5624-413f-453c-937e-0d5f75882cf4].error_message}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>folder_id</field>
+        <id>b2e29392dbb19f40bea7ff561d961936</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2018-05-03 13:22:52</sys_created_on>
+        <sys_id>85f2d392dbb19f40bea7ff561d961932</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2018-05-03 14:04:59</sys_updated_on>
+        <table>var__m_sys_hub_action_output_b2e29392dbb19f40bea7ff561d961936</table>
+        <value>{{step[129e5624-413f-453c-937e-0d5f75882cf4].file_id}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>status</field>
+        <id>b2e29392dbb19f40bea7ff561d961936</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2018-05-03 13:22:52</sys_created_on>
+        <sys_id>49f2d392dbb19f40bea7ff561d961932</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2018-05-03 13:22:52</sys_updated_on>
+        <table>var__m_sys_hub_action_output_b2e29392dbb19f40bea7ff561d961936</table>
+        <value>{{step[129e5624-413f-453c-937e-0d5f75882cf4].status}}</value>
+    </sys_element_mapping>
+</record_update>

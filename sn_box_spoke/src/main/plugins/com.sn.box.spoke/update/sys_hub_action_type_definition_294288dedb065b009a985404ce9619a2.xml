@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_hub_action_type_definition">
+    <sys_hub_action_type_definition action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <active>true</active>
+        <annotation/>
+        <category display_value="User Management">9c2cd2f0dba55b00868f5404ce961989</category>
+        <copied_from/>
+        <copied_from_name/>
+        <description>&lt;p&gt;This action deletes a user from Box application.&lt;/p&gt;
+
+&lt;p&gt;&lt;b&gt;Inputs:&lt;/b&gt;&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;b&gt;User ID&lt;/b&gt; - ID of the user which needs to be deleted. E.g.3640548586.&lt;/li&gt;
+  &lt;li&gt;&lt;b&gt;Notify&lt;/b&gt; - Flag to set whether destination user will receive email notification of deletion.&lt;/li&gt;
+  &lt;li&gt;&lt;b&gt;Force&lt;/b&gt; - Flag to set whether the user should be deleted even if this user still own files.&lt;/li&gt; 
+&lt;/ul&gt;
+&lt;p&gt;&lt;b&gt;Outputs:&lt;/b&gt;&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;b&gt;Status&lt;/b&gt; - Will be set to "Success" if the request succeeds or "Error" if a failure occurs.&lt;/li&gt;
+  &lt;li&gt;&lt;b&gt;Error Message&lt;/b&gt; - Will be populated when the status is "Error".&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;b&gt;Error Messages:&lt;/b&gt;&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;Invalid username or password/token.&lt;/li&gt;
+  &lt;li&gt;User with given ID not found.&lt;/li&gt;
+ &lt;li&gt;User has managed content.&lt;/li&gt;
+&lt;li&gt;The credentials associated with the Box Spoke connection does not have enough permission to perform this action.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;To use this action, the corresponding Box connection and credential must be created and associated with the Box Connection &amp; Credential alias. &lt;a target="_blank" href="http://docs.servicenow.com/?context=CSHelp:credentials-connections-alias"&gt;Learn More&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;b&gt;Note&lt;/b&gt;: Requires a subscription for production use. &lt;a target="_blank" href="https://docs.servicenow.com/?context=CSHelp:IntegrationHub-licensing-information"&gt;Read More&lt;/a&gt;.&lt;/p&gt;</description>
+        <internal_name>delete_user</internal_name>
+        <label_cache>[{"name":"{{action.user_id}}","label":"action➛User ID","type":"action","ref":""},{"name":"{{action.notify}}","label":"action➛Notify","type":"action","ref":""},{"name":"{{action.force}}","label":"action➛Force","type":"action","ref":""},{"name":"{{step[58914280-f848-4e0a-aa41-8d4905346701].}}","label":"step➛Pre Processing➛","type":"step","ref":""},{"name":"{{step[58914280-f848-4e0a-aa41-8d4905346701].u}}","label":"step➛Pre Processing➛u","type":"step","ref":""},{"name":"{{step[58914280-f848-4e0a-aa41-8d4905346701].us}}","label":"step➛Pre Processing➛us","type":"step","ref":""},{"name":"{{step[58914280-f848-4e0a-aa41-8d4905346701].use}}","label":"step➛Pre Processing➛use","type":"step","ref":""},{"name":"{{step[58914280-f848-4e0a-aa41-8d4905346701].user}}","label":"step➛Pre Processing➛user","type":"step","ref":""},{"name":"{{step[58914280-f848-4e0a-aa41-8d4905346701].user_}}","label":"step➛Pre Processing➛user_","type":"step","ref":""},{"name":"{{step[58914280-f848-4e0a-aa41-8d4905346701].user_i}}","label":"step➛Pre Processing➛user_i","type":"step","ref":""},{"name":"{{step[58914280-f848-4e0a-aa41-8d4905346701].user_id}}","label":"step➛Pre Processing➛user_id","type":"step","ref":""},{"name":"{{step[12c08b7f-cb89-4c41-a466-3cf89fc27b8b].status_code}}","label":"step➛Delete User➛Status Code","type":"step","ref":""},{"name":"{{step[12c08b7f-cb89-4c41-a466-3cf89fc27b8b].error_message}}","label":"step➛Delete User➛Error Message","type":"step","ref":""},{"name":"{{step[12c08b7f-cb89-4c41-a466-3cf89fc27b8b].response_body}}","label":"step➛Delete User➛Response Body","type":"step","ref":""},{"name":"{{step[18287e72-6da8-499f-affa-d7922e975b84].}}","label":"step➛Handle Errors➛","type":"step","ref":""},{"name":"{{step[18287e72-6da8-499f-affa-d7922e975b84].e}}","label":"step➛Handle Errors➛e","type":"step","ref":""},{"name":"{{step[18287e72-6da8-499f-affa-d7922e975b84].status}}","label":"step➛Handle Errors➛status","type":"step","ref":""},{"name":"{{step[18287e72-6da8-499f-affa-d7922e975b84].er}}","label":"step➛Handle Errors➛er","type":"step","ref":""},{"name":"{{step[18287e72-6da8-499f-affa-d7922e975b84].err}}","label":"step➛Handle Errors➛err","type":"step","ref":""},{"name":"{{step[18287e72-6da8-499f-affa-d7922e975b84].erro}}","label":"step➛Handle Errors➛erro","type":"step","ref":""},{"name":"{{step[18287e72-6da8-499f-affa-d7922e975b84].error}}","label":"step➛Handle Errors➛error","type":"step","ref":""},{"name":"{{step[18287e72-6da8-499f-affa-d7922e975b84].error_}}","label":"step➛Handle Errors➛error_","type":"step","ref":""},{"name":"{{step[18287e72-6da8-499f-affa-d7922e975b84].error_m}}","label":"step➛Handle Errors➛error_m","type":"step","ref":""},{"name":"{{step[18287e72-6da8-499f-affa-d7922e975b84].error_me}}","label":"step➛Handle Errors➛error_me","type":"step","ref":""},{"name":"{{step[18287e72-6da8-499f-affa-d7922e975b84].error_mes}}","label":"step➛Handle Errors➛error_mes","type":"step","ref":""},{"name":"{{step[18287e72-6da8-499f-affa-d7922e975b84].error_mess}}","label":"step➛Handle Errors➛error_mess","type":"step","ref":""},{"name":"{{step[18287e72-6da8-499f-affa-d7922e975b84].error_messa}}","label":"step➛Handle Errors➛error_messa","type":"step","ref":""},{"name":"{{step[18287e72-6da8-499f-affa-d7922e975b84].error_messag}}","label":"step➛Handle Errors➛error_messag","type":"step","ref":""},{"name":"{{step[18287e72-6da8-499f-affa-d7922e975b84].error_message}}","label":"step➛Handle Errors➛error_message","type":"step","ref":""},{"name":"{{step[58914280-f848-4e0a-aa41-8d4905346701].n}}","label":"step➛Pre Processing➛n","type":"step","ref":""},{"name":"{{step[58914280-f848-4e0a-aa41-8d4905346701].no}}","label":"step➛Pre Processing➛no","type":"step","ref":""},{"name":"{{step[58914280-f848-4e0a-aa41-8d4905346701].not}}","label":"step➛Pre Processing➛not","type":"step","ref":""},{"name":"{{step[58914280-f848-4e0a-aa41-8d4905346701].noti}}","label":"step➛Pre Processing➛noti","type":"step","ref":""},{"name":"{{step[58914280-f848-4e0a-aa41-8d4905346701].notif}}","label":"step➛Pre Processing➛notif","type":"step","ref":""},{"name":"{{step[58914280-f848-4e0a-aa41-8d4905346701].notify}}","label":"step➛Pre Processing➛notify","type":"step","ref":""},{"name":"{{step[58914280-f848-4e0a-aa41-8d4905346701].f}}","label":"step➛Pre Processing➛f","type":"step","ref":""},{"name":"{{step[58914280-f848-4e0a-aa41-8d4905346701].fo}}","label":"step➛Pre Processing➛fo","type":"step","ref":""},{"name":"{{step[58914280-f848-4e0a-aa41-8d4905346701].for}}","label":"step➛Pre Processing➛for","type":"step","ref":""},{"name":"{{step[58914280-f848-4e0a-aa41-8d4905346701].forc}}","label":"step➛Pre Processing➛forc","type":"step","ref":""},{"name":"{{step[58914280-f848-4e0a-aa41-8d4905346701].force}}","label":"step➛Pre Processing➛force","type":"step","ref":""}]</label_cache>
+        <latest_snapshot>6b6d4ee7dbbb1b001b5857935e9619d3</latest_snapshot>
+        <master_snapshot>6cc177a6db43db00868f5404ce96195a</master_snapshot>
+        <name>Delete User</name>
+        <outputs/>
+        <outputs/>
+        <state>published</state>
+        <sys_class_name>sys_hub_action_type_definition</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2018-05-15 08:26:50</sys_created_on>
+        <sys_id>294288dedb065b009a985404ce9619a2</sys_id>
+        <sys_mod_count>23</sys_mod_count>
+        <sys_name>Delete User</sys_name>
+        <sys_package display_value="Box Spoke" source="sn_box_spoke">fdc25a6bdb1d9700868f5404ce961969</sys_package>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="Box Spoke">fdc25a6bdb1d9700868f5404ce961969</sys_scope>
+        <sys_update_name>sys_hub_action_type_definition_294288dedb065b009a985404ce9619a2</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2018-08-14 15:37:10</sys_updated_on>
+        <system_level>false</system_level>
+        <type/>
+    </sys_hub_action_type_definition>
+    <sys_translated_text action="delete_multiple" query="documentkey=294288dedb065b009a985404ce9619a2"/>
+    <sys_variable_value action="delete_multiple" query="document_key=294288dedb065b009a985404ce9619a2"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_type_definition</document>
+        <document_key>294288dedb065b009a985404ce9619a2</document_key>
+        <order>0</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2018-07-06 11:54:15</sys_created_on>
+        <sys_id>c764a44fdb0fdb00868f5404ce961965</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2018-07-06 11:54:15</sys_updated_on>
+        <value/>
+        <variable display_value="">418f1376db031f00bea7ff561d961963</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=294288dedb065b009a985404ce9619a2"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>error_message</field>
+        <id>294288dedb065b009a985404ce9619a2</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2018-05-15 08:40:37</sys_created_on>
+        <sys_id>eb650092db465b009a985404ce961992</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2018-05-15 08:40:37</sys_updated_on>
+        <table>var__m_sys_hub_action_output_294288dedb065b009a985404ce9619a2</table>
+        <value>{{step[18287e72-6da8-499f-affa-d7922e975b84].error_message}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>status</field>
+        <id>294288dedb065b009a985404ce9619a2</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2018-05-15 08:40:37</sys_created_on>
+        <sys_id>af650092db465b009a985404ce961992</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2018-05-15 08:40:37</sys_updated_on>
+        <table>var__m_sys_hub_action_output_294288dedb065b009a985404ce9619a2</table>
+        <value>{{step[18287e72-6da8-499f-affa-d7922e975b84].status}}</value>
+    </sys_element_mapping>
+</record_update>

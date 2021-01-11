@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_documentation element="role7" label="Role" language="en" table="var__m_sys_hub_action_input_ba2cd2f0dba55b00868f5404ce9619e5">
+        <sys_documentation action="INSERT_OR_UPDATE">
+            <element>role7</element>
+            <help/>
+            <hint/>
+            <label>Role</label>
+            <language>en</language>
+            <name>var__m_sys_hub_action_input_ba2cd2f0dba55b00868f5404ce9619e5</name>
+            <plural/>
+            <sys_class_name>sys_documentation</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2018-04-17 10:19:51</sys_created_on>
+            <sys_id>c4afc019dbad9340bea7ff561d96199b</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>Role</sys_name>
+            <sys_package display_value="Box Spoke" source="sn_box_spoke">fdc25a6bdb1d9700868f5404ce961969</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Box Spoke">fdc25a6bdb1d9700868f5404ce961969</sys_scope>
+            <sys_update_name>sys_documentation_var__m_sys_hub_action_input_ba2cd2f0dba55b00868f5404ce9619e5_role7_en</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2018-04-17 10:19:51</sys_updated_on>
+            <url/>
+            <url_target/>
+        </sys_documentation>
+    </sys_documentation>
+</record_update>
