@@ -1,25 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_complex_object">
-  <sys_complex_object action="INSERT_OR_UPDATE">
-    <label/>
-    <name>FD4784968e214160106dee1059e7c15909</name>
-    <namespace>FlowDesigner</namespace>
-    <scope_name>fdc25a6bdb1d9700868f5404ce961969</scope_name>
-    <serialized_content>{"FlowDesigner:FD4784968e214160106dee1059e7c15909":{"avatar_url":"String","avatar_url.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"Avatar URL\",\"mandatory\":\"true\",\"order\":\"6\",\"max_length\":\"0\",\"uiUniqueId\":\"49f73b3e-38be-4ba1-aacf-9d4ab8051f44\"}"},"name":"String","name.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"Name\",\"mandatory\":\"true\",\"order\":\"3\",\"max_length\":\"0\",\"uiUniqueId\":\"866a2dba-debc-4e17-b579-63502e17ab6a\"}"},"language":"String","language.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"Language\",\"mandatory\":\"true\",\"order\":\"5\",\"max_length\":\"0\",\"uiUniqueId\":\"d04abdde-f29c-4c71-be18-93d39559cac7\"}"},"id":"String","id.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"ID\",\"mandatory\":\"true\",\"order\":\"1\",\"max_length\":\"0\",\"uiUniqueId\":\"453e0ba5-cf32-47d8-a180-85a402358dee\"}"},"type":"String","type.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"Type\",\"mandatory\":\"true\",\"order\":\"2\",\"max_length\":\"0\",\"uiUniqueId\":\"a8c0e29d-49ab-418e-9d62-45cf4d6570de\"}"},"job_title":"String","job_title.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"Job Title\",\"mandatory\":\"true\",\"order\":\"4\",\"max_length\":\"0\",\"uiUniqueId\":\"4b666969-b960-4e5f-b78f-6fe1c067e733\"}"}},"FlowDesigner:FD4784968e214160106dee1059e7c15909.$type_facets":{"SimpleMapFacet":"{\"sourceId\":\"321cd45e-ebd9-46f7-9e87-d0bf438cbfb8\",\"default_value\":\"\",\"label\":\"User\",\"mandatory\":\"false\",\"uiUniqueId\":\"bf763bb7-cb75-4cf5-8b35-81b39082da52\",\"uiTypeLabel\":\"Object\",\"co_type_name\":\"FD4784968e214160106dee1059e7c15909\",\"element_mapping_provider\":\"com.glide.flow_design.action.data.FlowDesignVariableMapper\",\"read_only\":\"false\",\"sourceType\":\"step\",\"sourceUiUniqueId\":\"a022c6da-8e80-4e1a-94af-52135f0b99a6\",\"hint\":null,\"uiType\":\"object\",\"order\":\"1\",\"max_length\":\"65000\"}"}}</serialized_content>
-    <sys_class_name>sys_complex_object</sys_class_name>
-    <sys_created_by>admin</sys_created_by>
-    <sys_created_on>2020-12-14 12:20:24</sys_created_on>
-    <sys_domain>global</sys_domain>
-    <sys_domain_path>/</sys_domain_path>
-    <sys_id>0b84968e0f416010747dc7d92f767e09</sys_id>
-    <sys_mod_count>0</sys_mod_count>
-    <sys_name>FD4784968e214160106dee1059e7c15909</sys_name>
-    <sys_overrides/>
-    <sys_package display_value="Box Spoke" source="sn_box_spoke">fdc25a6bdb1d9700868f5404ce961969</sys_package>
-    <sys_policy/>
-    <sys_scope display_value="Box Spoke">fdc25a6bdb1d9700868f5404ce961969</sys_scope>
-    <sys_update_name>sys_complex_object_0b84968e0f416010747dc7d92f767e09</sys_update_name>
-    <sys_updated_by>admin</sys_updated_by>
-    <sys_updated_on>2020-12-14 12:20:24</sys_updated_on>
-    <type>complex_object_schema</type>
-  </sys_complex_object>
+    <sys_complex_object action="INSERT_OR_UPDATE">
+        <label/>
+        <name>FD4784968e214160106dee1059e7c15909</name>
+        <namespace>FlowDesigner</namespace>
+        <scope_name>fdc25a6bdb1d9700868f5404ce961969</scope_name>
+        <serialized_content>{"FlowDesigner:FD4784968e214160106dee1059e7c15909":{"avatar_url":"String","avatar_url.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"Avatar URL\",\"mandatory\":\"true\",\"order\":\"6\",\"max_length\":\"0\",\"uiUniqueId\":\"49f73b3e-38be-4ba1-aacf-9d4ab8051f44\"}"},"name":"String","name.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"Name\",\"mandatory\":\"true\",\"order\":\"3\",\"max_length\":\"0\",\"uiUniqueId\":\"866a2dba-debc-4e17-b579-63502e17ab6a\"}"},"language":"String","language.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"Language\",\"mandatory\":\"true\",\"order\":\"5\",\"max_length\":\"0\",\"uiUniqueId\":\"d04abdde-f29c-4c71-be18-93d39559cac7\"}"},"id":"String","id.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"ID\",\"mandatory\":\"true\",\"order\":\"1\",\"max_length\":\"0\",\"uiUniqueId\":\"453e0ba5-cf32-47d8-a180-85a402358dee\"}"},"type":"String","type.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"Type\",\"mandatory\":\"true\",\"order\":\"2\",\"max_length\":\"0\",\"uiUniqueId\":\"a8c0e29d-49ab-418e-9d62-45cf4d6570de\"}"},"job_title":"String","job_title.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"Job Title\",\"mandatory\":\"true\",\"order\":\"4\",\"max_length\":\"0\",\"uiUniqueId\":\"4b666969-b960-4e5f-b78f-6fe1c067e733\"}"}},"FlowDesigner:FD4784968e214160106dee1059e7c15909.$type_facets":{"SimpleMapFacet":"{\"sourceId\":\"321cd45e-ebd9-46f7-9e87-d0bf438cbfb8\",\"default_value\":\"\",\"label\":\"User\",\"mandatory\":\"false\",\"uiUniqueId\":\"bf763bb7-cb75-4cf5-8b35-81b39082da52\",\"uiTypeLabel\":\"Object\",\"co_type_name\":\"FD4784968e214160106dee1059e7c15909\",\"element_mapping_provider\":\"com.glide.flow_design.action.data.FlowDesignVariableMapper\",\"read_only\":\"false\",\"sourceType\":\"step\",\"sourceUiUniqueId\":\"a022c6da-8e80-4e1a-94af-52135f0b99a6\",\"hint\":null,\"uiType\":\"object\",\"order\":\"1\",\"max_length\":\"65000\"}"}}</serialized_content>
+        <sys_class_name>sys_complex_object</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-12-14 12:20:24</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>0b84968e0f416010747dc7d92f767e09</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>FD4784968e214160106dee1059e7c15909</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Box Spoke" source="sn_box_spoke">fdc25a6bdb1d9700868f5404ce961969</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Box Spoke">fdc25a6bdb1d9700868f5404ce961969</sys_scope>
+        <sys_update_name>sys_complex_object_0b84968e0f416010747dc7d92f767e09</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-12-14 12:20:24</sys_updated_on>
+        <type>complex_object_schema</type>
+    </sys_complex_object>
 </record_update>

@@ -1,25 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_complex_object">
-  <sys_complex_object action="INSERT_OR_UPDATE">
-    <label/>
-    <name>FD3e6aa70ccec920108392eacd72e4ccba</name>
-    <namespace>FlowDesigner</namespace>
-    <scope_name>fdc25a6bdb1d9700868f5404ce961969</scope_name>
-    <serialized_content>{"FlowDesigner:FD3e6aa70ccec920108392eacd72e4ccba":{"id":"String","id.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"ID\",\"mandatory\":\"false\",\"order\":\"1\",\"max_length\":\"0\"}"},"type":"String","type.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"Type\",\"mandatory\":\"false\",\"order\":\"2\",\"max_length\":\"0\"}"}},"FlowDesigner:FD3e6aa70ccec920108392eacd72e4ccba.$type_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"Object\",\"co_type_name\":\"FD3e6aa70ccec920108392eacd72e4ccba\",\"element_mapping_provider\":\"com.glide.flow_design.action.data.FlowDesignVariableMapper\",\"read_only\":\"false\",\"hint\":null,\"uiType\":\"object\",\"default_value\":\"\",\"label\":\"File and Folders\",\"mandatory\":\"false\",\"order\":\"1\",\"max_length\":\"65000\",\"uiUniqueId\":\"fb9f308d-4322-4556-88ee-301627bc7395\"}"}}</serialized_content>
-    <sys_class_name>sys_complex_object</sys_class_name>
-    <sys_created_by>admin</sys_created_by>
-    <sys_created_on>2020-12-08 13:27:44</sys_created_on>
-    <sys_domain>global</sys_domain>
-    <sys_domain_path>/</sys_domain_path>
-    <sys_id>fe6aa70c0fc92010747dc7d92f767eba</sys_id>
-    <sys_mod_count>0</sys_mod_count>
-    <sys_name>FD3e6aa70ccec920108392eacd72e4ccba</sys_name>
-    <sys_overrides/>
-    <sys_package display_value="Box Spoke" source="sn_box_spoke">fdc25a6bdb1d9700868f5404ce961969</sys_package>
-    <sys_policy/>
-    <sys_scope display_value="Box Spoke">fdc25a6bdb1d9700868f5404ce961969</sys_scope>
-    <sys_update_name>sys_complex_object_fe6aa70c0fc92010747dc7d92f767eba</sys_update_name>
-    <sys_updated_by>admin</sys_updated_by>
-    <sys_updated_on>2020-12-08 13:27:44</sys_updated_on>
-    <type>complex_object_schema</type>
-  </sys_complex_object>
+    <sys_complex_object action="INSERT_OR_UPDATE">
+        <label/>
+        <name>FD3e6aa70ccec920108392eacd72e4ccba</name>
+        <namespace>FlowDesigner</namespace>
+        <scope_name>fdc25a6bdb1d9700868f5404ce961969</scope_name>
+        <serialized_content>{"FlowDesigner:FD3e6aa70ccec920108392eacd72e4ccba":{"id":"String","id.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"ID\",\"mandatory\":\"false\",\"order\":\"1\",\"max_length\":\"0\"}"},"type":"String","type.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"Type\",\"mandatory\":\"false\",\"order\":\"2\",\"max_length\":\"0\"}"}},"FlowDesigner:FD3e6aa70ccec920108392eacd72e4ccba.$type_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"Object\",\"co_type_name\":\"FD3e6aa70ccec920108392eacd72e4ccba\",\"element_mapping_provider\":\"com.glide.flow_design.action.data.FlowDesignVariableMapper\",\"read_only\":\"false\",\"hint\":null,\"uiType\":\"object\",\"default_value\":\"\",\"label\":\"File and Folders\",\"mandatory\":\"false\",\"order\":\"1\",\"max_length\":\"65000\",\"uiUniqueId\":\"fb9f308d-4322-4556-88ee-301627bc7395\"}"}}</serialized_content>
+        <sys_class_name>sys_complex_object</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-12-08 13:27:44</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>fe6aa70c0fc92010747dc7d92f767eba</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>FD3e6aa70ccec920108392eacd72e4ccba</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Box Spoke" source="sn_box_spoke">fdc25a6bdb1d9700868f5404ce961969</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Box Spoke">fdc25a6bdb1d9700868f5404ce961969</sys_scope>
+        <sys_update_name>sys_complex_object_fe6aa70c0fc92010747dc7d92f767eba</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-12-08 13:27:44</sys_updated_on>
+        <type>complex_object_schema</type>
+    </sys_complex_object>
 </record_update>

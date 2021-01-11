@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_documentation element="policy_name" label="Policy Name" language="en" table="var__m_sys_hub_action_input_eb040d0f0f412010747dc7d92f767e99">
+        <sys_documentation action="INSERT_OR_UPDATE">
+            <element>policy_name</element>
+            <help/>
+            <hint/>
+            <label>Policy Name</label>
+            <language>en</language>
+            <name>var__m_sys_hub_action_input_eb040d0f0f412010747dc7d92f767e99</name>
+            <plural/>
+            <sys_class_name>sys_documentation</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2020-12-17 09:17:29</sys_created_on>
+            <sys_id>78778d8f0f412010747dc7d92f767e1c</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>Policy Name</sys_name>
+            <sys_package display_value="Box Spoke" source="sn_box_spoke">fdc25a6bdb1d9700868f5404ce961969</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Box Spoke">fdc25a6bdb1d9700868f5404ce961969</sys_scope>
+            <sys_update_name>sys_documentation_var__m_sys_hub_action_input_eb040d0f0f412010747dc7d92f767e99_policy_name_en</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2020-12-17 09:17:29</sys_updated_on>
+            <url/>
+            <url_target/>
+        </sys_documentation>
+    </sys_documentation>
+</record_update>

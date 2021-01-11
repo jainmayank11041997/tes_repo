@@ -1,18 +1,19 @@
-<?xml version="1.0" encoding="UTF-8"?><record_update>
-  <sys_hub_category action="INSERT_OR_UPDATE">
-<name>Webhook Management</name>
-<order>100</order>
-<sys_class_name>sys_hub_category</sys_class_name>
-<sys_created_by>mayank.jain@snc</sys_created_by>
-<sys_created_on>2020-12-16 05:05:20</sys_created_on>
-<sys_id>131443a6dbc968502cf250d3e2961909</sys_id>
-<sys_mod_count>0</sys_mod_count>
-<sys_name>Webhook Management</sys_name>
-<sys_package display_value="Box Spoke" source="sn_box_spoke">fdc25a6bdb1d9700868f5404ce961969</sys_package>
-<sys_policy>read</sys_policy>
-<sys_scope display_value="Box Spoke">fdc25a6bdb1d9700868f5404ce961969</sys_scope>
-<sys_update_name>sys_hub_category_131443a6dbc968502cf250d3e2961909</sys_update_name>
-<sys_updated_by>admin</sys_updated_by>
-<sys_updated_on>2020-12-16 05:05:20</sys_updated_on>
-</sys_hub_category>
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_hub_category">
+    <sys_hub_category action="INSERT_OR_UPDATE">
+        <name>Webhook Management</name>
+        <order>100</order>
+        <sys_class_name>sys_hub_category</sys_class_name>
+        <sys_created_by>mayank.jain@snc</sys_created_by>
+        <sys_created_on>2020-12-16 05:05:20</sys_created_on>
+        <sys_id>131443a6dbc968502cf250d3e2961909</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Webhook Management</sys_name>
+        <sys_package display_value="Box Spoke" source="sn_box_spoke">fdc25a6bdb1d9700868f5404ce961969</sys_package>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="Box Spoke">fdc25a6bdb1d9700868f5404ce961969</sys_scope>
+        <sys_update_name>sys_hub_category_131443a6dbc968502cf250d3e2961909</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-12-16 05:05:20</sys_updated_on>
+    </sys_hub_category>
+    <sys_translated_text action="delete_multiple" query="documentkey=131443a6dbc968502cf250d3e2961909"/>
 </record_update>

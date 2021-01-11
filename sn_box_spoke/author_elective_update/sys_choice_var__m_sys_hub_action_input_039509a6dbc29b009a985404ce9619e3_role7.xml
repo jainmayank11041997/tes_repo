@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_choice action="INSERT_OR_UPDATE" field="role7" table="var__m_sys_hub_action_input_039509a6dbc29b009a985404ce9619e3" version="3">
+        <sys_choice_set action="INSERT_OR_UPDATE">
+            <element>role7</element>
+            <name>var__m_sys_hub_action_input_039509a6dbc29b009a985404ce9619e3</name>
+            <sys_class_name>sys_choice_set</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2018-05-28 09:37:48</sys_created_on>
+            <sys_id>7b2f8b52db1a5700bea7ff561d96199a</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>role7</sys_name>
+            <sys_package display_value="Box Spoke" source="sn_box_spoke">fdc25a6bdb1d9700868f5404ce961969</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Box Spoke">fdc25a6bdb1d9700868f5404ce961969</sys_scope>
+            <sys_update_name>sys_choice_var__m_sys_hub_action_input_039509a6dbc29b009a985404ce9619e3_role7</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2018-05-28 09:37:48</sys_updated_on>
+        </sys_choice_set>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>role7</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>-- None --</label>
+            <language>en</language>
+            <name>var__m_sys_hub_action_input_039509a6dbc29b009a985404ce9619e3</name>
+            <sequence>0</sequence>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2018-05-28 09:37:48</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>ff2f8b52db1a5700bea7ff561d961999</sys_id>
+            <sys_mod_count>1</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2021-01-06 05:42:18</sys_updated_on>
+            <value/>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>role7</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Editor</label>
+            <language>en</language>
+            <name>var__m_sys_hub_action_input_039509a6dbc29b009a985404ce9619e3</name>
+            <sequence>1</sequence>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2018-05-28 09:37:48</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>332f8b52db1a5700bea7ff561d96199c</sys_id>
+            <sys_mod_count>1</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2021-01-06 05:42:18</sys_updated_on>
+            <value>editor</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>role7</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Co-owner</label>
+            <language>en</language>
+            <name>var__m_sys_hub_action_input_039509a6dbc29b009a985404ce9619e3</name>
+            <sequence>2</sequence>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2018-05-28 09:37:48</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>3f2f8b52db1a5700bea7ff561d96199e</sys_id>
+            <sys_mod_count>1</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2021-01-06 05:42:18</sys_updated_on>
+            <value>co-owner</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>role7</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Viewer</label>
+            <language>en</language>
+            <name>var__m_sys_hub_action_input_039509a6dbc29b009a985404ce9619e3</name>
+            <sequence>3</sequence>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2018-05-28 09:37:48</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>732f8b52db1a5700bea7ff561d9619ae</sys_id>
+            <sys_mod_count>1</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2021-01-06 05:42:18</sys_updated_on>
+            <value>viewer</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>role7</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Previewer</label>
+            <language>en</language>
+            <name>var__m_sys_hub_action_input_039509a6dbc29b009a985404ce9619e3</name>
+            <sequence>4</sequence>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2018-05-28 09:37:48</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>732f8b52db1a5700bea7ff561d9619b1</sys_id>
+            <sys_mod_count>1</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2021-01-06 05:42:18</sys_updated_on>
+            <value>previewer</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>role7</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Uploader</label>
+            <language>en</language>
+            <name>var__m_sys_hub_action_input_039509a6dbc29b009a985404ce9619e3</name>
+            <sequence>5</sequence>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2018-05-28 09:37:48</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>f32f8b52db1a5700bea7ff561d9619b4</sys_id>
+            <sys_mod_count>1</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2021-01-06 05:42:18</sys_updated_on>
+            <value>uploader</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>role7</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Previewer Uploader</label>
+            <language>en</language>
+            <name>var__m_sys_hub_action_input_039509a6dbc29b009a985404ce9619e3</name>
+            <sequence>6</sequence>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2018-05-28 09:37:49</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>f72f8b52db1a5700bea7ff561d9619b7</sys_id>
+            <sys_mod_count>1</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2021-01-06 05:42:18</sys_updated_on>
+            <value>previewer uploader</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>role7</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Viewer Uploader</label>
+            <language>en</language>
+            <name>var__m_sys_hub_action_input_039509a6dbc29b009a985404ce9619e3</name>
+            <sequence>7</sequence>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2018-05-28 09:37:49</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>7f2f8b52db1a5700bea7ff561d9619ba</sys_id>
+            <sys_mod_count>1</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2021-01-06 05:42:18</sys_updated_on>
+            <value>viewer uploader</value>
+        </sys_choice>
+    </sys_choice>
+</record_update>

@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_choice action="INSERT_OR_UPDATE" field="invitation_preferences" table="var__m_sys_hub_action_input_6a2f7d45db1a9300bea7ff561d9619bd" version="3">
+        <sys_choice_set action="INSERT_OR_UPDATE">
+            <element>invitation_preferences</element>
+            <name>var__m_sys_hub_action_input_6a2f7d45db1a9300bea7ff561d9619bd</name>
+            <sys_class_name>sys_choice_set</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2018-05-24 09:56:13</sys_created_on>
+            <sys_id>a60dae09db9a9300bea7ff561d9619ef</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>invitation_preferences</sys_name>
+            <sys_package display_value="Box Spoke" source="sn_box_spoke">fdc25a6bdb1d9700868f5404ce961969</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Box Spoke">fdc25a6bdb1d9700868f5404ce961969</sys_scope>
+            <sys_update_name>sys_choice_var__m_sys_hub_action_input_6a2f7d45db1a9300bea7ff561d9619bd_invitation_preferences</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2018-05-24 09:56:13</sys_updated_on>
+        </sys_choice_set>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>invitation_preferences</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>-- None --</label>
+            <language>en</language>
+            <name>var__m_sys_hub_action_input_6a2f7d45db1a9300bea7ff561d9619bd</name>
+            <sequence>0</sequence>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2018-05-24 10:04:10</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>c7de6e89db9a9300bea7ff561d9619e8</sys_id>
+            <sys_mod_count>1</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2021-01-05 19:43:16</sys_updated_on>
+            <value/>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>invitation_preferences</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Admins Only</label>
+            <language>en</language>
+            <name>var__m_sys_hub_action_input_6a2f7d45db1a9300bea7ff561d9619bd</name>
+            <sequence>1</sequence>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2018-05-24 10:04:10</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>c3de6e89db9a9300bea7ff561d9619eb</sys_id>
+            <sys_mod_count>1</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2021-01-05 19:43:16</sys_updated_on>
+            <value>admins_only</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>invitation_preferences</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Admins and Members</label>
+            <language>en</language>
+            <name>var__m_sys_hub_action_input_6a2f7d45db1a9300bea7ff561d9619bd</name>
+            <sequence>2</sequence>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2018-05-24 09:56:13</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>1a0dae09db9a9300bea7ff561d9619ee</sys_id>
+            <sys_mod_count>2</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2021-01-05 19:43:16</sys_updated_on>
+            <value>admins_and_members</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>invitation_preferences</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>All Managed Users</label>
+            <language>en</language>
+            <name>var__m_sys_hub_action_input_6a2f7d45db1a9300bea7ff561d9619bd</name>
+            <sequence>3</sequence>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2018-05-24 10:04:11</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>87de6e89db9a9300bea7ff561d9619f1</sys_id>
+            <sys_mod_count>1</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2021-01-05 19:43:16</sys_updated_on>
+            <value>all_managed_users</value>
+        </sys_choice>
+    </sys_choice>
+</record_update>

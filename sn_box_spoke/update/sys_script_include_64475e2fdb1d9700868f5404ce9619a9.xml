@@ -3,6 +3,7 @@
         <access>package_private</access>
         <active>true</active>
         <api_name>sn_box_spoke.BoxUtils</api_name>
+        <caller_access/>
         <client_callable>false</client_callable>
         <description>Class containing utility methods for box spoke actions.</description>
         <name>BoxUtils</name>

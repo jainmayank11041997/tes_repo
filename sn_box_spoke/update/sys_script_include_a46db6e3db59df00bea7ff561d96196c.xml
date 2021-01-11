@@ -3,6 +3,7 @@
         <access>package_private</access>
         <active>true</active>
         <api_name>sn_box_spoke.BoxErrorHandler</api_name>
+        <caller_access/>
         <client_callable>false</client_callable>
         <description>Class containing error handling methods for box spoke actions.</description>
         <name>BoxErrorHandler</name>
